@@ -16,27 +16,27 @@
 
 | Field | Value |
 |---|---|
-| **Last completed phase** | `—` |
-| **Next phase to do** | `F00` |
-| **Production live?** | No (needs F04) |
-| **Production URL** | — |
-| **Foundation done** | 0 / 12 |
-| **Tool phases done** | 0 / 472 |
-| **Tools shipped** | 0 / 755 |
+| **Last completed phase** | `P001` |
+| **Next phase to do** | `P002` |
+| **Production live?** | Ready (deploy on push / Vercel) |
+| **Production URL** | — _(set after first Vercel deploy)_ |
+| **Foundation done** | 12 / 12 |
+| **Tool phases done** | 1 / 472 |
+| **Tools shipped** | 2 / 755 |
 | **Hub phases done** | 0 / 50 |
 | **SEO phases done** | 0 / 94 |
 | **Monetization phases done** | 0 / 15 |
-| **Last updated** | — |
+| **Last updated** | 2026-07-26 |
 
 ### Progress bar (manual)
 
 ```
-Foundation   [            ] 0%
-Tools        [            ] 0%
-Overall*     [            ] 0%
+Foundation   [############] 100%
+Tools        [#           ] ~0.2%
+Overall*     [#           ] ~2%
 ```
 
-\*Overall ≈ weighted feel; exact counts are in the dashboard table.
+*Overall ≈ weighted feel; exact counts are in the dashboard table.
 
 ---
 
@@ -60,7 +60,20 @@ Newest at top. One line per completed phase.
 
 | Date | Phase | Notes / commit / URL |
 |---|---|---|
-| _yyyy-mm-dd_ | `F00` | _example — delete this row when real_ |
+| 2026-07-26 | `theme` | Switched site to light lemon shade; Vitest + P001 unit tests |
+| 2026-07-26 | `P001` | JSON Formatter + JSON Validator shipped |
+| 2026-07-26 | `F11` | Blog index + 3 posts + InternalLink |
+| 2026-07-26 | `F10` | CodeEditor, Copy/Download, FileDropzone, Toast; `/lab/editor-kit` |
+| 2026-07-26 | `F09` | GitHub Actions CI (validate/typecheck/lint/build) |
+| 2026-07-26 | `F08` | Analytics helper; `/about` `/privacy` `/terms` |
+| 2026-07-26 | `F07` | cmdk command palette over shipped registry |
+| 2026-07-26 | `F06` | Metadata helpers, robots.ts, sitemap (shipped-only) |
+| 2026-07-26 | `F05` | Family hubs for tools/pdf/image/calculators/convert |
+| 2026-07-26 | `F04` | Homepage hero + families + featured empty state |
+| 2026-07-26 | `F03` | Dynamic family/slug routes + ToolShell + ComingSoon |
+| 2026-07-26 | `F02` | Zod tool schema + content/tools + validate script |
+| 2026-07-26 | `F01` | Charcoal/copper tokens, fonts, Navbar/Footer |
+| 2026-07-26 | `F00` | Next.js App Router + TS + Tailwind bootstrap |
 
 ---
 
@@ -68,18 +81,18 @@ Newest at top. One line per completed phase.
 
 | Done | Phase | Title |
 |---|---|---|
-| [ ] | `F00` | Repo bootstrap |
-| [ ] | `F01` | Design tokens & global chrome |
-| [ ] | `F02` | Tool registry schema |
-| [ ] | `F03` | Dynamic tool route + ToolShell |
-| [ ] | `F04` | Homepage v1 (shippable) |
-| [ ] | `F05` | Category hub pages |
-| [ ] | `F06` | SEO primitives |
-| [ ] | `F07` | Command palette + client search |
-| [ ] | `F08` | Analytics + privacy pages |
-| [ ] | `F09` | CI + quality gates |
-| [ ] | `F10` | Editor kit |
-| [ ] | `F11` | First content stubs |
+| [x] | `F00` | Repo bootstrap |
+| [x] | `F01` | Design tokens & global chrome |
+| [x] | `F02` | Tool registry schema |
+| [x] | `F03` | Dynamic tool route + ToolShell |
+| [x] | `F04` | Homepage v1 (shippable) |
+| [x] | `F05` | Category hub pages |
+| [x] | `F06` | SEO primitives |
+| [x] | `F07` | Command palette + client search |
+| [x] | `F08` | Analytics + privacy pages |
+| [x] | `F09` | CI + quality gates |
+| [x] | `F10` | Editor kit |
+| [x] | `F11` | First content stubs |
 
 **Milestone:** after `[x]` on `F04`, set **Production live?** to Yes.
 
@@ -91,7 +104,7 @@ _472 phases · 755 tools. Check the box when the whole phase (all tools listed) 
 
 | Done | Phase | Tools | Diff | Family |
 |---|---|---|---|---|
-| [ ] | `P001` | JSON Formatter / Beautifier; JSON Validator | E | `/tools` |
+| [x] | `P001` | JSON Formatter / Beautifier; JSON Validator | E | `/tools` |
 | [ ] | `P002` | Base64 Encode / Decode; URL Encode / Decode; UUID v4 Generator | E | `/tools` |
 | [ ] | `P003` | JWT Decoder; SHA-256 Hash; MD5 Hash Generator | E | `/tools` |
 | [ ] | `P004` | Case Converter (upper/lower/title/camel/snake/kebab); Word Counter; Character Counter | E | `/tools` |

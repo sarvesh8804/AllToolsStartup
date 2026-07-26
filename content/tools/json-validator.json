@@ -1,0 +1,31 @@
+{
+  "slug": "json-validator",
+  "name": "JSON Validator",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Validate JSON syntax locally and get clear error locations.",
+  "description": "Check whether your payload is valid JSON before you ship it. Validation runs in your browser and highlights parse errors with line and column when available.",
+  "keywords": ["json", "validator", "lint", "syntax", "parse error"],
+  "relatedSlugs": ["json-formatter"],
+  "faqs": [
+    {
+      "question": "Will validation happen on a server?",
+      "answer": "No. Validation uses your browser’s JSON parser only."
+    },
+    {
+      "question": "Does it check JSON Schema?",
+      "answer": "Not yet. This tool validates syntax. Schema validation can come later as a separate tool."
+    },
+    {
+      "question": "Can I validate large JSON files?",
+      "answer": "Browser memory limits apply. Typical API payloads work well."
+    },
+    {
+      "question": "Is an account required?",
+      "answer": "No. Forge has no authentication for the MVP."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-validator"
+}

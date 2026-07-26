@@ -20,6 +20,7 @@
 A tool phase is done only when **all** are true:
 
 - [ ] Tool works client-side for happy path + obvious edge cases
+- [ ] Unit tests for the tool’s pure logic (`src/**/*.test.ts`) — write + `npm test` green
 - [ ] Registry entry `status: shipped` with title, description, FAQ (≥3), relatedSlugs
 - [ ] Unique URL under correct family; in sitemap
 - [ ] Privacy badge accurate (local processing)
@@ -76,11 +77,11 @@ _Plus ~50 hub days (H) + ~94 SEO days (S) + 15 monetization days (M) interleaved
 
 | Field | Value |
 |---|---|
-| **Today’s phase** | `F00` |
-| **Last shipped** | — |
-| **Tools live (shipped)** | 0 / 755 |
-| **Production URL** | _set after F04_ |
-| **Notes** | Start here. Do not skip foundation. Track completion in `done.md`. |
+| **Today’s phase** | `P002` |
+| **Last shipped** | `P001` |
+| **Tools live (shipped)** | 2 / 755 |
+| **Production URL** | _set after Vercel deploy_ |
+| **Notes** | P001 shipped. Next: Base64, URL encode, UUID. |
 
 ---
 
@@ -106,63 +107,63 @@ Complete these **before or as** the first tool phases. **Production goes live at
 
 ### F00 — Repo bootstrap
 
-- [ ] Create Next.js App Router + TS + Tailwind + ESLint. `pnpm create`, git init, basic README. Empty homepage that builds.
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] Create Next.js App Router + TS + Tailwind + ESLint. `pnpm create`, git init, basic README. Empty homepage that builds.
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F01 — Design tokens & global chrome
 
-- [ ] Charcoal/copper tokens, fonts, dark mode CSS vars, Navbar/Footer shells, layout.tsx. No tools yet.
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] Charcoal/copper tokens, fonts, dark mode CSS vars, Navbar/Footer shells, layout.tsx. No tools yet.
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F02 — Tool registry schema
 
-- [ ] JSON/TS content schema for tools: slug, family, category, status=planned|shipped, seo fields. Validate script. Zero shipped tools OK.
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] JSON/TS content schema for tools: slug, family, category, status=planned|shipped, seo fields. Validate script. Zero shipped tools OK.
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F03 — Dynamic tool route + ToolShell
 
-- [ ] Route `/{family}/[slug]`. Shared ToolShell: title, privacy badge, FAQ slot, related tools, empty/error states. Coming-soon page for planned tools (noindex).
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] Route `/{family}/[slug]`. Shared ToolShell: title, privacy badge, FAQ slot, related tools, empty/error states. Coming-soon page for planned tools (noindex).
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F04 — Homepage v1 (shippable)
 
-- [ ] Brand hero, search stub, curated featured list (empty or placeholders), privacy pitch, category links. **Deploy to Vercel.**
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] Brand hero, search stub, curated featured list (empty or placeholders), privacy pitch, category links. **Deploy to Vercel.**
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F05 — Category hub pages
 
-- [ ] Family indexes `/tools`, `/pdf`, `/image`, `/calculators`, `/convert` listing only `status=shipped`. Empty states friendly.
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] Family indexes `/tools`, `/pdf`, `/image`, `/calculators`, `/convert` listing only `status=shipped`. Empty states friendly.
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F06 — SEO primitives
 
-- [ ] Metadata API, canonical, OG, robots.txt, sitemap.ts (shipped only), BreadcrumbList + WebApplication schema helpers.
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] Metadata API, canonical, OG, robots.txt, sitemap.ts (shipped only), BreadcrumbList + WebApplication schema helpers.
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F07 — Command palette + client search
 
-- [ ] cmdk over shipped tools registry. Keyboard `/` focus. Works with 0 tools.
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] cmdk over shipped tools registry. Keyboard `/` focus. Works with 0 tools.
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F08 — Analytics + privacy pages
 
-- [ ] Cloudflare Web Analytics or similar, `/privacy`, `/terms`, `/about`. Event helper `tool_start`/`tool_complete`.
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] Cloudflare Web Analytics or similar, `/privacy`, `/terms`, `/about`. Event helper `tool_start`/`tool_complete`.
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F09 — CI + quality gates
 
-- [ ] GitHub Action: typecheck, lint, build, schema validate. Preview deploys on PR. Main auto-deploys.
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] GitHub Action: typecheck, lint, build, schema validate. Preview deploys on PR. Main auto-deploys.
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F10 — Editor kit
 
-- [ ] CodeMirror 6 wrapper, CopyButton, FileDropzone, DownloadButton, Toast. Shared by most Phase tools.
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] CodeMirror 6 wrapper, CopyButton, FileDropzone, DownloadButton, Toast. Shared by most Phase tools.
+- [x] Push `main` → confirm Vercel deploy green
 
 ### F11 — First content stubs
 
-- [ ] 3 MDX posts outline only OR 1 real guide. Blog index. Internal link component.
-- [ ] Push `main` → confirm Vercel deploy green
+- [x] 3 MDX posts outline only OR 1 real guide. Blog index. Internal link component.
+- [x] Push `main` → confirm Vercel deploy green
 
 ---
 

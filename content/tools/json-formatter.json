@@ -1,0 +1,31 @@
+{
+  "slug": "json-formatter",
+  "name": "JSON Formatter",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Beautify, format, and minify JSON entirely in your browser.",
+  "description": "Paste messy JSON and get a clean, indented result instantly. Forge formats and minifies JSON locally—nothing is uploaded to a server.",
+  "keywords": ["json", "formatter", "beautify", "pretty print", "minify"],
+  "relatedSlugs": ["json-validator"],
+  "faqs": [
+    {
+      "question": "Does Forge upload my JSON?",
+      "answer": "No. Formatting runs entirely in your browser with the built-in JSON parser."
+    },
+    {
+      "question": "Can I minify JSON too?",
+      "answer": "Yes. Use Minify or set Indent to Minified to remove whitespace."
+    },
+    {
+      "question": "What if my JSON is invalid?",
+      "answer": "You will see a parse error. Fix the syntax, or use JSON Validator for a clearer line/column hint."
+    },
+    {
+      "question": "Is an account required?",
+      "answer": "No. Forge tools work without signup."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-formatter"
+}
