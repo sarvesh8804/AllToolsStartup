@@ -1,0 +1,27 @@
+{
+  "slug": "image-resizer",
+  "name": "Image Resizer",
+  "family": "image",
+  "category": "Image Tools",
+  "status": "shipped",
+  "summary": "Resize PNG, JPEG, or WebP images to exact pixels, fit a box, or scale by percent — in your browser.",
+  "description": "Drop an image, pick exact size, fit-inside dimensions, or a percentage scale. Lock aspect ratio, choose output format and JPEG quality, then download. Processing stays on your device.",
+  "keywords": ["image resizer", "resize image", "scale photo", "change image size", "resize png"],
+  "relatedSlugs": ["png-to-jpg"],
+  "faqs": [
+    {
+      "question": "Is my image uploaded?",
+      "answer": "No. Resize runs entirely in your browser with the Canvas API."
+    },
+    {
+      "question": "What does Fit box mean?",
+      "answer": "The image is scaled to fit inside the max width and height while keeping aspect ratio."
+    },
+    {
+      "question": "Which formats can I export?",
+      "answer": "Keep the source format, or export as JPEG, PNG, or WebP (browser support required)."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "image-resizer"
+}

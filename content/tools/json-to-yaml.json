@@ -1,0 +1,27 @@
+{
+  "slug": "json-to-yaml",
+  "name": "JSON to YAML",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Convert JSON to YAML instantly in your browser.",
+  "description": "Paste JSON and get readable YAML. Objects, arrays, booleans, and numbers are preserved. Conversion runs locally — nothing is uploaded.",
+  "keywords": ["json to yaml", "json converter", "yaml", "convert json"],
+  "relatedSlugs": ["yaml-to-json", "json-formatter", "csv-to-json"],
+  "faqs": [
+    {
+      "question": "Is my JSON uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    },
+    {
+      "question": "Does it support all JSON values?",
+      "answer": "Yes for standard JSON. The output is plain YAML without exotic tags."
+    },
+    {
+      "question": "Can I convert YAML back to JSON?",
+      "answer": "Yes — use the YAML to JSON tool."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-to-yaml"
+}

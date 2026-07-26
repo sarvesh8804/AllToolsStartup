@@ -1,0 +1,27 @@
+{
+  "slug": "gitignore-generator",
+  "name": "Gitignore Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Build a .gitignore from common stacks — Node, Next.js, Python, OS, and more.",
+  "description": "Toggle stack templates (macOS, Windows, Node, Next.js, Python, VS Code, JetBrains, env secrets, logs) and copy a combined .gitignore. Everything runs locally.",
+  "keywords": ["gitignore", "gitignore generator", "dot gitignore", "node gitignore"],
+  "relatedSlugs": ["hex-to-rgb", "slug-generator"],
+  "faqs": [
+    {
+      "question": "Are these official GitHub templates?",
+      "answer": "They are curated common patterns for Forge’s MVP. You can edit the output before committing."
+    },
+    {
+      "question": "Can I select multiple stacks?",
+      "answer": "Yes. Selected sections are concatenated in a stable order."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "gitignore-generator"
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "css-formatter",
+  "name": "CSS Formatter",
+  "family": "tools",
+  "category": "Code Formatters",
+  "status": "shipped",
+  "summary": "Pretty-print CSS with readable indentation and spacing — locally in your browser.",
+  "description": "Turn minified or messy CSS into a readable stylesheet. Supports nested blocks like @media, preserves quoted strings, and can minify back into the input.",
+  "keywords": ["css formatter", "css beautifier", "pretty print css", "format css"],
+  "relatedSlugs": ["css-minifier", "html-formatter"],
+  "faqs": [
+    {
+      "question": "Is this a full CSS parser?",
+      "answer": "No. It is a structural beautifier that handles braces, declarations, and comments well for typical stylesheets."
+    },
+    {
+      "question": "Are comments kept?",
+      "answer": "Formatting strips comments for a cleaner result. Use the original input if you need them."
+    },
+    {
+      "question": "Is my CSS uploaded?",
+      "answer": "No. Formatting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "css-formatter"
+}

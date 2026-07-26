@@ -1,0 +1,27 @@
+{
+  "slug": "number-base-converter",
+  "name": "Number Base Converter",
+  "family": "convert",
+  "category": "Converters (Units & Misc)",
+  "status": "shipped",
+  "summary": "Convert numbers between binary, octal, decimal, and hexadecimal — locally in your browser.",
+  "description": "Type a value in any base (2, 8, 10, or 16) and see the others update instantly. Supports optional 0b / 0o / 0x prefixes, negatives, and large integers via BigInt.",
+  "keywords": ["base converter", "binary", "hexadecimal", "octal", "decimal converter"],
+  "relatedSlugs": ["unix-timestamp-converter", "cron-expression-explainer"],
+  "faqs": [
+    {
+      "question": "Which bases are supported?",
+      "answer": "Binary (2), octal (8), decimal (10), and hexadecimal (16)."
+    },
+    {
+      "question": "Can I use prefixes?",
+      "answer": "Yes. 0b for binary, 0o for octal, and 0x for hex are optional and stripped when parsing."
+    },
+    {
+      "question": "Is there a size limit?",
+      "answer": "Values use JavaScript BigInt, so very large integers work as long as your browser can handle them."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "number-base-converter"
+}

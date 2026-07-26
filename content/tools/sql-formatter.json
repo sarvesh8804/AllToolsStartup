@@ -1,0 +1,27 @@
+{
+  "slug": "sql-formatter",
+  "name": "SQL Formatter",
+  "family": "tools",
+  "category": "Code Formatters",
+  "status": "shipped",
+  "summary": "Pretty-print SQL with uppercase keywords and readable clauses — in your browser.",
+  "description": "Format SELECT/INSERT/UPDATE/DELETE style SQL with major clauses on their own lines, indented JOINs and AND/OR, and optional minify. String literals are preserved. Runs entirely locally.",
+  "keywords": ["sql formatter", "format sql", "pretty print sql", "beautify sql"],
+  "relatedSlugs": ["yaml-to-json", "json-formatter"],
+  "faqs": [
+    {
+      "question": "Which SQL dialects are supported?",
+      "answer": "It targets common ANSI-style SQL. Exotic vendor syntax may still format, but is best-effort."
+    },
+    {
+      "question": "Does it validate my query?",
+      "answer": "No. It only reformats whitespace and keyword casing."
+    },
+    {
+      "question": "Is my SQL uploaded?",
+      "answer": "No. Formatting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "sql-formatter"
+}

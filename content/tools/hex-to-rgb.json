@@ -1,0 +1,27 @@
+{
+  "slug": "hex-to-rgb",
+  "name": "HEX to RGB",
+  "family": "tools",
+  "category": "Colors",
+  "status": "shipped",
+  "summary": "Convert HEX colors to RGB and HSL — instantly in your browser.",
+  "description": "Paste a hex or rgb() color to see HEX, short HEX, RGB channels, and HSL. Includes a color picker and one-click copy for each format.",
+  "keywords": ["hex to rgb", "color converter", "hex converter", "rgb", "hsl"],
+  "relatedSlugs": ["color-contrast-checker", "gitignore-generator"],
+  "faqs": [
+    {
+      "question": "Does it accept 3-digit hex?",
+      "answer": "Yes. #abc expands to #aabbcc."
+    },
+    {
+      "question": "Can I paste rgb()?",
+      "answer": "Yes. rgb(r, g, b) and rgba(...) (alpha ignored for conversion) are supported."
+    },
+    {
+      "question": "Is my color uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "hex-to-rgb"
+}

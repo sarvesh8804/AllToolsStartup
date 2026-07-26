@@ -1,0 +1,27 @@
+{
+  "slug": "json-to-csv",
+  "name": "JSON to CSV",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Convert a JSON array of objects into CSV with headers — in your browser.",
+  "description": "Paste a JSON array of objects (or arrays) and get downloadable CSV. Headers are collected from object keys in first-seen order. Commas and quotes are escaped correctly.",
+  "keywords": ["json to csv", "json converter", "export csv", "array to csv"],
+  "relatedSlugs": ["csv-to-json", "json-formatter", "yaml-to-json"],
+  "faqs": [
+    {
+      "question": "What JSON shape is required?",
+      "answer": "An array of objects, or an array of arrays. A single object is not enough — wrap it in [ ]."
+    },
+    {
+      "question": "What if rows have different keys?",
+      "answer": "All keys across rows are unioned into the header. Missing values become empty cells."
+    },
+    {
+      "question": "Is my JSON uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-to-csv"
+}

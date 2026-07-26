@@ -1,0 +1,27 @@
+{
+  "slug": "timezone-converter",
+  "name": "Timezone Converter",
+  "family": "convert",
+  "category": "Converters (Units & Misc)",
+  "status": "shipped",
+  "summary": "Convert a date and time across world timezones — DST-aware, entirely in your browser.",
+  "description": "Pick a wall-clock time and source timezone, then see it in cities worldwide. Uses the IANA timezone database via your browser’s Intl API, so daylight saving transitions are handled correctly.",
+  "keywords": ["timezone converter", "world clock", "utc converter", "dst", "time zone"],
+  "relatedSlugs": ["unix-timestamp-converter", "age-calculator"],
+  "faqs": [
+    {
+      "question": "How is DST handled?",
+      "answer": "Conversions use your browser’s IANA timezone data through Intl, so daylight saving offsets are applied for the selected date."
+    },
+    {
+      "question": "What does “Source timezone” mean?",
+      "answer": "The date & time you enter is interpreted as local wall time in that zone, then shown in every selected target zone."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "timezone-converter"
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "lorem-ipsum-generator",
+  "name": "Lorem Ipsum Generator",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Generate classic placeholder copy by paragraph, sentence, or word — locally in your browser.",
+  "description": "Create Lorem Ipsum filler text for mockups and layouts. Choose paragraphs, sentences, or words, optionally starting with the traditional “Lorem ipsum” opening.",
+  "keywords": ["lorem ipsum", "placeholder text", "dummy text", "filler text"],
+  "relatedSlugs": ["word-counter", "color-contrast-checker"],
+  "faqs": [
+    {
+      "question": "Is the text random?",
+      "answer": "It cycles a fixed classic Latin word list so output is deterministic and reproducible for a given count."
+    },
+    {
+      "question": "Can I generate up to 100 units?",
+      "answer": "Yes. Count is clamped between 1 and 100."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "lorem-ipsum-generator"
+}

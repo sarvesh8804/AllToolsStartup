@@ -1,0 +1,27 @@
+{
+  "slug": "tip-calculator",
+  "name": "Tip Calculator",
+  "family": "calculators",
+  "category": "Finance Calculators",
+  "status": "shipped",
+  "summary": "Split a bill with tip — tip amount, total, and per-person share, locally.",
+  "description": "Enter the bill, tip percent, and number of people. Get tip amount, grand total, and even splits. Quick presets for common tip rates.",
+  "keywords": ["tip calculator", "gratuity", "bill split", "restaurant tip"],
+  "relatedSlugs": ["percentage-calculator", "number-base-converter"],
+  "faqs": [
+    {
+      "question": "How is the tip calculated?",
+      "answer": "Tip = bill × (tip% / 100). Total = bill + tip. Per person divides the total evenly."
+    },
+    {
+      "question": "Can I split between more than two people?",
+      "answer": "Yes. Set People to any whole number ≥ 1."
+    },
+    {
+      "question": "Is my bill uploaded?",
+      "answer": "No. Calculations run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "tip-calculator"
+}

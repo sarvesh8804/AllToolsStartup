@@ -1,0 +1,27 @@
+{
+  "slug": "age-calculator",
+  "name": "Age Calculator",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Calculate exact age in years, months, and days — plus next birthday — in your browser.",
+  "description": "Pick a date of birth and an optional as-of date to see precise age (Y/M/D), total days/weeks/months, and days until the next birthday. Leap years are handled correctly.",
+  "keywords": ["age calculator", "how old am i", "birthday calculator", "date of birth"],
+  "relatedSlugs": ["unix-timestamp-converter", "cron-expression-explainer"],
+  "faqs": [
+    {
+      "question": "How is age calculated?",
+      "answer": "We subtract calendar years, months, and days with borrowing (like manual age math), so results match common “exact age” calculators."
+    },
+    {
+      "question": "What about leap-day birthdays?",
+      "answer": "Feb 29 births use Feb 28 in non-leap years for the next-birthday date."
+    },
+    {
+      "question": "Is my date uploaded?",
+      "answer": "No. Calculations run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "age-calculator"
+}

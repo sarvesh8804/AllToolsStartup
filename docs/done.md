@@ -16,13 +16,13 @@
 
 | Field | Value |
 |---|---|
-| **Last completed phase** | `P005` |
-| **Next phase to do** | `P006` |
+| **Last completed phase** | `P020` |
+| **Next phase to do** | `P021` |
 | **Production live?** | Ready (deploy on push / Vercel) |
 | **Production URL** | — _(set after first Vercel deploy)_ |
 | **Foundation done** | 12 / 12 |
-| **Tool phases done** | 5 / 472 |
-| **Tools shipped** | 13 / 755 |
+| **Tool phases done** | 20 / 472 |
+| **Tools shipped** | 39 / 755 |
 | **Hub phases done** | 0 / 50 |
 | **SEO phases done** | 0 / 94 |
 | **Monetization phases done** | 0 / 15 |
@@ -60,6 +60,21 @@ Newest at top. One line per completed phase.
 
 | Date | Phase | Notes / commit / URL |
 |---|---|---|
+| 2026-07-26 | `P020` | Image Resizer + PNG to JPG (Canvas, local-only) on `/image` + tests |
+| 2026-07-26 | `P019` | Regex Tester (flags, matches/groups, replace preview) on `/tools` + tests |
+| 2026-07-26 | `P018` | Timezone Converter (Intl/IANA, DST-aware) on `/convert` + tests |
+| 2026-07-26 | `P017` | Age Calculator (Y/M/D + next birthday) + tests |
+| 2026-07-26 | `P016` | EMI / Loan Calculator (amortization schedule) + tests |
+| 2026-07-26 | `P015` | Percentage + Tip Calculators on `/calculators` + tests |
+| 2026-07-26 | `P014` | Number Base Converter (2/8/10/16, BigInt) on `/convert` + tests |
+| 2026-07-26 | `P013` | HEX to RGB/HSL + Gitignore Generator + tests |
+| 2026-07-26 | `P012` | Lorem Ipsum Generator + WCAG Color Contrast Checker + tests |
+| 2026-07-26 | `P011` | JSON↔YAML + CSV↔JSON converters + tests |
+| 2026-07-26 | `P010` | SQL Formatter + YAML to JSON + tests (soft-launch milestone) |
+| 2026-07-26 | `P009` | HTML Formatter + CSS Formatter + CSS Minifier + tests |
+| 2026-07-26 | `P008` | Text Diff (side-by-side) + Markdown Preview (GFM) + tests |
+| 2026-07-26 | `P007` | Unix Timestamp Converter + Cron Explainer (`/convert`) + tests |
+| 2026-07-26 | `P006` | QR Code Generator (PNG/SVG, error correction) + tests |
 | 2026-07-26 | `P005` | Slug Generator + Random Password Generator (CSPRNG) + tests |
 | 2026-07-26 | `P004` | Case Converter + Word Counter + Character Counter + tests |
 | 2026-07-26 | `P003` | JWT Decoder + SHA-256 + MD5 shipped (pure impls + tests) |
@@ -113,21 +128,21 @@ _472 phases · 755 tools. Check the box when the whole phase (all tools listed) 
 | [x] | `P003` | JWT Decoder; SHA-256 Hash; MD5 Hash Generator | E | `/tools` |
 | [x] | `P004` | Case Converter (upper/lower/title/camel/snake/kebab); Word Counter; Character Counter | E | `/tools` |
 | [x] | `P005` | Slug Generator; Random Password Generator | E | `/tools` |
-| [ ] | `P006` | QR Code Generator | E | `/tools` |
-| [ ] | `P007` | Unix Timestamp Converter; Cron Expression Explainer | E/M | `/convert` |
-| [ ] | `P008` | Text Diff (side-by-side); Markdown Preview | E/M | `/tools` |
-| [ ] | `P009` | HTML Formatter; CSS Formatter; CSS Minifier | E | `/tools` |
-| [ ] | `P010` | SQL Formatter; YAML to JSON | E | `/tools` |
-| [ ] | `P011` | JSON to YAML; CSV to JSON; JSON to CSV | E | `/tools` |
-| [ ] | `P012` | Lorem Ipsum Generator; Color Contrast Checker (WCAG) | E | `/tools` |
-| [ ] | `P013` | HEX to RGB; Gitignore Generator | E | `/tools` |
-| [ ] | `P014` | Number Base Converter (2/8/10/16) | E | `/convert` |
-| [ ] | `P015` | Percentage Calculator; Tip Calculator | E | `/calculators` |
-| [ ] | `P016` | EMI / Loan Calculator | E | `/calculators` |
-| [ ] | `P017` | Age Calculator | E | `/tools` |
-| [ ] | `P018` | Timezone Converter | M | `/convert` |
-| [ ] | `P019` | Regex Tester | M | `/tools` |
-| [ ] | `P020` | Image Resizer; PNG to JPG | E/M | `/image` |
+| [x] | `P006` | QR Code Generator | E | `/tools` |
+| [x] | `P007` | Unix Timestamp Converter; Cron Expression Explainer | E/M | `/convert` |
+| [x] | `P008` | Text Diff (side-by-side); Markdown Preview | E/M | `/tools` |
+| [x] | `P009` | HTML Formatter; CSS Formatter; CSS Minifier | E | `/tools` |
+| [x] | `P010` | SQL Formatter; YAML to JSON | E | `/tools` |
+| [x] | `P011` | JSON to YAML; CSV to JSON; JSON to CSV | E | `/tools` |
+| [x] | `P012` | Lorem Ipsum Generator; Color Contrast Checker (WCAG) | E | `/tools` |
+| [x] | `P013` | HEX to RGB; Gitignore Generator | E | `/tools` |
+| [x] | `P014` | Number Base Converter (2/8/10/16) | E | `/convert` |
+| [x] | `P015` | Percentage Calculator; Tip Calculator | E | `/calculators` |
+| [x] | `P016` | EMI / Loan Calculator | E | `/calculators` |
+| [x] | `P017` | Age Calculator | E | `/tools` |
+| [x] | `P018` | Timezone Converter | M | `/convert` |
+| [x] | `P019` | Regex Tester | M | `/tools` |
+| [x] | `P020` | Image Resizer; PNG to JPG | E/M | `/image` |
 | [ ] | `P021` | JPG to PNG; WebP Converter | E/M | `/image` |
 | [ ] | `P022` | Image Compressor; EXIF Remover | M | `/image` |
 | [ ] | `P023` | Favicon Generator from Image | M | `/image` |

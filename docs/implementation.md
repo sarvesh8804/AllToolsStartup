@@ -77,11 +77,11 @@ _Plus ~50 hub days (H) + ~94 SEO days (S) + 15 monetization days (M) interleaved
 
 | Field | Value |
 |---|---|
-| **Today’s phase** | `P006` |
-| **Last shipped** | `P005` |
-| **Tools live (shipped)** | 13 / 755 |
+| **Today’s phase** | `P021` |
+| **Last shipped** | `P020` |
+| **Tools live (shipped)** | 39 / 755 |
 | **Production URL** | _set after Vercel deploy_ |
-| **Notes** | P005 shipped (Slug + Password Generator). Next: QR Code Generator. |
+| **Notes** | P020 shipped (Image Resizer; PNG to JPG). Next: JPG to PNG; WebP Converter. |
 
 ---
 

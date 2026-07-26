@@ -1,0 +1,27 @@
+{
+  "slug": "cron-expression-explainer",
+  "name": "Cron Expression Explainer",
+  "family": "convert",
+  "category": "Converters (Units & Misc)",
+  "status": "shipped",
+  "summary": "Translate a 5-field cron expression into plain English and see the next UTC runs.",
+  "description": "Paste a standard cron expression (minute hour day-of-month month day-of-week) to get a human summary, per-field meanings, and the next few UTC fire times. Supports lists, ranges, steps, and month/weekday aliases.",
+  "keywords": ["cron", "cron expression", "crontab", "cron explainer", "schedule"],
+  "relatedSlugs": ["unix-timestamp-converter"],
+  "faqs": [
+    {
+      "question": "Which cron format is supported?",
+      "answer": "Standard 5-field cron: minute, hour, day-of-month, month, day-of-week. Six-field (with seconds) is not supported yet."
+    },
+    {
+      "question": "Are next runs in my local timezone?",
+      "answer": "Next runs are shown in UTC for consistency. Convert with the Unix Timestamp tool if you need local time."
+    },
+    {
+      "question": "How do day-of-month and day-of-week interact?",
+      "answer": "When both are restricted, a match on either field is enough (standard cron OR semantics)."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "cron-expression-explainer"
+}

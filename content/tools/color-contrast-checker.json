@@ -1,0 +1,27 @@
+{
+  "slug": "color-contrast-checker",
+  "name": "Color Contrast Checker",
+  "family": "tools",
+  "category": "Colors",
+  "status": "shipped",
+  "summary": "Check WCAG 2 contrast ratios for text and background colors — AA and AAA, normal and large text.",
+  "description": "Enter foreground and background colors as hex or rgb() to see the contrast ratio and WCAG 2 AA/AAA pass/fail for normal and large text. Includes a live preview sample.",
+  "keywords": ["contrast checker", "wcag", "accessibility", "color contrast", "aa aaa"],
+  "relatedSlugs": ["lorem-ipsum-generator", "case-converter"],
+  "faqs": [
+    {
+      "question": "What counts as large text?",
+      "answer": "WCAG treats 18pt+ (or 14pt+ bold) as large text, which has a lower contrast requirement (3:1 for AA)."
+    },
+    {
+      "question": "Which formula is used?",
+      "answer": "WCAG 2 relative luminance and contrast ratio: (L1 + 0.05) / (L2 + 0.05)."
+    },
+    {
+      "question": "Is this WCAG 3 / APCA?",
+      "answer": "Not yet. This tool implements the WCAG 2.x contrast algorithm used by most current audits."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "color-contrast-checker"
+}

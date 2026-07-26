@@ -80,6 +80,161 @@ const RandomPasswordTool = dynamic(
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
 );
 
+const QrCodeGeneratorTool = dynamic(
+  () =>
+    import("@/tools/qr-code-generator").then((m) => m.QrCodeGeneratorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const UnixTimestampTool = dynamic(
+  () =>
+    import("@/tools/unix-timestamp-converter").then(
+      (m) => m.UnixTimestampTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CronExplainerTool = dynamic(
+  () =>
+    import("@/tools/cron-expression-explainer").then(
+      (m) => m.CronExplainerTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const TextDiffTool = dynamic(
+  () => import("@/tools/text-diff").then((m) => m.TextDiffTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const MarkdownPreviewTool = dynamic(
+  () =>
+    import("@/tools/markdown-preview").then((m) => m.MarkdownPreviewTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const HtmlFormatterTool = dynamic(
+  () => import("@/tools/html-formatter").then((m) => m.HtmlFormatterTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CssFormatterTool = dynamic(
+  () => import("@/tools/css-formatter").then((m) => m.CssFormatterTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CssMinifierTool = dynamic(
+  () => import("@/tools/css-minifier").then((m) => m.CssMinifierTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const SqlFormatterTool = dynamic(
+  () => import("@/tools/sql-formatter").then((m) => m.SqlFormatterTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const YamlToJsonTool = dynamic(
+  () => import("@/tools/yaml-to-json").then((m) => m.YamlToJsonTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const JsonToYamlTool = dynamic(
+  () => import("@/tools/json-to-yaml").then((m) => m.JsonToYamlTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CsvToJsonTool = dynamic(
+  () => import("@/tools/csv-to-json").then((m) => m.CsvToJsonTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const JsonToCsvTool = dynamic(
+  () => import("@/tools/json-to-csv").then((m) => m.JsonToCsvTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const LoremIpsumTool = dynamic(
+  () =>
+    import("@/tools/lorem-ipsum-generator").then((m) => m.LoremIpsumTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ColorContrastTool = dynamic(
+  () =>
+    import("@/tools/color-contrast-checker").then((m) => m.ColorContrastTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const HexToRgbTool = dynamic(
+  () => import("@/tools/hex-to-rgb").then((m) => m.HexToRgbTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const GitignoreGeneratorTool = dynamic(
+  () =>
+    import("@/tools/gitignore-generator").then(
+      (m) => m.GitignoreGeneratorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const NumberBaseConverterTool = dynamic(
+  () =>
+    import("@/tools/number-base-converter").then(
+      (m) => m.NumberBaseConverterTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const PercentageCalculatorTool = dynamic(
+  () =>
+    import("@/tools/percentage-calculator").then(
+      (m) => m.PercentageCalculatorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const TipCalculatorTool = dynamic(
+  () => import("@/tools/tip-calculator").then((m) => m.TipCalculatorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const EmiLoanCalculatorTool = dynamic(
+  () =>
+    import("@/tools/emi-loan-calculator").then(
+      (m) => m.EmiLoanCalculatorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const AgeCalculatorTool = dynamic(
+  () => import("@/tools/age-calculator").then((m) => m.AgeCalculatorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const TimezoneConverterTool = dynamic(
+  () =>
+    import("@/tools/timezone-converter").then(
+      (m) => m.TimezoneConverterTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const RegexTesterTool = dynamic(
+  () => import("@/tools/regex-tester").then((m) => m.RegexTesterTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ImageResizerTool = dynamic(
+  () => import("@/tools/image-resizer").then((m) => m.ImageResizerTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const PngToJpgTool = dynamic(
+  () => import("@/tools/png-to-jpg").then((m) => m.PngToJpgTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
 const REGISTRY = {
   "json-formatter": JsonFormatterTool,
   "json-validator": JsonValidatorTool,
@@ -94,6 +249,32 @@ const REGISTRY = {
   "character-counter": CharacterCounterTool,
   "slug-generator": SlugGeneratorTool,
   "random-password-generator": RandomPasswordTool,
+  "qr-code-generator": QrCodeGeneratorTool,
+  "unix-timestamp-converter": UnixTimestampTool,
+  "cron-expression-explainer": CronExplainerTool,
+  "text-diff": TextDiffTool,
+  "markdown-preview": MarkdownPreviewTool,
+  "html-formatter": HtmlFormatterTool,
+  "css-formatter": CssFormatterTool,
+  "css-minifier": CssMinifierTool,
+  "sql-formatter": SqlFormatterTool,
+  "yaml-to-json": YamlToJsonTool,
+  "json-to-yaml": JsonToYamlTool,
+  "csv-to-json": CsvToJsonTool,
+  "json-to-csv": JsonToCsvTool,
+  "lorem-ipsum-generator": LoremIpsumTool,
+  "color-contrast-checker": ColorContrastTool,
+  "hex-to-rgb": HexToRgbTool,
+  "gitignore-generator": GitignoreGeneratorTool,
+  "number-base-converter": NumberBaseConverterTool,
+  "percentage-calculator": PercentageCalculatorTool,
+  "tip-calculator": TipCalculatorTool,
+  "emi-loan-calculator": EmiLoanCalculatorTool,
+  "age-calculator": AgeCalculatorTool,
+  "timezone-converter": TimezoneConverterTool,
+  "regex-tester": RegexTesterTool,
+  "image-resizer": ImageResizerTool,
+  "png-to-jpg": PngToJpgTool,
 } as const;
 
 export function ToolWorkbench({ component }: { component?: string }) {

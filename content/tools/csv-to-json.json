@@ -1,0 +1,27 @@
+{
+  "slug": "csv-to-json",
+  "name": "CSV to JSON",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Convert CSV spreadsheets to JSON arrays of objects — locally in your browser.",
+  "description": "Paste CSV with a header row to get a JSON array of objects. Quoted fields, commas inside quotes, and simple type inference (numbers, booleans, null) are supported.",
+  "keywords": ["csv to json", "csv converter", "spreadsheet json", "parse csv"],
+  "relatedSlugs": ["json-to-csv", "json-formatter", "json-to-yaml"],
+  "faqs": [
+    {
+      "question": "Must the first row be headers?",
+      "answer": "Yes for this tool. Each header becomes an object key."
+    },
+    {
+      "question": "How are numbers and booleans handled?",
+      "answer": "Bare numbers become JSON numbers. true/false/null become booleans/null. Everything else stays a string."
+    },
+    {
+      "question": "Is my CSV uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "csv-to-json"
+}

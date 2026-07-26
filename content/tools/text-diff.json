@@ -1,0 +1,27 @@
+{
+  "slug": "text-diff",
+  "name": "Text Diff",
+  "family": "tools",
+  "category": "Regex & Text",
+  "status": "shipped",
+  "summary": "Compare two texts side-by-side and highlight additions and deletions — entirely in your browser.",
+  "description": "Paste original and modified text to see a line-based side-by-side diff with counts for additions, deletions, and unchanged lines. Export a unified diff to the clipboard. Nothing leaves your device.",
+  "keywords": ["diff", "text diff", "compare text", "side by side diff", "unified diff"],
+  "relatedSlugs": ["markdown-preview", "word-counter"],
+  "faqs": [
+    {
+      "question": "Is this character-level or line-level?",
+      "answer": "Line-level. Each changed line is highlighted as a deletion on the left and/or addition on the right."
+    },
+    {
+      "question": "Does my text get uploaded?",
+      "answer": "No. Diffing runs entirely in your browser."
+    },
+    {
+      "question": "What is the unified diff copy?",
+      "answer": "A classic +/- format you can paste into chats, tickets, or patches."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "text-diff"
+}

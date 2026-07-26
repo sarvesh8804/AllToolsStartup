@@ -1,0 +1,27 @@
+{
+  "slug": "png-to-jpg",
+  "name": "PNG to JPG",
+  "family": "image",
+  "category": "Image Tools",
+  "status": "shipped",
+  "summary": "Convert PNG images to JPG with quality control and a background color for transparency — locally.",
+  "description": "Upload a PNG, choose JPEG quality and a fill color for transparent areas, preview the result, and download a .jpg. Conversion uses your browser only; nothing is uploaded.",
+  "keywords": ["png to jpg", "png to jpeg", "convert png", "image converter", "png jpg"],
+  "relatedSlugs": ["image-resizer"],
+  "faqs": [
+    {
+      "question": "What happens to transparency?",
+      "answer": "JPEG has no alpha channel. Transparent pixels are filled with the background color you pick (white by default)."
+    },
+    {
+      "question": "Is the file uploaded?",
+      "answer": "No. Conversion runs in your browser."
+    },
+    {
+      "question": "Can I convert other formats?",
+      "answer": "This tool is PNG → JPG. Use Image Resizer to change size or export other formats."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "png-to-jpg"
+}

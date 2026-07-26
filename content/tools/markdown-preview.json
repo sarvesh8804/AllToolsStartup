@@ -1,0 +1,27 @@
+{
+  "slug": "markdown-preview",
+  "name": "Markdown Preview",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Write Markdown and preview GitHub-flavored rendering live in your browser.",
+  "description": "Edit Markdown on the left and see a live preview with GFM tables, task lists, strikethrough, and fenced code. Includes quick stats for words, headings, links, and code blocks.",
+  "keywords": ["markdown", "markdown preview", "gfm", "md preview", "readme preview"],
+  "relatedSlugs": ["text-diff", "word-counter"],
+  "faqs": [
+    {
+      "question": "Which Markdown flavor is used?",
+      "answer": "GitHub-flavored Markdown via remark-gfm (tables, strikethrough, task lists, autolinks)."
+    },
+    {
+      "question": "Is my draft uploaded?",
+      "answer": "No. Preview runs entirely in your browser."
+    },
+    {
+      "question": "Can I export HTML?",
+      "answer": "Not yet. Copy the Markdown source for now; HTML export can come later."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "markdown-preview"
+}

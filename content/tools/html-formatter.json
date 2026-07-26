@@ -1,0 +1,27 @@
+{
+  "slug": "html-formatter",
+  "name": "HTML Formatter",
+  "family": "tools",
+  "category": "Code Formatters",
+  "status": "shipped",
+  "summary": "Beautify messy HTML with consistent indentation — entirely in your browser.",
+  "description": "Paste HTML to pretty-print nested tags with configurable indent. Optionally minify back into the input. Formatting runs locally with no upload.",
+  "keywords": ["html formatter", "html beautifier", "pretty print html", "format html"],
+  "relatedSlugs": ["css-formatter", "css-minifier"],
+  "faqs": [
+    {
+      "question": "Does it validate HTML?",
+      "answer": "No. It focuses on indentation and readability. Invalid markup is still formatted best-effort."
+    },
+    {
+      "question": "Are script and style contents reformatted?",
+      "answer": "Their inner content is preserved as-is so you do not accidentally break embedded code."
+    },
+    {
+      "question": "Is my HTML uploaded?",
+      "answer": "No. Formatting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "html-formatter"
+}

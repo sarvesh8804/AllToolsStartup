@@ -1,0 +1,27 @@
+{
+  "slug": "unix-timestamp-converter",
+  "name": "Unix Timestamp Converter",
+  "family": "convert",
+  "category": "Converters (Units & Misc)",
+  "status": "shipped",
+  "summary": "Convert Unix timestamps to human-readable dates and back — locally in your browser.",
+  "description": "Paste a Unix timestamp in seconds or milliseconds to see ISO-8601, UTC, and local time. Or paste an ISO date to get seconds and milliseconds. Auto-detects the unit from magnitude.",
+  "keywords": ["unix timestamp", "epoch", "timestamp converter", "epoch converter", "iso 8601"],
+  "relatedSlugs": ["cron-expression-explainer"],
+  "faqs": [
+    {
+      "question": "Seconds or milliseconds?",
+      "answer": "We auto-detect from the number's magnitude. Typical second timestamps are ~10 digits; milliseconds are ~13."
+    },
+    {
+      "question": "Is my timestamp sent to a server?",
+      "answer": "No. Conversion runs entirely in your browser."
+    },
+    {
+      "question": "What timezone is Local?",
+      "answer": "Your browser's current timezone, via the platform Date API."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "unix-timestamp-converter"
+}

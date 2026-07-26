@@ -1,0 +1,27 @@
+{
+  "slug": "emi-loan-calculator",
+  "name": "EMI / Loan Calculator",
+  "family": "calculators",
+  "category": "Finance Calculators",
+  "status": "shipped",
+  "summary": "Calculate monthly EMI, total interest, and an amortization schedule for a loan — locally.",
+  "description": "Enter loan amount, annual interest rate, and tenure in years. See monthly EMI, total payment, total interest, and optionally the full month-by-month amortization schedule. Uses the standard reducing-balance EMI formula.",
+  "keywords": ["emi calculator", "loan calculator", "amortization", "monthly payment", "interest"],
+  "relatedSlugs": ["tip-calculator", "percentage-calculator"],
+  "faqs": [
+    {
+      "question": "Which EMI formula is used?",
+      "answer": "The standard reducing-balance formula: EMI = P × r × (1+r)^n / ((1+r)^n − 1), where r is the monthly rate and n is the number of months."
+    },
+    {
+      "question": "Can the interest rate be zero?",
+      "answer": "Yes. With 0% interest, the payment is simply principal divided by the number of months."
+    },
+    {
+      "question": "Is my loan data uploaded?",
+      "answer": "No. Calculations run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "emi-loan-calculator"
+}

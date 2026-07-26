@@ -1,0 +1,27 @@
+{
+  "slug": "qr-code-generator",
+  "name": "QR Code Generator",
+  "family": "tools",
+  "category": "QR & Barcodes",
+  "status": "shipped",
+  "summary": "Generate a QR code from any text or URL and download it as PNG or SVG — all in your browser.",
+  "description": "Create QR codes for links, Wi‑Fi notes, contact strings, or plain text. Choose error-correction level and size, then download PNG or SVG. Generation runs entirely on your device.",
+  "keywords": ["qr code", "qr generator", "qrcode", "download qr", "svg qr"],
+  "relatedSlugs": ["slug-generator", "url-encode-decode"],
+  "faqs": [
+    {
+      "question": "Is my content uploaded?",
+      "answer": "No. The QR code is generated entirely in your browser."
+    },
+    {
+      "question": "What does error correction mean?",
+      "answer": "Higher levels (Q/H) survive more damage or logo overlays but pack less data into the same size. M is a good default."
+    },
+    {
+      "question": "PNG or SVG?",
+      "answer": "PNG is ready for sharing and printing at the chosen pixel size. SVG scales cleanly for design tools."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "qr-code-generator"
+}

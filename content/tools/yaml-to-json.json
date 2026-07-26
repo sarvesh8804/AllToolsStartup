@@ -1,0 +1,27 @@
+{
+  "slug": "yaml-to-json",
+  "name": "YAML to JSON",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Convert YAML documents to JSON instantly in your browser.",
+  "description": "Paste YAML and get pretty or minified JSON. Nested maps, arrays, booleans, and numbers are preserved. Conversion runs locally — nothing is uploaded.",
+  "keywords": ["yaml to json", "yaml converter", "yml to json", "convert yaml"],
+  "relatedSlugs": ["json-formatter", "sql-formatter"],
+  "faqs": [
+    {
+      "question": "Does it support multi-document YAML?",
+      "answer": "This tool converts a single YAML document. Multi-doc streams can come later."
+    },
+    {
+      "question": "What about YAML-specific types?",
+      "answer": "Values are converted to JSON-friendly forms. Some exotic YAML tags may not round-trip."
+    },
+    {
+      "question": "Is my data uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "yaml-to-json"
+}

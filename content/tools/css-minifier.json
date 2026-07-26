@@ -1,0 +1,27 @@
+{
+  "slug": "css-minifier",
+  "name": "CSS Minifier",
+  "family": "tools",
+  "category": "Code Formatters",
+  "status": "shipped",
+  "summary": "Minify CSS by stripping comments and whitespace — instantly in your browser.",
+  "description": "Shrink stylesheets for production by removing comments and unnecessary whitespace while preserving string contents. See a live size-savings percentage.",
+  "keywords": ["css minifier", "minify css", "compress css", "css compressor"],
+  "relatedSlugs": ["css-formatter", "html-formatter"],
+  "faqs": [
+    {
+      "question": "Will minification break my CSS?",
+      "answer": "It is safe for typical stylesheets. Quoted strings are preserved. Extremely unusual hacks may need a full CSS toolchain."
+    },
+    {
+      "question": "Are comments removed?",
+      "answer": "Yes. Comments are stripped as part of minification."
+    },
+    {
+      "question": "Is my CSS uploaded?",
+      "answer": "No. Minification runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "css-minifier"
+}

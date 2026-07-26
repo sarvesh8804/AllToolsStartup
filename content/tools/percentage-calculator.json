@@ -1,0 +1,27 @@
+{
+  "slug": "percentage-calculator",
+  "name": "Percentage Calculator",
+  "family": "calculators",
+  "category": "Math & Calculators",
+  "status": "shipped",
+  "summary": "Calculate percentages, percent-of, percent change, and increase/decrease — in your browser.",
+  "description": "Four common percentage modes: X% of Y, X is what % of Y, percent change between two values, and increase/decrease a value by a percent. All math runs locally.",
+  "keywords": ["percentage calculator", "percent of", "percent change", "increase by percent"],
+  "relatedSlugs": ["tip-calculator", "number-base-converter"],
+  "faqs": [
+    {
+      "question": "How is percent change calculated?",
+      "answer": "(new − old) / |old| × 100. A zero starting value is not allowed."
+    },
+    {
+      "question": "Can I decrease by a percent?",
+      "answer": "Yes — use Increase / decrease mode and pick Decrease."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Calculations run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "percentage-calculator"
+}
