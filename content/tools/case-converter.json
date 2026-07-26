@@ -1,0 +1,27 @@
+{
+  "slug": "case-converter",
+  "name": "Case Converter",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Convert text between upper, lower, title, camel, snake, kebab, and more — instantly in your browser.",
+  "description": "Flip casing for prose or identifiers. Supports UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE. All conversion runs locally.",
+  "keywords": ["case converter", "camelCase", "snake_case", "kebab-case", "title case"],
+  "relatedSlugs": ["word-counter", "character-counter"],
+  "faqs": [
+    {
+      "question": "Does it upload my text?",
+      "answer": "No. Conversion runs entirely in your browser."
+    },
+    {
+      "question": "How does camelCase handle existing identifiers?",
+      "answer": "It splits on spaces, underscores, hyphens, and camelCase boundaries first, then rebuilds the target style."
+    },
+    {
+      "question": "Is Title Case perfect for every language?",
+      "answer": "It capitalizes letters after word boundaries using Unicode-aware rules. Specialized style guides may still differ."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "case-converter"
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "base64-encode-decode",
+  "name": "Base64 Encode / Decode",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Encode text to Base64 or decode Base64 back to text, entirely in your browser.",
+  "description": "Convert any UTF-8 text to Base64 and back. Handles emoji and accented characters correctly. Everything runs locally — your data never leaves the browser.",
+  "keywords": ["base64", "encode", "decode", "base64 decoder", "utf-8"],
+  "relatedSlugs": ["url-encode-decode", "jwt-decoder"],
+  "faqs": [
+    {
+      "question": "Does my text get uploaded anywhere?",
+      "answer": "No. Encoding and decoding run entirely in your browser using the built-in APIs."
+    },
+    {
+      "question": "Does it support Unicode and emoji?",
+      "answer": "Yes. Text is encoded as UTF-8 first, so emoji and accented characters round-trip correctly."
+    },
+    {
+      "question": "What is the difference from URL-safe Base64?",
+      "answer": "Standard Base64 uses + and / with = padding. URL-safe Base64 replaces those characters — used by JWTs, for example."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "base64-encode-decode"
+}

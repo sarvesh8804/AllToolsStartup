@@ -1,0 +1,27 @@
+{
+  "slug": "word-counter",
+  "name": "Word Counter",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Count words, sentences, paragraphs, and estimate reading time — all locally.",
+  "description": "Paste any text to see live word, sentence, paragraph, and line counts plus a rough reading-time estimate. Nothing leaves your browser.",
+  "keywords": ["word counter", "word count", "sentence count", "reading time"],
+  "relatedSlugs": ["character-counter", "case-converter"],
+  "faqs": [
+    {
+      "question": "How are words counted?",
+      "answer": "Words are whitespace-separated tokens. Multiple spaces and newlines collapse into a single separator."
+    },
+    {
+      "question": "How is reading time estimated?",
+      "answer": "We assume about 200 words per minute and round up to at least one minute when there is any text."
+    },
+    {
+      "question": "Is my draft uploaded?",
+      "answer": "No. Counting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "word-counter"
+}

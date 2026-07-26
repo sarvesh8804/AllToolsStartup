@@ -16,13 +16,13 @@
 
 | Field | Value |
 |---|---|
-| **Last completed phase** | `P001` |
-| **Next phase to do** | `P002` |
+| **Last completed phase** | `P005` |
+| **Next phase to do** | `P006` |
 | **Production live?** | Ready (deploy on push / Vercel) |
 | **Production URL** | — _(set after first Vercel deploy)_ |
 | **Foundation done** | 12 / 12 |
-| **Tool phases done** | 1 / 472 |
-| **Tools shipped** | 2 / 755 |
+| **Tool phases done** | 5 / 472 |
+| **Tools shipped** | 13 / 755 |
 | **Hub phases done** | 0 / 50 |
 | **SEO phases done** | 0 / 94 |
 | **Monetization phases done** | 0 / 15 |
@@ -60,6 +60,10 @@ Newest at top. One line per completed phase.
 
 | Date | Phase | Notes / commit / URL |
 |---|---|---|
+| 2026-07-26 | `P005` | Slug Generator + Random Password Generator (CSPRNG) + tests |
+| 2026-07-26 | `P004` | Case Converter + Word Counter + Character Counter + tests |
+| 2026-07-26 | `P003` | JWT Decoder + SHA-256 + MD5 shipped (pure impls + tests) |
+| 2026-07-26 | `P002` | Base64, URL encode/decode, UUID v4 generator shipped + tests |
 | 2026-07-26 | `theme` | Switched site to light lemon shade; Vitest + P001 unit tests |
 | 2026-07-26 | `P001` | JSON Formatter + JSON Validator shipped |
 | 2026-07-26 | `F11` | Blog index + 3 posts + InternalLink |
@@ -105,10 +109,10 @@ _472 phases · 755 tools. Check the box when the whole phase (all tools listed) 
 | Done | Phase | Tools | Diff | Family |
 |---|---|---|---|---|
 | [x] | `P001` | JSON Formatter / Beautifier; JSON Validator | E | `/tools` |
-| [ ] | `P002` | Base64 Encode / Decode; URL Encode / Decode; UUID v4 Generator | E | `/tools` |
-| [ ] | `P003` | JWT Decoder; SHA-256 Hash; MD5 Hash Generator | E | `/tools` |
-| [ ] | `P004` | Case Converter (upper/lower/title/camel/snake/kebab); Word Counter; Character Counter | E | `/tools` |
-| [ ] | `P005` | Slug Generator; Random Password Generator | E | `/tools` |
+| [x] | `P002` | Base64 Encode / Decode; URL Encode / Decode; UUID v4 Generator | E | `/tools` |
+| [x] | `P003` | JWT Decoder; SHA-256 Hash; MD5 Hash Generator | E | `/tools` |
+| [x] | `P004` | Case Converter (upper/lower/title/camel/snake/kebab); Word Counter; Character Counter | E | `/tools` |
+| [x] | `P005` | Slug Generator; Random Password Generator | E | `/tools` |
 | [ ] | `P006` | QR Code Generator | E | `/tools` |
 | [ ] | `P007` | Unix Timestamp Converter; Cron Expression Explainer | E/M | `/convert` |
 | [ ] | `P008` | Text Diff (side-by-side); Markdown Preview | E/M | `/tools` |

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Command } from "cmdk";
 import { track } from "@/lib/analytics";
@@ -17,9 +17,14 @@ export type SearchItem = {
 
 export function CommandPalette({ items }: { items: SearchItem[] }) {
   const [open, setOpen] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
   const openSearch = useCallback(() => {
+    // Drop focus from editors (e.g. CodeMirror) so ⌘K can land in search.
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
     setOpen(true);
     track({ name: "search_open" });
   }, []);
@@ -30,7 +35,9 @@ export function CommandPalette({ items }: { items: SearchItem[] }) {
         const tag = (e.target as HTMLElement)?.tagName;
         if (
           e.key === "/" &&
-          (tag === "INPUT" || tag === "TEXTAREA" || (e.target as HTMLElement).isContentEditable)
+          (tag === "INPUT" ||
+            tag === "TEXTAREA" ||
+            (e.target as HTMLElement).isContentEditable)
         ) {
           return;
         }
@@ -49,6 +56,14 @@ export function CommandPalette({ items }: { items: SearchItem[] }) {
     };
   }, [openSearch]);
 
+  useEffect(() => {
+    if (!open) return;
+    const id = requestAnimationFrame(() => {
+      inputRef.current?.focus();
+    });
+    return () => cancelAnimationFrame(id);
+  }, [open]);
+
   const empty = useMemo(() => items.length === 0, [items.length]);
 
   if (!open) return null;
@@ -58,12 +73,15 @@ export function CommandPalette({ items }: { items: SearchItem[] }) {
       <button
         type="button"
         aria-label="Close search"
+        tabIndex={-1}
         className="absolute inset-0 bg-[var(--ink)]/35"
         onClick={() => setOpen(false)}
       />
       <div className="relative mx-auto mt-[12vh] w-[min(640px,calc(100%-1.5rem))] overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-2xl">
         <Command label="Search tools" className="bg-transparent">
           <Command.Input
+            ref={inputRef}
+            autoFocus
             placeholder={
               empty
                 ? "No shipped tools yet — check back after P001"

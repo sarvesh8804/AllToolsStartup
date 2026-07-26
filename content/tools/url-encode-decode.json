@@ -1,0 +1,27 @@
+{
+  "slug": "url-encode-decode",
+  "name": "URL Encode / Decode",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Percent-encode or decode URLs and query parameters right in your browser.",
+  "description": "Escape special characters for use in URLs, or decode percent-encoded strings back to readable text. Switch between component encoding (for query values) and full-URL encoding.",
+  "keywords": ["url encode", "url decode", "percent encoding", "uri", "query string"],
+  "relatedSlugs": ["base64-encode-decode", "json-formatter"],
+  "faqs": [
+    {
+      "question": "What is component mode?",
+      "answer": "Component mode encodes reserved characters like / ? & = so a value can be safely dropped into a query string. Full-URL mode preserves those delimiters."
+    },
+    {
+      "question": "Is my input sent to a server?",
+      "answer": "No. Encoding uses your browser's built-in encodeURIComponent and decodeURIComponent."
+    },
+    {
+      "question": "Why did decoding fail?",
+      "answer": "Malformed percent-encodings (like a stray %) cannot be decoded. Fix or remove them and try again."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "url-encode-decode"
+}

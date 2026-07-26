@@ -1,0 +1,27 @@
+{
+  "slug": "jwt-decoder",
+  "name": "JWT Decoder",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Decode a JSON Web Token's header and payload without verifying — all in your browser.",
+  "description": "Paste a JWT to inspect its header and payload as formatted JSON. Human-readable timestamps are shown for standard time claims. Decoding is local and never verifies or exposes secrets.",
+  "keywords": ["jwt", "jwt decoder", "json web token", "decode jwt", "jwt payload"],
+  "relatedSlugs": ["base64-encode-decode", "sha-256-hash"],
+  "faqs": [
+    {
+      "question": "Does this verify the signature?",
+      "answer": "No. It only decodes the token so you can read the claims. It never checks the signature and you should never paste production secrets."
+    },
+    {
+      "question": "Is my token sent anywhere?",
+      "answer": "No. Decoding happens entirely in your browser."
+    },
+    {
+      "question": "Why does it show ISO dates?",
+      "answer": "Standard claims like iat, exp and nbf are Unix timestamps. We convert them to readable ISO dates for convenience."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "jwt-decoder"
+}

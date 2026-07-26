@@ -1,0 +1,27 @@
+{
+  "slug": "sha-256-hash",
+  "name": "SHA-256 Hash Generator",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Compute the SHA-256 hash of any text instantly and locally.",
+  "description": "Generate a SHA-256 digest for any UTF-8 text. Useful for checksums, fingerprints and integrity checks. Hashing runs in your browser with no network calls.",
+  "keywords": ["sha256", "sha-256", "hash", "checksum", "digest"],
+  "relatedSlugs": ["md5-hash-generator", "base64-encode-decode"],
+  "faqs": [
+    {
+      "question": "Is the hashing done on a server?",
+      "answer": "No. The SHA-256 computation runs entirely in your browser."
+    },
+    {
+      "question": "Can I use SHA-256 for passwords?",
+      "answer": "A plain SHA-256 is not enough for passwords. Use a dedicated password hashing algorithm like bcrypt, scrypt or Argon2 with a salt."
+    },
+    {
+      "question": "Does it hash files?",
+      "answer": "This tool hashes text. File hashing can arrive as a separate tool later."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "sha-256-hash"
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "slug-generator",
+  "name": "Slug Generator",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Turn any title into a clean, URL-friendly slug — locally in your browser.",
+  "description": "Convert headings and titles into SEO-friendly slugs. Strips punctuation and accents, collapses spaces, and lets you pick the separator. Everything runs on your device.",
+  "keywords": ["slug generator", "url slug", "slugify", "permalink", "seo slug"],
+  "relatedSlugs": ["case-converter", "random-password-generator"],
+  "faqs": [
+    {
+      "question": "What is a slug?",
+      "answer": "A slug is the URL-friendly part of a web address, usually lowercase words joined by hyphens, like why-forge-runs-in-your-browser."
+    },
+    {
+      "question": "Does it remove accents?",
+      "answer": "In ASCII-only mode it transliterates accents (é becomes e). Turn that off to keep unicode letters."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. Slug generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "slug-generator"
+}

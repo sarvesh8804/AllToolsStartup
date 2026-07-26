@@ -1,0 +1,27 @@
+{
+  "slug": "md5-hash-generator",
+  "name": "MD5 Hash Generator",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Compute the MD5 hash of any text locally — great for checksums and cache keys.",
+  "description": "Generate an MD5 digest for any UTF-8 text. MD5 is fast and handy for non-security checksums and cache keys, but is not collision-resistant. Runs entirely in your browser.",
+  "keywords": ["md5", "hash", "checksum", "digest", "md5 generator"],
+  "relatedSlugs": ["sha-256-hash", "base64-encode-decode"],
+  "faqs": [
+    {
+      "question": "Is MD5 secure?",
+      "answer": "No. MD5 is broken for security purposes. Use it only for checksums, deduplication and cache keys — never for passwords or signatures."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. The MD5 computation runs entirely in your browser."
+    },
+    {
+      "question": "Why use MD5 at all?",
+      "answer": "It is fast and produces a short 32-character digest, which is convenient for non-security fingerprints."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "md5-hash-generator"
+}

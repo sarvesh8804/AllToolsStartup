@@ -1,0 +1,27 @@
+{
+  "slug": "character-counter",
+  "name": "Character Counter",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Count characters, spaces, and UTF-8 bytes for any text in your browser.",
+  "description": "Live character counts with and without spaces, plus UTF-8 byte length for emoji and accented text. Useful for bios, SMS limits, and form validation.",
+  "keywords": ["character counter", "char count", "byte length", "character limit"],
+  "relatedSlugs": ["word-counter", "case-converter"],
+  "faqs": [
+    {
+      "question": "Are emoji counted as one character?",
+      "answer": "Yes for the Characters metric — we count Unicode code points. UTF-8 bytes may be larger for emoji."
+    },
+    {
+      "question": "What does “No spaces” mean?",
+      "answer": "All whitespace characters (spaces, tabs, newlines) are removed before counting."
+    },
+    {
+      "question": "Is text sent to a server?",
+      "answer": "No. Counting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "character-counter"
+}

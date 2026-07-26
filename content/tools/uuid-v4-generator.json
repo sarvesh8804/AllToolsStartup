@@ -1,0 +1,27 @@
+{
+  "slug": "uuid-v4-generator",
+  "name": "UUID v4 Generator",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Generate random RFC 4122 version 4 UUIDs in bulk, locally and instantly.",
+  "description": "Create one or many random UUIDs (v4) using your browser's cryptographic random number generator. Copy individually or all at once, with optional uppercase output.",
+  "keywords": ["uuid", "guid", "uuid v4", "uuid generator", "random id"],
+  "relatedSlugs": ["base64-encode-decode", "sha-256-hash"],
+  "faqs": [
+    {
+      "question": "Are these UUIDs cryptographically random?",
+      "answer": "Yes. They use the platform's crypto random source (crypto.randomUUID or getRandomValues), not Math.random."
+    },
+    {
+      "question": "How many can I generate at once?",
+      "answer": "Up to 1000 per batch. Enter any number and press Generate."
+    },
+    {
+      "question": "What is a UUID v4?",
+      "answer": "A 128-bit identifier where most bits are random, with version and variant bits fixed per RFC 4122. Collisions are effectively impossible in practice."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "uuid-v4-generator"
+}
