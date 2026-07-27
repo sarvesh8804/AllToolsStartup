@@ -1,0 +1,37 @@
+{
+  "slug": "qr-code-reader",
+  "name": "QR Code Reader",
+  "family": "tools",
+  "category": "QR & Barcodes",
+  "status": "shipped",
+  "summary": "Decode QR codes from an image file or your camera — entirely in the browser.",
+  "description": "Upload a QR image or scan with your device camera. Decoded text is shown instantly for copy. Uses jsQR locally — no image upload to a server.",
+  "keywords": [
+    "qr code reader",
+    "scan qr code",
+    "decode qr",
+    "qr scanner online",
+    "read qr from image"
+  ],
+  "relatedSlugs": [
+    "qr-code-generator",
+    "wifi-qr-generator",
+    "url-encode-decode"
+  ],
+  "faqs": [
+    {
+      "question": "Does the camera upload video?",
+      "answer": "No. Frames are processed locally in your browser and never uploaded."
+    },
+    {
+      "question": "What image formats work?",
+      "answer": "PNG, JPEG, WebP, GIF, and BMP. Clear, high-contrast QR codes decode best."
+    },
+    {
+      "question": "Camera permission denied?",
+      "answer": "Use the file upload mode instead, or allow camera access in your browser settings."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "qr-code-reader"
+}

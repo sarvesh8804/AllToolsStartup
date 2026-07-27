@@ -1,0 +1,38 @@
+{
+  "slug": "week-number-calculator",
+  "name": "Week Number Calculator",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Get the ISO 8601 or US week number for any date — plus weekday, week year, and date range.",
+  "description": "Pick a date to see its week number under ISO 8601 (Monday start) or US weeks (Sunday start). Shows week year, weekday name, ISO label, and the week’s start/end dates. Also look up a week year + week number to get the date range. Runs locally.",
+  "keywords": [
+    "week number",
+    "iso week",
+    "week of year",
+    "iso 8601 week",
+    "week calculator"
+  ],
+  "relatedSlugs": [
+    "age-calculator",
+    "date-difference-calculator",
+    "add-subtract-dates",
+    "unix-timestamp-converter"
+  ],
+  "faqs": [
+    {
+      "question": "What is ISO 8601 week numbering?",
+      "answer": "Weeks start on Monday. Week 1 is the week containing the year’s first Thursday. Near New Year the week year can differ from the calendar year."
+    },
+    {
+      "question": "How do US weeks work?",
+      "answer": "Weeks start on Sunday. Week 1 is the week that contains January 1."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Calculation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "week-number-calculator"
+}

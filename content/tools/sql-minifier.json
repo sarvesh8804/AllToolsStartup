@@ -1,0 +1,42 @@
+{
+  "slug": "sql-minifier",
+  "name": "SQL Minifier",
+  "family": "tools",
+  "category": "Code Formatters",
+  "status": "shipped",
+  "summary": "Minify SQL to a single line — strip comments and collapse whitespace locally.",
+  "description": "Paste SQL to collapse whitespace into a one-liner. Optionally remove -- line comments and /* block */ comments while preserving string literals. See original vs minified character counts. Runs entirely in your browser.",
+  "keywords": [
+    "sql minifier",
+    "minify sql",
+    "compress sql",
+    "sql one liner",
+    "strip sql comments"
+  ],
+  "relatedSlugs": [
+    "sql-formatter",
+    "javascript-minifier",
+    "json-minifier",
+    "css-minifier"
+  ],
+  "faqs": [
+    {
+      "question": "Does it remove comments?",
+      "answer": "Yes by default. Uncheck Strip comments to keep -- and /* */ comments while still collapsing whitespace."
+    },
+    {
+      "question": "Are string literals safe?",
+      "answer": "Yes. Quoted strings are protected so comment-like text inside them is not removed."
+    },
+    {
+      "question": "Need pretty formatting instead?",
+      "answer": "Use SQL Formatter to expand clauses onto readable lines."
+    },
+    {
+      "question": "Is my SQL uploaded?",
+      "answer": "No. Minifying runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "sql-minifier"
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "license-text-generator",
+  "name": "License Text Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Fill MIT, Apache-2.0, BSD, ISC, Unlicense, or GPLv3 notice text with your year and name.",
+  "description": "Pick a common open-source license template, set copyright year and holder (and project name for the GPLv3 notice), then copy a LICENSE file. Not legal advice — review the full license before you ship.",
+  "keywords": ["license generator", "mit license", "apache license", "gpl notice", "open source license"],
+  "relatedSlugs": ["readme-generator", "gitignore-generator", "git-cheat-sheet-interactive"],
+  "faqs": [
+    {
+      "question": "Is this legal advice?",
+      "answer": "No. Templates help you draft a LICENSE file. Choose a license that fits your project and read it carefully."
+    },
+    {
+      "question": "Why is GPLv3 only a notice?",
+      "answer": "The full GPLv3 is long. The tool generates the common short copyright notice; link to gnu.org for the complete text."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Text is generated in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "license-text-generator"
+}

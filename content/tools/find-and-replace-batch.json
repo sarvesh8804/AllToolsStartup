@@ -1,0 +1,38 @@
+{
+  "slug": "find-and-replace-batch",
+  "name": "Find & Replace Batch",
+  "family": "tools",
+  "category": "Regex & Text",
+  "status": "shipped",
+  "summary": "Run multiple find-and-replace rules in order — literal or regex, with case and whole-word options.",
+  "description": "Stack find/replace rules and apply them top-to-bottom on your text. Each rule can be literal or regex, case-sensitive, and whole-word. See per-rule match counts and copy the final output. Everything runs locally in your browser.",
+  "keywords": [
+    "find and replace",
+    "batch replace",
+    "multiple replace",
+    "regex replace",
+    "search replace"
+  ],
+  "relatedSlugs": [
+    "regex-tester",
+    "text-diff",
+    "sort-lines",
+    "remove-duplicate-lines"
+  ],
+  "faqs": [
+    {
+      "question": "In what order do rules run?",
+      "answer": "Top to bottom. Each rule runs on the output of the previous one, so later rules can match text introduced by earlier replacements."
+    },
+    {
+      "question": "Literal vs regex?",
+      "answer": "Literal treats special characters as plain text. Regex mode uses JavaScript regular expressions and supports $1-style group replacements."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. All replacements run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "find-and-replace-batch"
+}

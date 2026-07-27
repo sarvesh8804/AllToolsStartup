@@ -7,7 +7,12 @@
   "summary": "Calculate monthly EMI, total interest, and an amortization schedule for a loan — locally.",
   "description": "Enter loan amount, annual interest rate, and tenure in years. See monthly EMI, total payment, total interest, and optionally the full month-by-month amortization schedule. Uses the standard reducing-balance EMI formula.",
   "keywords": ["emi calculator", "loan calculator", "amortization", "monthly payment", "interest"],
-  "relatedSlugs": ["tip-calculator", "percentage-calculator"],
+  "relatedSlugs": [
+    "sip-calculator",
+    "gst-sales-tax-calculator",
+    "tip-calculator",
+    "percentage-calculator"
+  ],
   "faqs": [
     {
       "question": "Which EMI formula is used?",

@@ -1,0 +1,27 @@
+{
+  "slug": "pomodoro-timer",
+  "name": "Pomodoro Timer",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Focus and break timer with classic Pomodoro cycles — runs entirely in your browser.",
+  "description": "Start a focus session, take short breaks, and insert a long break after a configurable number of sessions. Customize durations, pause/reset/skip, optional desktop alerts, and a live tab title countdown. Nothing is uploaded.",
+  "keywords": ["pomodoro", "pomodoro timer", "focus timer", "productivity timer", "25 minute timer"],
+  "relatedSlugs": ["date-difference-calculator", "unix-timestamp-converter", "timezone-converter"],
+  "faqs": [
+    {
+      "question": "What is the default schedule?",
+      "answer": "25 minutes focus, 5 minutes short break, 15 minutes long break after every 4 focus sessions. You can change all of these."
+    },
+    {
+      "question": "Do alerts work offline?",
+      "answer": "The timer runs locally. Desktop notifications need browser permission and may require the tab to stay open."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Timing runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "pomodoro-timer"
+}

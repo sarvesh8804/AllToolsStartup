@@ -1,0 +1,27 @@
+{
+  "slug": "html-minifier",
+  "name": "HTML Minifier",
+  "family": "tools",
+  "category": "Code Formatters",
+  "status": "shipped",
+  "summary": "Minify HTML by stripping comments and collapsing whitespace — locally in your browser.",
+  "description": "Paste HTML to remove comments, collapse whitespace between tags, and optionally trim text edges. See an estimated size savings and copy the minified output. Prefer the HTML Formatter when you need pretty-print instead.",
+  "keywords": ["html minifier", "minify html", "compress html", "html compress", "remove html whitespace"],
+  "relatedSlugs": ["html-formatter", "css-minifier", "javascript-minifier"],
+  "faqs": [
+    {
+      "question": "Will it break my markup?",
+      "answer": "It is best-effort whitespace/comment removal. Inline spacing that matters for layout may change if “Trim text around tags” is on — toggle options as needed."
+    },
+    {
+      "question": "Does it minify CSS or JS inside the page?",
+      "answer": "No. Use the CSS and JavaScript minifiers for those assets."
+    },
+    {
+      "question": "Is my HTML uploaded?",
+      "answer": "No. Minification runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "html-minifier"
+}

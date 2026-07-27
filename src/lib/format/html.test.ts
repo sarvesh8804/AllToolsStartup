@@ -23,7 +23,7 @@ describe("formatHtml", () => {
 describe("minifyHtml", () => {
   it("collapses whitespace between tags", () => {
     expect(minifyHtml("<div>  <p> Hi </p>  </div>")).toBe(
-      "<div><p> Hi </p></div>",
+      "<div><p>Hi</p></div>",
     );
   });
 
@@ -31,5 +31,22 @@ describe("minifyHtml", () => {
     expect(minifyHtml("<div><!--x--><span></span></div>")).toBe(
       "<div><span></span></div>",
     );
+  });
+
+  it("can keep comments", () => {
+    expect(
+      minifyHtml("<div><!--x--><span></span></div>", {
+        removeComments: false,
+      }),
+    ).toContain("<!--x-->");
+  });
+
+  it("can skip aggressive text trim", () => {
+    expect(
+      minifyHtml("<p> Hi </p>", {
+        collapseWhitespace: true,
+        trimTextNodes: false,
+      }),
+    ).toBe("<p> Hi </p>");
   });
 });

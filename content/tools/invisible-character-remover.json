@@ -1,0 +1,38 @@
+{
+  "slug": "invisible-character-remover",
+  "name": "Invisible Character Remover",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Strip zero-width characters, NBSP, odd spaces, and BiDi marks from text — with category toggles.",
+  "description": "Paste text and remove invisible Unicode characters: zero-width spaces, non-breaking spaces, thin/hair spaces, BiDi embedding marks, soft hyphens, and BOM. Toggle categories, optionally convert NBSP to a normal space, then copy the cleaned result. Runs locally.",
+  "keywords": [
+    "remove invisible characters",
+    "strip zero width",
+    "remove nbsp",
+    "clean hidden characters",
+    "remove bidi marks"
+  ],
+  "relatedSlugs": [
+    "zero-width-character-detector",
+    "find-and-replace-batch",
+    "text-diff",
+    "word-counter"
+  ],
+  "faqs": [
+    {
+      "question": "How is this different from the Zero-Width Detector?",
+      "answer": "The detector highlights zero-width characters. This remover also targets NBSP, odd spaces, and BiDi format marks, with per-category controls."
+    },
+    {
+      "question": "What does NBSP → space do?",
+      "answer": "When enabled, no-break and similar spaces become a normal ASCII space instead of being deleted, which usually preserves word separation."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. Cleaning runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "invisible-character-remover"
+}

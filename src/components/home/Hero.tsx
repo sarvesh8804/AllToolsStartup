@@ -27,12 +27,13 @@ export function Hero() {
         <p className="font-[family-name:var(--font-display)] text-5xl tracking-tight text-[var(--foreground)] sm:text-7xl">
           {SITE_NAME}
         </p>
-        <p className="mt-4 max-w-xl text-lg text-[var(--muted)] sm:text-xl">
+        <h1 className="mt-4 max-w-2xl font-[family-name:var(--font-display)] text-2xl tracking-tight text-[var(--foreground)] sm:text-3xl">
           {SITE_TAGLINE}
-        </p>
-        <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-          Browser-first utilities that respect your files. No account. No paid
-          APIs. Building in public—one phase a day.
+        </h1>
+        <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+          Everything runs securely inside your browser. No account. No uploads
+          for private tools. Formatters, PDFs, images, calculators, and
+          converters — one place.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -42,7 +43,7 @@ export function Hero() {
             href="/tools"
             className="rounded-md bg-[var(--accent)] px-4 py-2 text-sm font-medium text-[var(--ink)] transition hover:bg-[var(--accent-bright)]"
           >
-            Browse tools
+            Browse developer tools
           </Link>
         </div>
       </div>

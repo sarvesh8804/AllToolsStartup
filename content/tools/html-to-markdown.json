@@ -1,0 +1,42 @@
+{
+  "slug": "html-to-markdown",
+  "name": "HTML to Markdown",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Convert HTML fragments to Markdown locally — headings, lists, links, code, tables, and more.",
+  "description": "Paste HTML and get Markdown in your browser. Supports headings, paragraphs, bold/italic, links, images, lists, blockquotes, fenced code blocks, horizontal rules, and basic tables. Script and style tags are stripped. Not a full HTML5 engine — best for content fragments.",
+  "keywords": [
+    "html to markdown",
+    "html to md",
+    "convert html",
+    "turndown",
+    "markdown converter"
+  ],
+  "relatedSlugs": [
+    "markdown-to-html",
+    "markdown-preview",
+    "html-formatter",
+    "html-minifier"
+  ],
+  "faqs": [
+    {
+      "question": "Is this a full HTML5 parser?",
+      "answer": "No. It handles common content tags for everyday conversion. Complex layouts, inline styles, and exotic markup may need cleanup."
+    },
+    {
+      "question": "Are scripts kept?",
+      "answer": "No. script and style elements are removed during conversion."
+    },
+    {
+      "question": "Need the reverse direction?",
+      "answer": "Use Markdown to HTML to convert Markdown into HTML."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "html-to-markdown"
+}

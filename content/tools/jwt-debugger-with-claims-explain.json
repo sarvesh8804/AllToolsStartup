@@ -1,0 +1,38 @@
+{
+  "slug": "jwt-debugger-with-claims-explain",
+  "name": "JWT Debugger with Claims Explain",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Decode a JWT and get plain-English explanations for header and payload claims — including expiry checks.",
+  "description": "Paste a JSON Web Token to decode the header and payload, then read explanations for registered claims (iss, sub, aud, exp, nbf, iat, jti, and more). Time claims are checked against now. Decoding is local and never verifies the signature.",
+  "keywords": [
+    "jwt debugger",
+    "jwt claims",
+    "explain jwt",
+    "jwt exp",
+    "json web token debugger"
+  ],
+  "relatedSlugs": [
+    "jwt-decoder",
+    "base64-encode-decode",
+    "sha-256-hash",
+    "unix-timestamp-converter"
+  ],
+  "faqs": [
+    {
+      "question": "Does this verify the signature?",
+      "answer": "No. It only decodes the token and explains claims. It never checks the signature — do not paste production secrets."
+    },
+    {
+      "question": "How are exp and nbf evaluated?",
+      "answer": "Numeric Unix timestamps are converted to ISO dates and compared to your browser’s current time so you can see if a token is expired or not yet valid."
+    },
+    {
+      "question": "What does alg=none mean?",
+      "answer": "An unsigned token. Verifiers should reject alg=none unless explicitly allowed. This debugger flags it as dangerous."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "jwt-debugger-with-claims-explain"
+}

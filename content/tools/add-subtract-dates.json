@@ -1,0 +1,27 @@
+{
+  "slug": "add-subtract-dates",
+  "name": "Add / Subtract Dates",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Add or subtract days, weeks, months, or years from a date — locally in your browser.",
+  "description": "Pick a start date, choose add or subtract, enter an amount and unit, and get the resulting calendar date. Month and year math clamps end-of-month days safely (for example Jan 31 + 1 month). Nothing is uploaded.",
+  "keywords": ["add days to date", "subtract dates", "date calculator", "add months", "date math"],
+  "relatedSlugs": ["date-difference-calculator", "age-calculator", "meeting-time-planner"],
+  "faqs": [
+    {
+      "question": "How are months handled?",
+      "answer": "Calendar months are added, then the day is clamped to the last valid day of the target month (Jan 31 + 1 month → Feb 28/29)."
+    },
+    {
+      "question": "Is time of day included?",
+      "answer": "No. This tool works on calendar dates (YYYY-MM-DD) only."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Calculation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "add-subtract-dates"
+}

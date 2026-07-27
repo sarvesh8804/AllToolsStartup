@@ -1,0 +1,38 @@
+{
+  "slug": "regex-explainer",
+  "name": "Regex Explainer",
+  "family": "tools",
+  "category": "Regex & Text",
+  "status": "shipped",
+  "summary": "Paste a JavaScript regular expression and get a static, token-by-token explanation — no AI.",
+  "description": "Break a regex into tokens (literals, escapes, classes, groups, lookarounds, quantifiers, anchors) with plain-language explanations from static rules. Click any token to inspect it. Validates syntax with the browser’s RegExp engine and never uploads your pattern.",
+  "keywords": [
+    "regex explainer",
+    "explain regex",
+    "regular expression explained",
+    "regex breakdown",
+    "what does this regex mean"
+  ],
+  "relatedSlugs": [
+    "regex-tester",
+    "regex-cheatsheet-interactive",
+    "find-and-replace-batch",
+    "text-diff"
+  ],
+  "faqs": [
+    {
+      "question": "Is this AI-generated?",
+      "answer": "No. Explanations come from a fixed rule table and tokenizer for the JavaScript (ECMAScript) flavor."
+    },
+    {
+      "question": "Which regex flavor?",
+      "answer": "JavaScript / ECMAScript — the same engine as Forge’s Regex Tester and your browser."
+    },
+    {
+      "question": "What if my pattern is invalid?",
+      "answer": "You’ll see the engine’s syntax error. The tool still tries to show a partial token breakdown when possible."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "regex-explainer"
+}

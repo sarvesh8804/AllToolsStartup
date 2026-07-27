@@ -1,0 +1,42 @@
+{
+  "slug": "javascript-minifier",
+  "name": "JavaScript Minifier",
+  "family": "tools",
+  "category": "Code Formatters",
+  "status": "shipped",
+  "summary": "Minify JavaScript by collapsing whitespace and stripping comments — locally.",
+  "description": "Paste JavaScript to shrink it for size comparison or quick delivery. Optionally strip line and block comments while preserving strings and regex literals. Lightweight heuristic minifier — not Terser.",
+  "keywords": [
+    "javascript minifier",
+    "js minify",
+    "compress javascript",
+    "minify js",
+    "remove js comments"
+  ],
+  "relatedSlugs": [
+    "javascript-beautifier",
+    "css-minifier",
+    "html-formatter",
+    "sql-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "Is this Terser / Uglify?",
+      "answer": "No. It collapses whitespace and can strip comments while keeping strings/regex intact. It does not rename variables or perform AST optimizations."
+    },
+    {
+      "question": "Are comments removed?",
+      "answer": "Yes by default. Uncheck “Strip comments” to keep them."
+    },
+    {
+      "question": "Need readable code again?",
+      "answer": "Use the JavaScript Beautifier tool."
+    },
+    {
+      "question": "Is my code uploaded?",
+      "answer": "No. Minification runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "javascript-minifier"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "gitignore-builder",
+  "name": "Gitignore Builder",
+  "family": "tools",
+  "category": "Git & DevOps",
+  "status": "shipped",
+  "summary": "Advanced .gitignore builder — more stacks, presets, search, custom lines, and pattern dedupe.",
+  "description": "Compose a .gitignore from OS, language, framework, editor, DevOps, and secrets templates. Apply presets (Node web, Python API, Go, mobile), search stacks, add custom patterns, and optionally dedupe overlapping rules. Everything runs locally.",
+  "keywords": [
+    "gitignore builder",
+    "advanced gitignore",
+    "gitignore template",
+    "gitignore generator",
+    "custom gitignore"
+  ],
+  "relatedSlugs": [
+    "gitignore-generator",
+    "git-cheat-sheet-interactive",
+    "git-command-explorer",
+    "dockerfile-generator"
+  ],
+  "faqs": [
+    {
+      "question": "How is this different from Gitignore Generator?",
+      "answer": "This advanced builder adds more stacks (Go, Rust, Docker, Terraform, mobile, etc.), category grouping, presets, search, custom lines, and duplicate-pattern removal."
+    },
+    {
+      "question": "What does Dedupe do?",
+      "answer": "Identical ignore patterns across selected stacks are kept once so the file stays shorter."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "gitignore-builder"
+}

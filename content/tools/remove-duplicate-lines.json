@@ -1,0 +1,38 @@
+{
+  "slug": "remove-duplicate-lines",
+  "name": "Remove Duplicate Lines",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Deduplicate text lines in your browser — keep first or last, ignore case, trim, or preserve blanks.",
+  "description": "Paste any multi-line text and remove duplicate lines while preserving order. Options include case-insensitive matching, trim-before-compare, keep all blank lines, and keep the last occurrence instead of the first. Processing stays local.",
+  "keywords": [
+    "remove duplicate lines",
+    "dedupe lines",
+    "unique lines",
+    "delete duplicate lines",
+    "deduplicate text"
+  ],
+  "relatedSlugs": [
+    "text-diff",
+    "case-converter",
+    "word-counter",
+    "character-counter"
+  ],
+  "faqs": [
+    {
+      "question": "Does order matter?",
+      "answer": "Yes. By default the first occurrence of each line is kept and later duplicates are dropped. Enable “Keep last occurrence” to reverse that."
+    },
+    {
+      "question": "What about blank lines?",
+      "answer": "Blank lines are treated like any other line unless you enable “Keep blank lines”, which preserves every empty line."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. Deduplication runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "remove-duplicate-lines"
+}

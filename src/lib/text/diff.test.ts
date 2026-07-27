@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { diffLines, unifiedDiff } from "./diff";
+import { diffInline, diffLines, unifiedDiff, wordDiffSegments } from "./diff";
 
 describe("diffLines", () => {
   it("marks identical texts as unchanged", () => {
@@ -57,5 +57,23 @@ describe("unifiedDiff", () => {
     expect(text).toContain("  one");
     expect(text).toContain("- two");
     expect(text).toContain("+ three");
+  });
+});
+
+describe("diffInline / wordDiffSegments", () => {
+  it("marks replace lines with word segments", () => {
+    const { lines } = diffInline("hello world", "hello forge");
+    expect(lines).toHaveLength(1);
+    expect(lines[0].kind).toBe("replace");
+    expect(lines[0].segments?.some((s) => s.type === "remove")).toBe(true);
+    expect(lines[0].segments?.some((s) => s.type === "add")).toBe(true);
+  });
+
+  it("diffs words inside a line", () => {
+    const segs = wordDiffSegments("one two three", "one TWO three");
+    expect(segs.some((s) => s.text === "two" && s.type === "remove")).toBe(
+      true,
+    );
+    expect(segs.some((s) => s.text === "TWO" && s.type === "add")).toBe(true);
   });
 });

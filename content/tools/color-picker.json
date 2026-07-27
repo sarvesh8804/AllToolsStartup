@@ -1,0 +1,27 @@
+{
+  "slug": "color-picker",
+  "name": "Color Picker",
+  "family": "tools",
+  "category": "Colors",
+  "status": "shipped",
+  "summary": "Pick colors with HEX, RGB, and HSL controls — copy CSS values instantly in your browser.",
+  "description": "Use a native color picker plus RGB and HSL sliders to explore a color. Copy HEX, rgb(), and hsl() values, and jump to complementary or analogous swatches. Everything runs locally.",
+  "keywords": ["color picker", "hex picker", "hsl picker", "rgb color", "css color"],
+  "relatedSlugs": ["hex-to-rgb", "color-contrast-checker", "css-gradient-generator"],
+  "faqs": [
+    {
+      "question": "Can I type a hex code?",
+      "answer": "Yes. Paste #rgb or #rrggbb in the HEX field; the sliders and preview update when the value is valid."
+    },
+    {
+      "question": "What are related colors?",
+      "answer": "Complementary is hue + 180°. Analogous swatches sit ±30° on the color wheel. Click a swatch to select it."
+    },
+    {
+      "question": "Is my color uploaded?",
+      "answer": "No. All conversion and preview happen entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "color-picker"
+}

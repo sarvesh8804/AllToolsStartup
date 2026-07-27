@@ -1,0 +1,38 @@
+{
+  "slug": "zero-width-character-detector",
+  "name": "Zero-Width Character Detector",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Find and strip invisible zero-width characters (ZWSP, ZWJ, BOM, soft hyphen, and more).",
+  "description": "Paste text to detect zero-width and other invisible Unicode characters. See highlighted markers, a match list with code points, and a cleaned copy with invisibles removed. Everything runs locally.",
+  "keywords": [
+    "zero width space",
+    "zwsp detector",
+    "invisible characters",
+    "bom remover",
+    "strip zero width"
+  ],
+  "relatedSlugs": [
+    "character-counter",
+    "word-counter",
+    "text-diff",
+    "html-entity-encode-decode"
+  ],
+  "faqs": [
+    {
+      "question": "Which characters are detected?",
+      "answer": "Common invisibles including U+200B ZWSP, ZWNJ, ZWJ, LRM/RLM, word joiner, BOM (U+FEFF), soft hyphen, and several invisible math operators."
+    },
+    {
+      "question": "What does Strip do?",
+      "answer": "It removes detected characters from the input so you can copy or keep editing a clean string."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. Scanning runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "zero-width-character-detector"
+}

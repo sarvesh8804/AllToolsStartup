@@ -1,0 +1,43 @@
+{
+  "slug": "gst-sales-tax-calculator",
+  "name": "GST / Sales Tax Calculator",
+  "family": "calculators",
+  "category": "Finance Calculators",
+  "status": "shipped",
+  "summary": "Add or extract GST / sales tax from an amount — exclusive and inclusive modes, locally.",
+  "description": "Enter an amount and tax rate to see net, tax, and gross totals. Switch between exclusive (add tax) and inclusive (extract tax) modes. Includes Indian GST slab presets (5%, 12%, 18%, 28%) and works for any sales-tax percentage.",
+  "keywords": [
+    "gst calculator",
+    "sales tax calculator",
+    "vat calculator",
+    "inclusive tax",
+    "exclusive tax",
+    "gst 18"
+  ],
+  "relatedSlugs": [
+    "percentage-calculator",
+    "tip-calculator",
+    "emi-loan-calculator",
+    "sip-calculator"
+  ],
+  "faqs": [
+    {
+      "question": "What is exclusive vs inclusive tax?",
+      "answer": "Exclusive means your amount is before tax and tax is added on top. Inclusive means the amount already includes tax, and the calculator backs out the net and tax portions."
+    },
+    {
+      "question": "Are the GST presets only for India?",
+      "answer": "The 5 / 12 / 18 / 28% buttons match common Indian GST slabs for convenience. You can type any rate for other sales-tax systems."
+    },
+    {
+      "question": "Is this tax advice?",
+      "answer": "No. It is an educational math tool. Confirm filings with a tax professional or official tables."
+    },
+    {
+      "question": "Is my data uploaded?",
+      "answer": "No. Calculations run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "gst-sales-tax-calculator"
+}

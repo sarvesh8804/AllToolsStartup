@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/urls";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,6 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://forge.tools"}/sitemap.xml`,
+    // Next.js emits a sitemap index when generateSitemaps() is used
+    sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

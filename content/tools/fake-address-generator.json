@@ -1,0 +1,27 @@
+{
+  "slug": "fake-address-generator",
+  "name": "Fake Address Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Generate synthetic street addresses for tests and mockups — locally in your browser.",
+  "description": "Create 1–100 fake addresses for US, Canada, UK, India, or Germany (or mixed). Use a seed for reproducible fixtures, copy formatted blocks or JSON. For development demos only — not real postal data.",
+  "keywords": ["fake address", "dummy address", "mock address", "test address generator", "synthetic address"],
+  "relatedSlugs": ["fake-user-json-generator", "fake-credit-card", "lorem-ipsum-generator"],
+  "faqs": [
+    {
+      "question": "Are these real addresses?",
+      "answer": "No. They are randomly composed placeholders for UI and API fixtures."
+    },
+    {
+      "question": "Can I reproduce the same list?",
+      "answer": "Yes. Enable a deterministic seed so the same options yield the same JSON."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "fake-address-generator"
+}

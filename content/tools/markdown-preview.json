@@ -7,7 +7,12 @@
   "summary": "Write Markdown and preview GitHub-flavored rendering live in your browser.",
   "description": "Edit Markdown on the left and see a live preview with GFM tables, task lists, strikethrough, and fenced code. Includes quick stats for words, headings, links, and code blocks.",
   "keywords": ["markdown", "markdown preview", "gfm", "md preview", "readme preview"],
-  "relatedSlugs": ["text-diff", "word-counter"],
+  "relatedSlugs": [
+    "markdown-to-html",
+    "text-diff",
+    "word-counter",
+    "html-formatter"
+  ],
   "faqs": [
     {
       "question": "Which Markdown flavor is used?",
@@ -19,7 +24,7 @@
     },
     {
       "question": "Can I export HTML?",
-      "answer": "Not yet. Copy the Markdown source for now; HTML export can come later."
+      "answer": "Yes — use the Markdown to HTML tool to convert source to HTML markup."
     }
   ],
   "privacyLocal": true,

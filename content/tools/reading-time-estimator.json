@@ -1,0 +1,38 @@
+{
+  "slug": "reading-time-estimator",
+  "name": "Reading Time Estimator",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Estimate how long text takes to read or speak — adjustable words-per-minute, plus word and sentence counts.",
+  "description": "Paste an article or draft to estimate silent reading time and speaking time. Tune reading and speaking WPM, and see words, sentences, paragraphs, and characters. Everything stays in your browser.",
+  "keywords": [
+    "reading time",
+    "reading time calculator",
+    "words per minute",
+    "speaking time",
+    "estimate read time"
+  ],
+  "relatedSlugs": [
+    "word-counter",
+    "character-counter",
+    "keyword-density-checker",
+    "lorem-ipsum-generator"
+  ],
+  "faqs": [
+    {
+      "question": "What WPM does it use?",
+      "answer": "Defaults are 200 words per minute for reading and 150 for speaking. Drag the sliders to match your audience."
+    },
+    {
+      "question": "How is time rounded?",
+      "answer": "Non-empty text rounds up to at least one minute for display, matching common blog “read time” conventions."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. Estimation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "reading-time-estimator"
+}

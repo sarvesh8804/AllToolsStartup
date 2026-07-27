@@ -34,6 +34,47 @@ describe("csvToJson", () => {
   it("rejects empty input", () => {
     expect(csvToJson("").ok).toBe(false);
   });
+
+  it("supports delimiter and array output", () => {
+    const result = csvToJson("a;b\n1;2", {
+      delimiter: ";",
+      headers: false,
+      output: "arrays",
+      inferTypes: true,
+    });
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.rows).toEqual([
+        ["a", "b"],
+        [1, 2],
+      ]);
+    }
+  });
+
+  it("can disable type inference", () => {
+    const result = csvToJson("n\n3", { inferTypes: false });
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.rows[0]).toEqual({ n: "3" });
+    }
+  });
+
+  it("skips empty rows when enabled", () => {
+    const result = csvToJson("a,b\n1,2\n\n3,4", { skipEmptyRows: true });
+    expect(result.ok).toBe(true);
+    if (result.ok) expect(result.rows).toHaveLength(2);
+  });
+
+  it("outputs objects without headers", () => {
+    const result = csvToJson("1,2\n3,4", {
+      headers: false,
+      output: "objects",
+    });
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.rows[0]).toEqual({ column_1: 1, column_2: 2 });
+    }
+  });
 });
 
 describe("jsonToCsv", () => {

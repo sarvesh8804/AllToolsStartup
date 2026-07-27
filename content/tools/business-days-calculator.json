@@ -1,0 +1,42 @@
+{
+  "slug": "business-days-calculator",
+  "name": "Business Days Calculator",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Count weekdays between dates or add business days — with holidays, locally.",
+  "description": "Calculate business days between two dates (inclusive or exclusive) or add/subtract N business days from a start date. Weekends (Sat/Sun) are skipped; add optional holiday dates. All math runs in your browser.",
+  "keywords": [
+    "business days calculator",
+    "working days",
+    "network days",
+    "add business days",
+    "weekdays between dates"
+  ],
+  "relatedSlugs": [
+    "date-difference-calculator",
+    "add-subtract-dates",
+    "age-calculator",
+    "meeting-time-planner"
+  ],
+  "faqs": [
+    {
+      "question": "What counts as a business day?",
+      "answer": "Monday–Friday, excluding any dates you list as holidays. Saturday and Sunday are skipped."
+    },
+    {
+      "question": "Inclusive vs exclusive?",
+      "answer": "Inclusive counts the start and end dates when they are business days (Excel NETWORKDAYS-style). Exclusive counts days after the start through the end."
+    },
+    {
+      "question": "Does adding N days include the start date?",
+      "answer": "No. Adding 1 business day from a Friday lands on the following Monday (or the next non-holiday weekday)."
+    },
+    {
+      "question": "Is my data uploaded?",
+      "answer": "No. Calculations run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "business-days-calculator"
+}

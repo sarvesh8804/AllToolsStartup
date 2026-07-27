@@ -1,0 +1,27 @@
+{
+  "slug": "readme-generator",
+  "name": "README Generator",
+  "family": "tools",
+  "category": "Markdown & Docs",
+  "status": "shipped",
+  "summary": "Scaffold a project README.md from title, features, install, and more — locally in your browser.",
+  "description": "Fill in project details, toggle sections, optionally paste badge markdown, and copy a clean README.md. Ideal for new repos and template docs. Nothing is uploaded.",
+  "keywords": ["readme generator", "readme.md", "markdown readme", "github readme", "project readme"],
+  "relatedSlugs": ["readme-badges-generator", "markdown-preview", "markdown-to-html"],
+  "faqs": [
+    {
+      "question": "Can I include badges?",
+      "answer": "Yes. Paste badge markdown into the badges field, or generate them with the Readme Badges Generator and paste the result."
+    },
+    {
+      "question": "Do I have to keep every section?",
+      "answer": "No. Toggle sections on or off; empty fields are also skipped."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "readme-generator"
+}

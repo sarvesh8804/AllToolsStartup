@@ -1,0 +1,38 @@
+{
+  "slug": "sha-512-hash",
+  "name": "SHA-512 Hash",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Compute a SHA-512 digest of any text in your browser — copy lowercase or uppercase hex.",
+  "description": "Hash UTF-8 text with SHA-512 (FIPS 180-4) entirely client-side. Toggle uppercase hex and copy the 128-character digest. No data leaves your device.",
+  "keywords": [
+    "sha512",
+    "sha-512 hash",
+    "sha512 generator",
+    "checksum sha512",
+    "fips 180-4"
+  ],
+  "relatedSlugs": [
+    "sha-256-hash",
+    "sha-1-hash",
+    "md5-hash-generator",
+    "file-checksum"
+  ],
+  "faqs": [
+    {
+      "question": "Is SHA-512 stronger than SHA-256?",
+      "answer": "SHA-512 produces a 512-bit digest and is in the same SHA-2 family. Choose based on protocol requirements; both are widely considered secure for integrity hashing."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. Hashing runs entirely in your browser."
+    },
+    {
+      "question": "What encoding is used?",
+      "answer": "Input is hashed as UTF-8 bytes."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "sha-512-hash"
+}

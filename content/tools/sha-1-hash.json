@@ -1,0 +1,27 @@
+{
+  "slug": "sha-1-hash",
+  "name": "SHA-1 Hash",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Compute a SHA-1 digest of text in your browser — for legacy checksums, not new security designs.",
+  "description": "Hash UTF-8 text with a pure SHA-1 implementation and copy the hex digest. SHA-1 is cryptographically broken for collision resistance; prefer SHA-256 for security-sensitive work. Nothing is uploaded.",
+  "keywords": ["sha1", "sha-1 hash", "sha1 checksum", "hash generator", "message digest"],
+  "relatedSlugs": ["sha-256-hash", "md5-hash-generator", "base64-encode-decode"],
+  "faqs": [
+    {
+      "question": "Is SHA-1 secure?",
+      "answer": "No for collision-resistant uses (signatures, certificates). It can still appear in legacy checksums. Use SHA-256 for new designs."
+    },
+    {
+      "question": "How is text encoded before hashing?",
+      "answer": "As UTF-8 bytes, matching common tooling."
+    },
+    {
+      "question": "Is my input uploaded?",
+      "answer": "No. Hashing runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "sha-1-hash"
+}

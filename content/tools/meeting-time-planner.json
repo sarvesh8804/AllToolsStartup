@@ -1,0 +1,27 @@
+{
+  "slug": "meeting-time-planner",
+  "name": "Meeting Time Planner",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Plan a meeting across multiple timezones with work-hour hints — locally in your browser.",
+  "description": "Set a host start time, duration, and participant timezones. See local start/end for everyone, flag who is outside a simple work-hour window, and jump to suggested slots on the same day where more people overlap. Runs entirely locally.",
+  "keywords": ["meeting planner", "timezone meeting", "world meeting time", "schedule across timezones", "multi timezone"],
+  "relatedSlugs": ["timezone-converter", "add-subtract-dates", "date-difference-calculator"],
+  "faqs": [
+    {
+      "question": "What do work hours mean?",
+      "answer": "A simple local hour range (default 9–17) used to hint whether the meeting sits inside typical daytime for each participant. It is not calendar-aware."
+    },
+    {
+      "question": "How do suggestions work?",
+      "answer": "On the host’s selected calendar day, the planner samples start times and ranks slots by how many participants fall inside the work-hour window."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Planning runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "meeting-time-planner"
+}

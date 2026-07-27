@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getAllPosts, getPost } from "@/lib/blog";
-import { createPageMetadata } from "@/lib/seo";
+import { articleJsonLd, createPageMetadata } from "@/lib/seo";
 import { blogPath } from "@/lib/urls";
 import { InternalLink } from "@/components/ui/InternalLink";
 
@@ -35,8 +35,19 @@ export default async function BlogPostPage({
   const post = getPost(slug);
   if (!post) notFound();
 
+  const schema = articleJsonLd({
+    title: post.title,
+    description: post.description,
+    path: blogPath(post.slug),
+    date: post.date,
+  });
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <p className="text-xs text-[var(--muted)]">{post.date}</p>
       <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl tracking-tight">
         {post.title}
@@ -46,8 +57,8 @@ export default async function BlogPostPage({
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
       </div>
       <p className="mt-12 text-sm text-[var(--muted)]">
-        Continue to <InternalLink href="/tools">tools</InternalLink> or{" "}
-        <InternalLink href="/">home</InternalLink>.
+        Continue to <InternalLink href="/tools">developer tools</InternalLink>{" "}
+        or <InternalLink href="/">home</InternalLink>.
       </p>
     </article>
   );

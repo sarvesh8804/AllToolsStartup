@@ -1,0 +1,37 @@
+{
+  "slug": "wifi-qr-generator",
+  "name": "WiFi QR Generator",
+  "family": "tools",
+  "category": "QR & Barcodes",
+  "status": "shipped",
+  "summary": "Create a Wi‑Fi login QR code (SSID, password, WPA/WEP/open) and download PNG or SVG.",
+  "description": "Build a standard WIFI: QR payload for WPA/WPA2, WEP, or open networks, including hidden SSIDs. Preview and download PNG/SVG. Generation runs entirely in your browser — credentials are not uploaded.",
+  "keywords": [
+    "wifi qr code",
+    "wifi qr generator",
+    "qr code wifi password",
+    "wpa qr",
+    "guest wifi qr"
+  ],
+  "relatedSlugs": [
+    "qr-code-generator",
+    "qr-code-reader",
+    "url-encode-decode"
+  ],
+  "faqs": [
+    {
+      "question": "Will phones recognize this QR?",
+      "answer": "Most modern iOS and Android cameras open a “Join network” prompt for WIFI: payloads."
+    },
+    {
+      "question": "Is my password uploaded?",
+      "answer": "No. The WIFI: string and QR image are built locally in your browser."
+    },
+    {
+      "question": "What about special characters in the SSID?",
+      "answer": "Characters like ; : , \" and \\ are escaped per the WIFI QR convention."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "wifi-qr-generator"
+}

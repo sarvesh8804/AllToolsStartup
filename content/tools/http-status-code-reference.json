@@ -1,0 +1,42 @@
+{
+  "slug": "http-status-code-reference",
+  "name": "HTTP Status Code Reference",
+  "family": "tools",
+  "category": "Networking & HTTP",
+  "status": "shipped",
+  "summary": "Searchable HTTP status codes — 1xx through 5xx with names, short explanations, and one-click copy.",
+  "description": "Browse and search standard HTTP response status codes from informational (1xx) through server errors (5xx). Filter by class, search by code or phrase, and copy “404 Not Found” style labels. Covers RFC 9110 plus common extensions like 429 and 451. Runs entirely in your browser.",
+  "keywords": [
+    "http status codes",
+    "http status code list",
+    "404 meaning",
+    "http response codes",
+    "status code reference"
+  ],
+  "relatedSlugs": [
+    "url-encode-decode",
+    "htaccess-redirect-generator",
+    "robots-txt-generator",
+    "json-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "Which status codes are included?",
+      "answer": "Common codes from RFC 9110 plus widely used extensions such as 418, 422, 429, 451, and several WebDAV statuses."
+    },
+    {
+      "question": "Does this call a live server?",
+      "answer": "No. It is a static reference. Nothing is requested from a remote API."
+    },
+    {
+      "question": "What gets copied?",
+      "answer": "Click a row to copy “CODE Name”, for example “404 Not Found”."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Search and copy run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "http-status-code-reference"
+}

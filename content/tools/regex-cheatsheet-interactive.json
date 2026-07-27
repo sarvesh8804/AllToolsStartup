@@ -1,0 +1,42 @@
+{
+  "slug": "regex-cheatsheet-interactive",
+  "name": "Regex Cheatsheet Interactive",
+  "family": "tools",
+  "category": "Regex & Text",
+  "status": "shipped",
+  "summary": "Browse and search JavaScript regex tokens — click to copy, then test in the Regex Tester.",
+  "description": "Interactive regular-expression cheatsheet for the JavaScript (ECMAScript) flavor: character classes, anchors, quantifiers, groups, lookaround, flags, and common recipes. Search and filter by category; click any token to copy.",
+  "keywords": [
+    "regex cheatsheet",
+    "regular expression reference",
+    "regex syntax",
+    "javascript regex",
+    "regexp guide"
+  ],
+  "relatedSlugs": [
+    "regex-tester",
+    "text-diff",
+    "word-counter",
+    "json-minifier"
+  ],
+  "faqs": [
+    {
+      "question": "Which regex flavor is this?",
+      "answer": "JavaScript / ECMAScript — the same engine used by Forge’s Regex Tester and your browser."
+    },
+    {
+      "question": "Can I try a pattern live?",
+      "answer": "Copy a token, then open the Regex Tester to match against sample text."
+    },
+    {
+      "question": "Are lookbehinds supported?",
+      "answer": "Yes in modern browsers. Older engines may lack lookbehind."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. The cheatsheet is static content in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "regex-cheatsheet-interactive"
+}

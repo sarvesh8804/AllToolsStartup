@@ -1,0 +1,27 @@
+{
+  "slug": "git-cheat-sheet-interactive",
+  "name": "Git Cheat Sheet Interactive",
+  "family": "tools",
+  "category": "Git & DevOps",
+  "status": "shipped",
+  "summary": "Searchable Git commands with one-click copy — setup, commit, branch, remote, and more.",
+  "description": "Browse common Git commands by category or search. Click any command to copy it. Covers setup, staging, branches, remotes, history, undo, merge, and rebase. Runs entirely locally.",
+  "keywords": ["git cheat sheet", "git commands", "git reference", "git help", "git cheat sheet interactive"],
+  "relatedSlugs": ["gitignore-generator", "regex-cheatsheet-interactive", "readme-generator"],
+  "faqs": [
+    {
+      "question": "Does this run Git for me?",
+      "answer": "No. It is a reference sheet. Copy commands into your own terminal."
+    },
+    {
+      "question": "Are destructive commands marked?",
+      "answer": "Descriptions call out destructive actions such as restore, clean, and reset. Still double-check before running."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. The cheat sheet is bundled and searched in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "git-cheat-sheet-interactive"
+}

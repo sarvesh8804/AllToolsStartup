@@ -1,0 +1,27 @@
+{
+  "slug": "fake-user-json-generator",
+  "name": "Fake User JSON Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Generate mock user JSON for fixtures and API stubs — locally in your browser.",
+  "description": "Create 1–100 fake users with id, username, email, name, and phone. Enable rich mode for address, company, and job title. Use a seed for reproducible fixtures, then copy the JSON array.",
+  "keywords": ["fake user", "mock user json", "dummy users", "test data", "faker"],
+  "relatedSlugs": ["fake-credit-card", "uuid-v4-generator", "lorem-ipsum-generator"],
+  "faqs": [
+    {
+      "question": "Are these real people?",
+      "answer": "No. Names and emails are synthetic placeholders for development and demos only."
+    },
+    {
+      "question": "Why use a seed?",
+      "answer": "A fixed seed makes the same options produce identical JSON, which helps stable tests and screenshots."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "fake-user-json-generator"
+}

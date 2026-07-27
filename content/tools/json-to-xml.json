@@ -1,0 +1,27 @@
+{
+  "slug": "json-to-xml",
+  "name": "JSON to XML",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Convert JSON to XML with attributes via @keys — locally in your browser.",
+  "description": "Paste JSON and get XML. Single-key objects become the root element; otherwise a configurable root wraps the payload. Use @attr for attributes and #text for text nodes. Runs entirely locally.",
+  "keywords": ["json to xml", "convert json xml", "json xml converter", "xml from json"],
+  "relatedSlugs": ["xml-to-json", "json-to-yaml", "json-formatter"],
+  "faqs": [
+    {
+      "question": "How do I set XML attributes?",
+      "answer": "Use keys that start with @, for example \"@id\": \"1\" becomes id=\"1\" on the element."
+    },
+    {
+      "question": "What about arrays?",
+      "answer": "Array items become repeated elements with the same tag name."
+    },
+    {
+      "question": "Is my data uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-to-xml"
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "world-clock",
+  "name": "World Clock",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Live clocks for cities around the world — add zones, pause, and compare offsets locally.",
+  "description": "Watch the current time update every second across UTC and major cities. Add or remove timezones from a curated list, pause the tick, and jump to the Timezone Converter for one-off conversions. Nothing is uploaded.",
+  "keywords": ["world clock", "time zones clock", "city time", "utc clock", "multiple timezones"],
+  "relatedSlugs": ["timezone-converter", "meeting-time-planner", "unix-timestamp-converter"],
+  "faqs": [
+    {
+      "question": "How often does it update?",
+      "answer": "Once per second while running. Use Pause to freeze the display."
+    },
+    {
+      "question": "Which cities are available?",
+      "answer": "A curated set of IANA timezones (New York, London, Tokyo, and more). You can mix any of them on the board."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Times are computed in your browser with the Intl API."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "world-clock"
+}

@@ -7,7 +7,13 @@
   "summary": "Beautify messy HTML with consistent indentation — entirely in your browser.",
   "description": "Paste HTML to pretty-print nested tags with configurable indent. Optionally minify back into the input. Formatting runs locally with no upload.",
   "keywords": ["html formatter", "html beautifier", "pretty print html", "format html"],
-  "relatedSlugs": ["css-formatter", "css-minifier"],
+  "relatedSlugs": [
+    "css-formatter",
+    "css-minifier",
+    "meta-tags-preview",
+    "javascript-beautifier",
+    "markdown-to-html"
+  ],
   "faqs": [
     {
       "question": "Does it validate HTML?",

@@ -1,0 +1,38 @@
+{
+  "slug": "css-border-radius-generator",
+  "name": "CSS Border Radius Generator",
+  "family": "tools",
+  "category": "CSS & Design Dev",
+  "status": "shipped",
+  "summary": "Build border-radius CSS with linked or per-corner controls, units, and optional elliptical radii — live preview.",
+  "description": "Tune corner radii with linked or individual sliders, switch between px / % / rem, and optionally set elliptical (horizontal / vertical) radii. Copy a ready border-radius declaration. Preview updates live in your browser.",
+  "keywords": [
+    "border radius generator",
+    "css border-radius",
+    "rounded corners css",
+    "elliptical border radius",
+    "corner radius"
+  ],
+  "relatedSlugs": [
+    "css-box-shadow-generator",
+    "css-gradient-generator",
+    "glassmorphism-generator",
+    "css-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "What does Link corners do?",
+      "answer": "One slider sets all four corners to the same radius. Uncheck it to control each corner separately."
+    },
+    {
+      "question": "What is elliptical mode?",
+      "answer": "It outputs the two-radius form (horizontal / vertical), useful for pill-like or oval corners."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "css-border-radius-generator"
+}

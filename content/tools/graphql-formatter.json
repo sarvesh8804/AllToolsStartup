@@ -1,0 +1,38 @@
+{
+  "slug": "graphql-formatter",
+  "name": "GraphQL Formatter",
+  "family": "tools",
+  "category": "Code Formatters",
+  "status": "shipped",
+  "summary": "Pretty-print or minify GraphQL queries and schemas locally — nested selection sets, arguments, and strings.",
+  "description": "Paste a GraphQL operation or schema document to format with indentation, or minify to a single line. Strings and comments are preserved. Lightweight formatter — not a full GraphQL parser or validator.",
+  "keywords": [
+    "graphql formatter",
+    "graphql beautifier",
+    "pretty print graphql",
+    "minify graphql",
+    "graphql query format"
+  ],
+  "relatedSlugs": [
+    "json-formatter",
+    "javascript-beautifier",
+    "sql-formatter",
+    "yaml-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "Does this validate against a schema?",
+      "answer": "No. It only formats document structure. Invalid GraphQL may still pretty-print imperfectly."
+    },
+    {
+      "question": "Are string literals safe?",
+      "answer": "Yes. Quoted strings and block strings are protected so braces inside them are not treated as structure."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Formatting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "graphql-formatter"
+}

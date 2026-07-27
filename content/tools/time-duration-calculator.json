@@ -1,0 +1,27 @@
+{
+  "slug": "time-duration-calculator",
+  "name": "Time Duration Calculator",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Measure the duration between two datetimes or convert days, hours, minutes, and seconds — locally.",
+  "description": "Enter a start and end datetime to get a breakdown in days, hours, minutes, and seconds. Or build a duration from units and see equivalent values in weeks through milliseconds. Runs entirely in your browser.",
+  "keywords": ["duration calculator", "time between", "hours minutes seconds", "time converter", "elapsed time"],
+  "relatedSlugs": ["date-difference-calculator", "add-subtract-dates", "unix-timestamp-converter"],
+  "faqs": [
+    {
+      "question": "Does it use my local timezone?",
+      "answer": "Yes. Datetime fields are interpreted as local wall time in your browser."
+    },
+    {
+      "question": "What if end is before start?",
+      "answer": "The duration is shown as negative so you can see the direction of the gap."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Calculation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "time-duration-calculator"
+}

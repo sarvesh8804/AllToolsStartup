@@ -1,0 +1,27 @@
+{
+  "slug": "robots-txt-generator",
+  "name": "robots.txt Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Build a robots.txt with Allow/Disallow paths and an optional Sitemap line — locally.",
+  "description": "Set a User-agent, list Allow and Disallow paths, add a Sitemap URL, and optionally Crawl-delay. Copy the robots.txt for static hosting. Nothing is crawled or uploaded.",
+  "keywords": ["robots.txt", "robots txt generator", "disallow", "sitemap robots", "crawler rules"],
+  "relatedSlugs": ["sitemap-xml-generator", "htaccess-redirect-generator", "meta-tags-preview"],
+  "faqs": [
+    {
+      "question": "Does robots.txt hide private pages?",
+      "answer": "No. It asks well-behaved crawlers not to fetch paths. It is not access control."
+    },
+    {
+      "question": "Is Crawl-delay standard?",
+      "answer": "It is supported by some crawlers but not part of the original robots exclusion standard. Use sparingly."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. The file is generated in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "robots-txt-generator"
+}

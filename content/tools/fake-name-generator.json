@@ -1,0 +1,27 @@
+{
+  "slug": "fake-name-generator",
+  "name": "Fake Name Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Generate synthetic first/last names for fixtures and mockups — locally in your browser.",
+  "description": "Create 1–100 fake names with initials and optional usernames. Choose western-leaning or mixed name pools, use a seed for reproducible lists, and copy plain names or JSON. For development demos only.",
+  "keywords": ["fake name", "random name generator", "dummy names", "mock names", "test names"],
+  "relatedSlugs": ["fake-user-json-generator", "fake-address-generator", "lorem-ipsum-generator"],
+  "faqs": [
+    {
+      "question": "Are these real people?",
+      "answer": "No. Names are randomly combined from curated lists for placeholders and tests."
+    },
+    {
+      "question": "Can I get the same list again?",
+      "answer": "Yes. Enable a deterministic seed so identical options produce identical output."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "fake-name-generator"
+}

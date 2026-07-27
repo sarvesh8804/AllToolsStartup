@@ -20,14 +20,23 @@ export type DiffResult = {
   stats: DiffStats;
 };
 
+export type InlineSeg = {
+  text: string;
+  type: "equal" | "add" | "remove";
+};
+
+export type InlineDiffLine = {
+  kind: "equal" | "add" | "remove" | "replace";
+  leftNumber: number | null;
+  rightNumber: number | null;
+  /** Full line text for equal/add/remove; for replace, joined display. */
+  text: string;
+  segments?: InlineSeg[];
+};
+
 function splitLines(text: string): string[] {
   if (text.length === 0) return [];
-  // Keep a trailing empty line only if the input ends with a newline? Standard: split on \n
-  const lines = text.split(/\r\n|\n|\r/);
-  if (text.endsWith("\n") || text.endsWith("\r")) {
-    // split already yields trailing "" — keep it as an empty line marker only if meaningful
-  }
-  return lines;
+  return text.split(/\r\n|\n|\r/);
 }
 
 /** LCS lengths table for two string arrays. */
@@ -123,6 +132,22 @@ function toRows(ops: RawOp[]): DiffRow[] {
   return rows;
 }
 
+function tokenizeWords(line: string): string[] {
+  return line.match(/\s+|[^\s]+/g) ?? [];
+}
+
+/** Word-level segments for a changed line pair. */
+export function wordDiffSegments(left: string, right: string): InlineSeg[] {
+  const a = tokenizeWords(left);
+  const b = tokenizeWords(right);
+  const dp = lcsTable(a, b);
+  const ops = backtrack(a, b, dp);
+  return ops.map((op) => ({
+    text: op.text,
+    type: op.type === "equal" ? "equal" : op.type === "add" ? "add" : "remove",
+  }));
+}
+
 export function diffLines(left: string, right: string): DiffResult {
   const a = splitLines(left);
   const b = splitLines(right);
@@ -140,6 +165,60 @@ export function diffLines(left: string, right: string): DiffResult {
   }
 
   return { rows, stats: { additions, deletions, unchanged } };
+}
+
+/** Single-column inline view with word highlights on replacements. */
+export function diffInline(
+  left: string,
+  right: string,
+): {
+  lines: InlineDiffLine[];
+  stats: DiffStats;
+} {
+  const { rows, stats } = diffLines(left, right);
+  const lines: InlineDiffLine[] = [];
+
+  for (const row of rows) {
+    if (row.left.type === "equal") {
+      lines.push({
+        kind: "equal",
+        leftNumber: row.left.lineNumber,
+        rightNumber: row.right.lineNumber,
+        text: row.left.text,
+      });
+      continue;
+    }
+
+    if (row.left.type === "remove" && row.right.type === "add") {
+      lines.push({
+        kind: "replace",
+        leftNumber: row.left.lineNumber,
+        rightNumber: row.right.lineNumber,
+        text: row.right.text,
+        segments: wordDiffSegments(row.left.text, row.right.text),
+      });
+      continue;
+    }
+
+    if (row.left.type === "remove") {
+      lines.push({
+        kind: "remove",
+        leftNumber: row.left.lineNumber,
+        rightNumber: null,
+        text: row.left.text,
+      });
+    }
+    if (row.right.type === "add") {
+      lines.push({
+        kind: "add",
+        leftNumber: null,
+        rightNumber: row.right.lineNumber,
+        text: row.right.text,
+      });
+    }
+  }
+
+  return { lines, stats };
 }
 
 export function unifiedDiff(left: string, right: string): string {

@@ -1,0 +1,42 @@
+{
+  "slug": "csv-viewer-table",
+  "name": "CSV Viewer / Table",
+  "family": "tools",
+  "category": "CSV & Spreadsheets",
+  "status": "shipped",
+  "summary": "Paste CSV and browse it as a sortable, filterable table — entirely in your browser.",
+  "description": "Open CSV as an interactive table with delimiter options (comma, semicolon, tab, pipe), optional header row, cell search, and column sorting (numeric when possible). Pair with CSV to JSON when you need a conversion.",
+  "keywords": [
+    "csv viewer",
+    "csv table",
+    "open csv online",
+    "csv preview",
+    "sortable csv"
+  ],
+  "relatedSlugs": [
+    "csv-to-json",
+    "json-to-csv",
+    "csv-to-excel-client-side",
+    "excel-to-csv"
+  ],
+  "faqs": [
+    {
+      "question": "Are quoted commas supported?",
+      "answer": "Yes. Fields wrapped in double quotes can contain commas; escaped quotes use \"\"."
+    },
+    {
+      "question": "Can I sort columns?",
+      "answer": "Click a column header to sort ascending/descending. Purely numeric columns sort numerically."
+    },
+    {
+      "question": "Is my CSV uploaded?",
+      "answer": "No. Parsing and filtering run entirely in your browser."
+    },
+    {
+      "question": "Need JSON instead?",
+      "answer": "Use the CSV to JSON tool to convert the same data."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "csv-viewer-table"
+}

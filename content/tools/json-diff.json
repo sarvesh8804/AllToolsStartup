@@ -1,0 +1,38 @@
+{
+  "slug": "json-diff",
+  "name": "JSON Diff",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Compare two JSON documents structurally — see added, removed, and changed paths, plus a text unified view.",
+  "description": "Paste original and modified JSON to get path-level differences (key order ignored). Switch to a sorted-key text unified diff when you want a classic patch view. Parsing and diffing stay in your browser.",
+  "keywords": [
+    "json diff",
+    "compare json",
+    "json difference",
+    "json patch view",
+    "structural json diff"
+  ],
+  "relatedSlugs": [
+    "json-formatter",
+    "json-validator",
+    "text-diff",
+    "json-to-yaml"
+  ],
+  "faqs": [
+    {
+      "question": "Does key order matter?",
+      "answer": "No for the structural view. Objects with the same keys and values are treated as equal even if property order differs."
+    },
+    {
+      "question": "How are arrays compared?",
+      "answer": "By index. Reordered items show as changes at those indexes rather than as a move."
+    },
+    {
+      "question": "Is my JSON uploaded?",
+      "answer": "No. Diffing runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-diff"
+}

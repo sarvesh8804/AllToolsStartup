@@ -7,7 +7,15 @@
   "summary": "Beautify, format, and minify JSON entirely in your browser.",
   "description": "Paste messy JSON and get a clean, indented result instantly. Forge formats and minifies JSON locally—nothing is uploaded to a server.",
   "keywords": ["json", "formatter", "beautify", "pretty print", "minify"],
-  "relatedSlugs": ["json-validator"],
+  "relatedSlugs": [
+    "json-validator",
+    "json-minifier",
+    "json-to-yaml",
+    "yaml-to-json",
+    "json-to-csv",
+    "csv-to-json",
+    "jwt-decoder"
+  ],
   "faqs": [
     {
       "question": "Does Forge upload my JSON?",
@@ -15,7 +23,7 @@
     },
     {
       "question": "Can I minify JSON too?",
-      "answer": "Yes. Use Minify or set Indent to Minified to remove whitespace."
+      "answer": "Yes — use Minify here, Indent → Minified, or the dedicated JSON Minifier tool."
     },
     {
       "question": "What if my JSON is invalid?",

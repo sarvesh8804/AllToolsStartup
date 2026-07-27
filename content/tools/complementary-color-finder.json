@@ -1,0 +1,39 @@
+{
+  "slug": "complementary-color-finder",
+  "name": "Complementary Color Finder",
+  "family": "tools",
+  "category": "Colors",
+  "status": "shipped",
+  "summary": "Find the complementary color for any hex or RGB — plus split-complementary, analogous, and triadic harmonies.",
+  "description": "Pick or paste a base color to get its complementary (hue + 180°) and related harmony swatches: split-complementary, analogous, and triadic. Copy hex values instantly. Everything runs locally.",
+  "keywords": [
+    "complementary color",
+    "color harmony",
+    "opposite color",
+    "split complementary",
+    "triadic colors"
+  ],
+  "relatedSlugs": [
+    "hex-to-rgb",
+    "rgb-to-hex",
+    "color-contrast-checker",
+    "color-picker",
+    "palette-from-image"
+  ],
+  "faqs": [
+    {
+      "question": "How is complementary calculated?",
+      "answer": "The hue is rotated 180° in HSL while keeping saturation and lightness the same."
+    },
+    {
+      "question": "What else is shown?",
+      "answer": "Split-complementary (±150/210°), analogous (±30°), and triadic (+120/+240°) swatches for quick palette ideas."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Color math runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "complementary-color-finder"
+}

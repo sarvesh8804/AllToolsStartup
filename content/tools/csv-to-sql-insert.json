@@ -1,0 +1,42 @@
+{
+  "slug": "csv-to-sql-insert",
+  "name": "CSV to SQL INSERT",
+  "family": "tools",
+  "category": "CSV & Spreadsheets",
+  "status": "shipped",
+  "summary": "Turn CSV into SQL INSERT statements — dialects, batches, type inference, local-only.",
+  "description": "Paste CSV and generate INSERT INTO statements. Choose table name, identifier quoting (PostgreSQL, MySQL, SQL Server, or unquoted), delimiter, batch size for multi-row VALUES, type inference, and empty-as-NULL. Conversion runs entirely in your browser.",
+  "keywords": [
+    "csv to sql",
+    "csv to insert",
+    "generate insert statements",
+    "csv sql converter",
+    "import csv sql"
+  ],
+  "relatedSlugs": [
+    "csv-to-json",
+    "json-to-csv",
+    "csv-viewer-table",
+    "sql-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "Which SQL dialects are supported?",
+      "answer": "Identifier quoting for PostgreSQL/SQLite (double quotes), MySQL (backticks), SQL Server (brackets), or sanitized unquoted names. Values use standard single-quoted strings."
+    },
+    {
+      "question": "What does rows per INSERT do?",
+      "answer": "1 emits one INSERT per CSV row. Higher values pack multiple rows into a single multi-row VALUES clause."
+    },
+    {
+      "question": "How are numbers and booleans handled?",
+      "answer": "With type inference on, bare numbers stay numeric and true/false become TRUE/FALSE. Turn inference off to quote everything as strings."
+    },
+    {
+      "question": "Is my CSV uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "csv-to-sql-insert"
+}

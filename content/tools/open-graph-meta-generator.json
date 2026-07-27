@@ -1,0 +1,42 @@
+{
+  "slug": "open-graph-meta-generator",
+  "name": "Open Graph Meta Generator",
+  "family": "tools",
+  "category": "Web & HTML",
+  "status": "shipped",
+  "summary": "Generate Open Graph and Twitter Card meta tags with a live social-card preview.",
+  "description": "Fill in title, description, URL, image, type, and Twitter fields to get copy-ready og:* and twitter:* HTML. Includes a simple large-image card preview and validation tips. Runs locally in your browser.",
+  "keywords": [
+    "open graph generator",
+    "og tags",
+    "twitter card meta",
+    "social meta tags",
+    "og:image"
+  ],
+  "relatedSlugs": [
+    "meta-tags-preview",
+    "html-formatter",
+    "slug-generator",
+    "favicon-generator-from-image"
+  ],
+  "faqs": [
+    {
+      "question": "What tags are generated?",
+      "answer": "og:title, og:description, og:type, og:url, og:site_name, og:locale, og:image (+ alt), plus twitter:card/title/description/image/site."
+    },
+    {
+      "question": "Why absolute image URLs?",
+      "answer": "Most social scrapers require a publicly reachable absolute HTTPS URL for og:image."
+    },
+    {
+      "question": "Does this fetch my page?",
+      "answer": "No. You paste values; Forge does not crawl URLs."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Everything runs in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "open-graph-meta-generator"
+}

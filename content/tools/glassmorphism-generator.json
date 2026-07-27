@@ -1,0 +1,38 @@
+{
+  "slug": "glassmorphism-generator",
+  "name": "Glassmorphism Generator",
+  "family": "tools",
+  "category": "CSS & Design Dev",
+  "status": "shipped",
+  "summary": "Tune frosted-glass CSS — blur, opacity, border, radius — with a live preview and copy-ready rule.",
+  "description": "Design a glassmorphism panel with backdrop-filter blur, translucent fill, border, radius, and optional shadow. Preview on a gradient background and copy a .glass CSS rule. Runs entirely in your browser.",
+  "keywords": [
+    "glassmorphism generator",
+    "frosted glass css",
+    "backdrop-filter",
+    "glass css",
+    "glassmorphism"
+  ],
+  "relatedSlugs": [
+    "css-box-shadow-generator",
+    "css-gradient-generator",
+    "css-flexbox-playground",
+    "css-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "Why include -webkit-backdrop-filter?",
+      "answer": "Safari still needs the -webkit- prefix for backdrop-filter in many versions."
+    },
+    {
+      "question": "Does the preview match production?",
+      "answer": "It uses the same CSS properties. Some browsers disable backdrop-filter behind certain stacking contexts."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "glassmorphism-generator"
+}

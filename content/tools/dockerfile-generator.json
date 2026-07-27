@@ -1,0 +1,38 @@
+{
+  "slug": "dockerfile-generator",
+  "name": "Dockerfile Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Generate starter Dockerfiles for Node, Next.js, Python, Go, and static nginx — tweak port, tags, and users.",
+  "description": "Pick a stack template and customize runtime tags, ports, workdirs, start commands, non-root users, and multi-stage builds. Copy a ready-to-edit Dockerfile. Everything runs locally.",
+  "keywords": [
+    "dockerfile generator",
+    "docker template",
+    "next.js dockerfile",
+    "node dockerfile",
+    "docker multi-stage"
+  ],
+  "relatedSlugs": [
+    "gitignore-generator",
+    "htaccess-redirect-generator",
+    "robots-txt-generator",
+    "git-cheat-sheet-interactive"
+  ],
+  "faqs": [
+    {
+      "question": "Are these production-ready images?",
+      "answer": "They are curated starters for common stacks. Review security, caching layers, and your app’s start path before shipping."
+    },
+    {
+      "question": "Does Next.js need special config?",
+      "answer": "The Next.js template expects next.config output: 'standalone' so the runner stage can copy .next/standalone."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "dockerfile-generator"
+}

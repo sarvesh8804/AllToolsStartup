@@ -4,14 +4,30 @@
   "family": "tools",
   "category": "Regex & Text",
   "status": "shipped",
-  "summary": "Compare two texts side-by-side and highlight additions and deletions — entirely in your browser.",
-  "description": "Paste original and modified text to see a line-based side-by-side diff with counts for additions, deletions, and unchanged lines. Export a unified diff to the clipboard. Nothing leaves your device.",
-  "keywords": ["diff", "text diff", "compare text", "side by side diff", "unified diff"],
-  "relatedSlugs": ["markdown-preview", "word-counter"],
+  "summary": "Compare two texts with inline word highlights or side-by-side lines — entirely in your browser.",
+  "description": "Paste original and modified text to see additions, deletions, and unchanged lines. Switch between inline (word-level highlights on changed lines) and classic side-by-side views. Export a unified diff to the clipboard.",
+  "keywords": [
+    "diff",
+    "text diff",
+    "inline diff",
+    "compare text",
+    "side by side diff",
+    "unified diff"
+  ],
+  "relatedSlugs": [
+    "markdown-preview",
+    "word-counter",
+    "regex-tester",
+    "character-counter"
+  ],
   "faqs": [
     {
+      "question": "Inline vs side-by-side?",
+      "answer": "Inline shows a single stream with +/-/~ markers and word-level highlights on replaced lines. Side-by-side shows original and modified columns."
+    },
+    {
       "question": "Is this character-level or line-level?",
-      "answer": "Line-level. Each changed line is highlighted as a deletion on the left and/or addition on the right."
+      "answer": "Matching is line-level. Replaced lines also get a word-level highlight pass in inline mode."
     },
     {
       "question": "Does my text get uploaded?",

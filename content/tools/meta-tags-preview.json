@@ -1,0 +1,42 @@
+{
+  "slug": "meta-tags-preview",
+  "name": "Meta Tags Preview (SERP)",
+  "family": "tools",
+  "category": "Web & HTML",
+  "status": "shipped",
+  "summary": "Preview how a title and meta description may look in Google search results — locally.",
+  "description": "Enter a page title, meta description, and URL to see a Google-style SERP snippet with character counts, truncation heuristics, and copy-ready HTML for title, description, canonical, and Open Graph tags. Planning aid only — not a live ranking check.",
+  "keywords": [
+    "meta tags preview",
+    "serp preview",
+    "meta description",
+    "title tag",
+    "google snippet"
+  ],
+  "relatedSlugs": [
+    "html-formatter",
+    "open-graph-meta-generator",
+    "slug-generator",
+    "qr-code-generator"
+  ],
+  "faqs": [
+    {
+      "question": "Are the character limits exact?",
+      "answer": "No. Google truncates by pixel width and may rewrite snippets. Forge uses common ~60 / ~155 character planning heuristics."
+    },
+    {
+      "question": "Does this check my live page?",
+      "answer": "No. Paste draft copy to preview. It does not crawl URLs."
+    },
+    {
+      "question": "What HTML is generated?",
+      "answer": "title, meta description, canonical link, and basic og:title / og:description / og:url tags."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Everything runs in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "meta-tags-preview"
+}

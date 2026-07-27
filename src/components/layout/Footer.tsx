@@ -11,8 +11,8 @@ export function Footer() {
             {SITE_NAME}
           </p>
           <p className="mt-2 max-w-sm text-sm text-[var(--muted)]">
-            {SITE_TAGLINE} Browser-first utilities. No account. No uploads when
-            we can help it.
+            {SITE_TAGLINE}. Browser-first. No account. No uploads when we can
+            help it.
           </p>
         </div>
 

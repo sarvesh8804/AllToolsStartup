@@ -1,0 +1,38 @@
+{
+  "slug": "fake-credit-card",
+  "name": "Fake Credit Card (Test Numbers)",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Generate Luhn-valid test card numbers for payment sandboxes — not real cards.",
+  "description": "Create Visa, Mastercard, Amex, or Discover test PANs with expiry and CVV for UI and sandbox testing. Includes known Stripe-style fixtures. Numbers are generated locally and are for testing only — never use for real charges.",
+  "keywords": [
+    "fake credit card",
+    "test card number",
+    "luhn generator",
+    "stripe test card",
+    "sandbox credit card"
+  ],
+  "relatedSlugs": [
+    "random-password-generator",
+    "uuid-v4-generator",
+    "lorem-ipsum-generator",
+    "open-graph-meta-generator"
+  ],
+  "faqs": [
+    {
+      "question": "Are these real credit cards?",
+      "answer": "No. They only satisfy the Luhn checksum for sandbox/UI testing. They cannot authorize real purchases."
+    },
+    {
+      "question": "Will they work with Stripe?",
+      "answer": "Use “known sandbox number” for Stripe’s documented test PANs (e.g. 4242…). Random Luhn-valid numbers may still be declined by gateways that only accept their published fixtures."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "fake-credit-card"
+}

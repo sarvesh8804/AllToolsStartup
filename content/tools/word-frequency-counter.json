@@ -1,0 +1,38 @@
+{
+  "slug": "word-frequency-counter",
+  "name": "Word Frequency Counter",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Count how often each word appears, with ranks, percentages, and CSV export — in your browser.",
+  "description": "Paste text to see a ranked word-frequency table. Toggle case sensitivity, stop-word filtering, minimum length, sort order, and top-N. Copy results as CSV. Complements the Keyword Density Checker with a general-purpose frequency list.",
+  "keywords": [
+    "word frequency",
+    "word count frequency",
+    "most common words",
+    "word frequency counter",
+    "term frequency"
+  ],
+  "relatedSlugs": [
+    "keyword-density-checker",
+    "word-counter",
+    "line-counter",
+    "character-counter"
+  ],
+  "faqs": [
+    {
+      "question": "How is this different from Keyword Density?",
+      "answer": "Keyword Density is SEO-oriented (density %, focus keywords). Word Frequency is a general ranked list of every word with counts and CSV export."
+    },
+    {
+      "question": "What counts as a word?",
+      "answer": "Sequences of letters, digits, apostrophes, and hyphens (e.g. don’t, well-known)."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. Counting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "word-frequency-counter"
+}

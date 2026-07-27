@@ -16,17 +16,17 @@
 
 | Field | Value |
 |---|---|
-| **Last completed phase** | `P030` |
-| **Next phase to do** | `P031` |
+| **Last completed phase** | `P079` |
+| **Next phase to do** | `P080` |
 | **Production live?** | Ready (deploy on push / Vercel) |
 | **Production URL** | — _(set after first Vercel deploy)_ |
 | **Foundation done** | 12 / 12 |
-| **Tool phases done** | 30 / 472 |
-| **Tools shipped** | 53 / 755 |
+| **Tool phases done** | 79 / 472 |
+| **Tools shipped** | 144 / 755 |
 | **Hub phases done** | 0 / 50 |
-| **SEO phases done** | 0 / 94 |
+| **SEO phases done** | 1 / 94 _(platform SEO pass after P030)_ |
 | **Monetization phases done** | 0 / 15 |
-| **Last updated** | 2026-07-26 |
+| **Last updated** | 2026-07-27 |
 
 ### Progress bar (manual)
 
@@ -60,6 +60,56 @@ Newest at top. One line per completed phase.
 
 | Date | Phase | Notes / commit / URL |
 |---|---|---|
+| 2026-07-27 | `P079` | Word Frequency Counter + HTML Table Generator on `/tools` + tests |
+| 2026-07-27 | `P078` | Dummy Text Generator + Invisible Character Remover + Line Counter on `/tools` + tests |
+| 2026-07-27 | `P077` | Regex Explainer (static rules) on `/tools` + tests |
+| 2026-07-27 | `P076` | Find & Replace Batch on `/tools` + tests |
+| 2026-07-27 | `P075` | Mermaid Live Editor (embed) on `/tools` + tests |
+| 2026-07-27 | `P074` | Image to Base64 on `/image` + tests |
+| 2026-07-27 | `P073` | UUID Bulk Generator + Gitignore Builder (advanced) on `/tools` + tests |
+| 2026-07-27 | `P072` | SHA-512 Hash + Twitter Card Meta Generator on `/tools` + tests |
+| 2026-07-27 | `P071` | Week Number Calculator + Base64 URL-safe on `/tools` + tests |
+| 2026-07-27 | `P070` | SQL Minifier + Complementary Color Finder on `/tools` + tests |
+| 2026-07-27 | `P069` | CSV Column Splitter + GraphQL Formatter on `/tools` + tests |
+| 2026-07-27 | `P068` | Zero-Width Character Detector + CSS Border Radius Generator on `/tools` + tests |
+| 2026-07-27 | `P067` | HTML to Markdown + Reading Time Estimator on `/tools` + tests |
+| 2026-07-27 | `P066` | Dockerfile Generator + JSON Diff on `/tools` + tests |
+| 2026-07-27 | `P065` | JWT Debugger with Claims Explain + Passphrase Generator on `/tools` + tests |
+| 2026-07-27 | `P064` | Countdown Timer Builder + File Checksum on `/tools` + tests |
+| 2026-07-27 | `P063` | SVG Optimizer (SVGO browser) on `/tools` + tests |
+| 2026-07-27 | `P062` | CSV to SQL INSERT on `/tools` + tests |
+| 2026-07-27 | `P061` | vCard QR Generator + Glassmorphism Generator on `/tools` + tests |
+| 2026-07-27 | `P060` | Business Days Calculator + JSON to TypeScript Interface on `/tools` + tests |
+| 2026-07-27 | `P059` | QR Code Reader + WiFi QR Generator on `/tools` + tests |
+| 2026-07-27 | `P058` | CSS Grid Playground + Palette from Image on `/tools` + tests |
+| 2026-07-27 | `P057` | YAML Formatter + CSS Flexbox Playground on `/tools` + tests |
+| 2026-07-27 | `P056` | Sort Lines + XML Formatter on `/tools` + tests |
+| 2026-07-27 | `P055` | HTTP Status Code Reference + Remove Duplicate Lines on `/tools` + tests |
+| 2026-07-27 | `P054` | JSON to XML + XML to JSON on `/tools` + tests |
+| 2026-07-27 | `P053` | htaccess Redirect Generator + robots.txt Generator on `/tools` + tests |
+| 2026-07-27 | `P052` | Fake Email + License Text + Sitemap XML generators on `/tools` + tests |
+| 2026-07-27 | `P051` | HTML Entity Encode / Decode + SHA-1 Hash on `/tools` + tests |
+| 2026-07-27 | `P050` | Time Duration Calculator + World Clock on `/tools` + tests |
+| 2026-07-27 | `P049` | Add / Subtract Dates + Meeting Time Planner on `/tools` + tests |
+| 2026-07-27 | `P048` | Git Command Explorer + HTML Minifier on `/tools` + tests |
+| 2026-07-27 | `P047` | Fake Name Generator + Git Cheat Sheet Interactive on `/tools` + tests |
+| 2026-07-27 | `P046` | Pomodoro Timer + Fake Address Generator on `/tools` + tests |
+| 2026-07-27 | `P045` | Markdown Table Generator + RGB to HEX on `/tools` + tests |
+| 2026-07-27 | `P044` | SQL Formatter advanced options + Keyword Density Checker on `/tools` + tests |
+| 2026-07-27 | `P043` | README Generator + Readme Badges Generator on `/tools` + tests |
+| 2026-07-27 | `P042` | Color Picker + Fake User JSON Generator on `/tools` + tests |
+| 2026-07-27 | `P041` | Text Diff inline mode + Password Generator (advanced) on `/tools` + tests |
+| 2026-07-27 | `P040` | Fake Credit Card (test) + Open Graph Meta Generator on `/tools` + tests |
+| 2026-07-27 | `P039` | CSV to Excel (XLSX) + Excel to CSV on `/tools` + tests |
+| 2026-07-27 | `P038` | CSS Box Shadow Generator + CSS Gradient Generator on `/tools` + tests |
+| 2026-07-27 | `P037` | Regex Cheatsheet Interactive + JSON Minifier on `/tools` + tests |
+| 2026-07-27 | `P036` | JavaScript Minifier + Date Difference Calculator on `/tools` + tests |
+| 2026-07-27 | `P035` | Markdown to HTML + JavaScript Beautifier on `/tools` + tests |
+| 2026-07-27 | `P034` | CSV to JSON advanced options + Password Strength Meter on `/tools` + tests |
+| 2026-07-27 | `P033` | Meta Tags Preview (SERP) + CSV Viewer / Table on `/tools` + tests |
+| 2026-07-27 | `P032` | BMI Calculator + GPA Calculator on `/calculators` + tests |
+| 2026-07-27 | `P031` | GST / Sales Tax Calculator + SIP Calculator on `/calculators` + tests |
+| 2026-07-27 | `SEO` | Platform SEO: rich tool/hub pages, related fill, OG image, split sitemaps, Organization/WebSite JSON-LD, intent blogs |
 | 2026-07-27 | `P030` | Data Storage Converter (SI + IEC units) on `/convert` + tests |
 | 2026-07-27 | `P029` | Length / Weight / Temperature converters on `/convert` + tests |
 | 2026-07-27 | `P028` | PDF to Images (PDF.js render → PNG/JPEG) on `/pdf` + tests |
@@ -163,55 +213,55 @@ _472 phases · 755 tools. Check the box when the whole phase (all tools listed) 
 | [x] | `P028` | PDF to Images | H | `/pdf` |
 | [x] | `P029` | Unit Converter (length); Unit Converter (weight); Unit Converter (temperature) | E | `/convert` |
 | [x] | `P030` | Unit Converter (data storage) | E | `/convert` |
-| [ ] | `P031` | GST / Sales Tax Calculator; SIP Calculator | E | `/calculators` |
-| [ ] | `P032` | BMI Calculator; GPA Calculator | E | `/calculators` |
-| [ ] | `P033` | Meta Tags Preview (SERP); CSV Viewer / Table | E | `/tools` |
-| [ ] | `P034` | CSV to JSON (advanced options); Password Strength Meter | E | `/tools` |
-| [ ] | `P035` | Markdown to HTML; JavaScript Beautifier | E | `/tools` |
-| [ ] | `P036` | JavaScript Minifier; Date Difference Calculator | E | `/tools` |
-| [ ] | `P037` | Regex Cheatsheet Interactive; JSON Minifier | E | `/tools` |
-| [ ] | `P038` | CSS Box Shadow Generator; CSS Gradient Generator | E | `/tools` |
-| [ ] | `P039` | CSV to Excel (XLSX) client-side; Excel to CSV | M | `/tools` |
-| [ ] | `P040` | Fake Credit Card (test numbers only); Open Graph Meta Generator | E | `/tools` |
-| [ ] | `P041` | Text Diff (inline); Password Generator (advanced options) | E/M | `/tools` |
-| [ ] | `P042` | Color Picker; Fake User JSON Generator | E | `/tools` |
-| [ ] | `P043` | README Generator; Readme Badges Generator | E | `/tools` |
-| [ ] | `P044` | SQL Formatter (advanced); Keyword Density Checker | E | `/tools` |
-| [ ] | `P045` | Markdown Table Generator; RGB to HEX | E | `/tools` |
-| [ ] | `P046` | Pomodoro Timer; Fake Address Generator | E | `/tools` |
-| [ ] | `P047` | Fake Name Generator; Git Cheat Sheet Interactive | E | `/tools` |
-| [ ] | `P048` | Git Command Explorer; HTML Minifier | E | `/tools` |
-| [ ] | `P049` | Add / Subtract Dates; Meeting Time Planner (multi-TZ) | E/M | `/tools` |
-| [ ] | `P050` | Time Duration Calculator; World Clock | E | `/tools` |
-| [ ] | `P051` | HTML Entity Encode / Decode; SHA-1 Hash | E | `/tools` |
-| [ ] | `P052` | Fake Email Generator (local); License Text Generator; Sitemap XML Generator (manual URLs) | E | `/tools` |
-| [ ] | `P053` | htaccess Redirect Generator; robots.txt Generator | E | `/tools` |
-| [ ] | `P054` | JSON to XML; XML to JSON | E | `/tools` |
-| [ ] | `P055` | HTTP Status Code Reference; Remove Duplicate Lines | E | `/tools` |
-| [ ] | `P056` | Sort Lines; XML Formatter | E | `/tools` |
-| [ ] | `P057` | YAML Formatter; CSS Flexbox Playground | E/M | `/tools` |
-| [ ] | `P058` | CSS Grid Playground; Palette from Image | M | `/tools` |
-| [ ] | `P059` | QR Code Reader (camera/file); WiFi QR Generator | E/M | `/tools` |
-| [ ] | `P060` | Business Days Calculator; JSON to TypeScript Interface | M | `/tools` |
-| [ ] | `P061` | vCard QR Generator; Glassmorphism Generator | E | `/tools` |
-| [ ] | `P062` | CSV to SQL INSERT | M | `/tools` |
-| [ ] | `P063` | SVG Optimizer (SVGO-like) | H | `/tools` |
-| [ ] | `P064` | Countdown Timer Builder; File Checksum (browser) | E/M | `/tools` |
-| [ ] | `P065` | JWT Debugger with Claims Explain; Passphrase Generator | E/M | `/tools` |
-| [ ] | `P066` | Dockerfile Generator (templates); JSON Diff | M | `/tools` |
-| [ ] | `P067` | HTML to Markdown; Reading Time Estimator | E/M | `/tools` |
-| [ ] | `P068` | Zero-Width Character Detector; CSS Border Radius Generator | E | `/tools` |
-| [ ] | `P069` | CSV Column Splitter; GraphQL Formatter | E | `/tools` |
-| [ ] | `P070` | SQL Minifier; Complementary Color Finder | E | `/tools` |
-| [ ] | `P071` | Week Number Calculator; Base64 URL-safe | E | `/tools` |
-| [ ] | `P072` | SHA-512 Hash; Twitter Card Meta Generator | E | `/tools` |
-| [ ] | `P073` | UUID Bulk Generator; Gitignore Builder (advanced) | E | `/tools` |
-| [ ] | `P074` | Image to Base64 | E | `/image` |
-| [ ] | `P075` | Mermaid Live Editor (embed) | H | `/tools` |
-| [ ] | `P076` | Find & Replace Batch | E | `/tools` |
-| [ ] | `P077` | Regex Explainer (static rules) | H | `/tools` |
-| [ ] | `P078` | Dummy Text Generator (paragraphs); Invisible Character Remover; Line Counter | E | `/tools` |
-| [ ] | `P079` | Word Frequency Counter; HTML Table Generator | E | `/tools` |
+| [x] | `P031` | GST / Sales Tax Calculator; SIP Calculator | E | `/calculators` |
+| [x] | `P032` | BMI Calculator; GPA Calculator | E | `/calculators` |
+| [x] | `P033` | Meta Tags Preview (SERP); CSV Viewer / Table | E | `/tools` |
+| [x] | `P034` | CSV to JSON (advanced options); Password Strength Meter | E | `/tools` |
+| [x] | `P035` | Markdown to HTML; JavaScript Beautifier | E | `/tools` |
+| [x] | `P036` | JavaScript Minifier; Date Difference Calculator | E | `/tools` |
+| [x] | `P037` | Regex Cheatsheet Interactive; JSON Minifier | E | `/tools` |
+| [x] | `P038` | CSS Box Shadow Generator; CSS Gradient Generator | E | `/tools` |
+| [x] | `P039` | CSV to Excel (XLSX) client-side; Excel to CSV | M | `/tools` |
+| [x] | `P040` | Fake Credit Card (test numbers only); Open Graph Meta Generator | E | `/tools` |
+| [x] | `P041` | Text Diff (inline); Password Generator (advanced options) | E/M | `/tools` |
+| [x] | `P042` | Color Picker; Fake User JSON Generator | E | `/tools` |
+| [x] | `P043` | README Generator; Readme Badges Generator | E | `/tools` |
+| [x] | `P044` | SQL Formatter (advanced); Keyword Density Checker | E | `/tools` |
+| [x] | `P045` | Markdown Table Generator; RGB to HEX | E | `/tools` |
+| [x] | `P046` | Pomodoro Timer; Fake Address Generator | E | `/tools` |
+| [x] | `P047` | Fake Name Generator; Git Cheat Sheet Interactive | E | `/tools` |
+| [x] | `P048` | Git Command Explorer; HTML Minifier | E | `/tools` |
+| [x] | `P049` | Add / Subtract Dates; Meeting Time Planner (multi-TZ) | E/M | `/tools` |
+| [x] | `P050` | Time Duration Calculator; World Clock | E | `/tools` |
+| [x] | `P051` | HTML Entity Encode / Decode; SHA-1 Hash | E | `/tools` |
+| [x] | `P052` | Fake Email Generator (local); License Text Generator; Sitemap XML Generator (manual URLs) | E | `/tools` |
+| [x] | `P053` | htaccess Redirect Generator; robots.txt Generator | E | `/tools` |
+| [x] | `P054` | JSON to XML; XML to JSON | E | `/tools` |
+| [x] | `P055` | HTTP Status Code Reference; Remove Duplicate Lines | E | `/tools` |
+| [x] | `P056` | Sort Lines; XML Formatter | E | `/tools` |
+| [x] | `P057` | YAML Formatter; CSS Flexbox Playground | E/M | `/tools` |
+| [x] | `P058` | CSS Grid Playground; Palette from Image | M | `/tools` |
+| [x] | `P059` | QR Code Reader (camera/file); WiFi QR Generator | E/M | `/tools` |
+| [x] | `P060` | Business Days Calculator; JSON to TypeScript Interface | M | `/tools` |
+| [x] | `P061` | vCard QR Generator; Glassmorphism Generator | E | `/tools` |
+| [x] | `P062` | CSV to SQL INSERT | M | `/tools` |
+| [x] | `P063` | SVG Optimizer (SVGO-like) | H | `/tools` |
+| [x] | `P064` | Countdown Timer Builder; File Checksum (browser) | E/M | `/tools` |
+| [x] | `P065` | JWT Debugger with Claims Explain; Passphrase Generator | E/M | `/tools` |
+| [x] | `P066` | Dockerfile Generator (templates); JSON Diff | M | `/tools` |
+| [x] | `P067` | HTML to Markdown; Reading Time Estimator | E/M | `/tools` |
+| [x] | `P068` | Zero-Width Character Detector; CSS Border Radius Generator | E | `/tools` |
+| [x] | `P069` | CSV Column Splitter; GraphQL Formatter | E | `/tools` |
+| [x] | `P070` | SQL Minifier; Complementary Color Finder | E | `/tools` |
+| [x] | `P071` | Week Number Calculator; Base64 URL-safe | E | `/tools` |
+| [x] | `P072` | SHA-512 Hash; Twitter Card Meta Generator | E | `/tools` |
+| [x] | `P073` | UUID Bulk Generator; Gitignore Builder (advanced) | E | `/tools` |
+| [x] | `P074` | Image to Base64 | E | `/image` |
+| [x] | `P075` | Mermaid Live Editor (embed) | H | `/tools` |
+| [x] | `P076` | Find & Replace Batch | E | `/tools` |
+| [x] | `P077` | Regex Explainer (static rules) | H | `/tools` |
+| [x] | `P078` | Dummy Text Generator (paragraphs); Invisible Character Remover; Line Counter | E | `/tools` |
+| [x] | `P079` | Word Frequency Counter; HTML Table Generator | E | `/tools` |
 | [ ] | `P080` | CSV to Markdown; Accessible Palette Generator | E/M | `/tools` |
 | [ ] | `P081` | HEX to HSL; Commit Message Helper | E | `/tools` |
 | [ ] | `P082` | Conventional Commit Builder; JSON to Markdown Table | E | `/tools` |
@@ -676,7 +726,7 @@ One SEO day after every 5 tool phases (`S001` after `P005`, `S002` after `P010`,
 | [ ] | `S003` | `P015` | S-c internal links |
 | [ ] | `S004` | `P020` | S-d CWV audit |
 | [ ] | `S005` | `P025` | S-e homepage/changelog |
-| [ ] | `S006` | `P030` | S-a comparison |
+| [x] | `S006` | `P030` | Platform SEO: metadata depth, hubs, related, OG, sitemaps, blogs |
 | [ ] | `S007` | `P035` | S-b how-to guide |
 | [ ] | `S008` | `P040` | S-c internal links |
 | [ ] | `S009` | `P045` | S-d CWV audit |

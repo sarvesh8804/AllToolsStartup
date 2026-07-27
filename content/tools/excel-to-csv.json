@@ -1,0 +1,42 @@
+{
+  "slug": "excel-to-csv",
+  "name": "Excel to CSV",
+  "family": "tools",
+  "category": "CSV & Spreadsheets",
+  "status": "shipped",
+  "summary": "Convert an Excel .xlsx / .xls sheet to CSV locally in your browser.",
+  "description": "Choose an Excel workbook, pick a sheet, and get CSV output you can copy. Parsing runs client-side with SheetJS — files are not uploaded.",
+  "keywords": [
+    "excel to csv",
+    "xlsx to csv",
+    "convert spreadsheet",
+    "xls to csv",
+    "export csv"
+  ],
+  "relatedSlugs": [
+    "csv-to-excel-client-side",
+    "csv-viewer-table",
+    "csv-to-json",
+    "json-to-csv"
+  ],
+  "faqs": [
+    {
+      "question": "Which formats are supported?",
+      "answer": ".xlsx and legacy .xls workbooks that SheetJS can read in the browser."
+    },
+    {
+      "question": "What if there are multiple sheets?",
+      "answer": "Pick the sheet from the dropdown after the file loads."
+    },
+    {
+      "question": "Is my spreadsheet uploaded?",
+      "answer": "No. Reading and conversion run entirely in your browser."
+    },
+    {
+      "question": "Need a table preview?",
+      "answer": "Copy the CSV into CSV Viewer / Table."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "excel-to-csv"
+}

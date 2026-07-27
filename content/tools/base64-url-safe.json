@@ -1,0 +1,38 @@
+{
+  "slug": "base64-url-safe",
+  "name": "Base64 URL-safe",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Encode and decode URL-safe Base64 (RFC 4648) — convert to and from standard Base64.",
+  "description": "Encode UTF-8 text to URL-safe Base64 (-_ alphabet, no padding), decode it back, or convert between standard (+/) and URL-safe forms. Useful for JWTs, data URLs in paths, and tokens. Everything runs in your browser.",
+  "keywords": [
+    "base64url",
+    "url safe base64",
+    "base64 url encode",
+    "rfc 4648",
+    "jwt base64"
+  ],
+  "relatedSlugs": [
+    "base64-encode-decode",
+    "jwt-decoder",
+    "jwt-debugger-with-claims-explain",
+    "url-encode-decode"
+  ],
+  "faqs": [
+    {
+      "question": "How is this different from standard Base64?",
+      "answer": "URL-safe Base64 replaces + with - and / with _, and usually omits = padding so the string is safe in URLs and filenames."
+    },
+    {
+      "question": "Can I convert existing Base64?",
+      "answer": "Yes. Use Std → URL or URL → Std to swap alphabets and restore padding when needed."
+    },
+    {
+      "question": "Is my data uploaded?",
+      "answer": "No. Encoding runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "base64-url-safe"
+}

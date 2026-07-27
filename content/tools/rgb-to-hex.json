@@ -1,0 +1,27 @@
+{
+  "slug": "rgb-to-hex",
+  "name": "RGB to HEX",
+  "family": "tools",
+  "category": "Colors",
+  "status": "shipped",
+  "summary": "Convert RGB channels to HEX and HSL — instantly in your browser.",
+  "description": "Enter R, G, and B (0–255), paste rgb() or comma-separated channels, or use the color picker. Copy HEX, short HEX, RGB, and HSL. Runs entirely locally.",
+  "keywords": ["rgb to hex", "rgb converter", "hex from rgb", "color converter", "css color"],
+  "relatedSlugs": ["hex-to-rgb", "color-picker", "color-contrast-checker"],
+  "faqs": [
+    {
+      "question": "What formats can I paste?",
+      "answer": "rgb(r, g, b), bare “r, g, b”, or a hex color from the picker."
+    },
+    {
+      "question": "Does it show short hex?",
+      "answer": "Yes, when the color can be expressed as #rgb (for example #abc)."
+    },
+    {
+      "question": "Is my color uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "rgb-to-hex"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "svg-optimizer",
+  "name": "SVG Optimizer",
+  "family": "tools",
+  "category": "Code Formatters",
+  "status": "shipped",
+  "summary": "Optimize SVG with SVGO in your browser — multipass, precision, pretty print, download.",
+  "description": "Paste or upload SVG and run SVGO locally. Tune multipass, float precision, viewBox retention, xmlns removal, and pretty-print. See byte savings, preview the result, and download the optimized file. Nothing is uploaded.",
+  "keywords": [
+    "svg optimizer",
+    "svgo",
+    "minify svg",
+    "compress svg",
+    "optimize svg online"
+  ],
+  "relatedSlugs": [
+    "html-minifier",
+    "css-minifier",
+    "xml-formatter",
+    "html-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "Is this real SVGO?",
+      "answer": "Yes. It uses the official SVGO browser build with the default preset, plus a few safe overrides you can toggle."
+    },
+    {
+      "question": "Why keep viewBox by default?",
+      "answer": "Removing viewBox can break responsive scaling when width/height are present. Uncheck “Keep viewBox” if you want SVGO’s default removal behavior."
+    },
+    {
+      "question": "Is my SVG uploaded?",
+      "answer": "No. Optimization runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "svg-optimizer"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "json-to-typescript-interface",
+  "name": "JSON to TypeScript Interface",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Infer TypeScript interfaces from JSON samples — nested types, arrays, and optionals.",
+  "description": "Paste JSON to generate TypeScript interfaces or type aliases. Nested objects become named types, array element shapes are merged (missing keys become optional), and you can toggle export and interface vs type. Runs entirely locally.",
+  "keywords": [
+    "json to typescript",
+    "json to interface",
+    "typescript interface generator",
+    "infer types from json",
+    "json ts"
+  ],
+  "relatedSlugs": [
+    "json-formatter",
+    "json-validator",
+    "json-to-yaml",
+    "json-to-xml"
+  ],
+  "faqs": [
+    {
+      "question": "Are types exact?",
+      "answer": "They are inferred from one sample. Numbers stay number (not literal unions), and empty arrays become unknown[]."
+    },
+    {
+      "question": "How are array objects merged?",
+      "answer": "Keys present in every element are required; keys missing from some elements become optional."
+    },
+    {
+      "question": "Is my JSON uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-to-typescript-interface"
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "git-command-explorer",
+  "name": "Git Command Explorer",
+  "family": "tools",
+  "category": "Git & DevOps",
+  "status": "shipped",
+  "summary": "Build ready-to-run Git commands by filling placeholders — clone, commit, branch, and more.",
+  "description": "Pick a Git action, fill in branch names, paths, messages, or remotes, and copy the finished command. Search and filter by category. Destructive commands are labeled. Runs entirely locally.",
+  "keywords": ["git command builder", "git explorer", "git commands", "git helper", "git cli"],
+  "relatedSlugs": ["git-cheat-sheet-interactive", "gitignore-generator", "readme-generator"],
+  "faqs": [
+    {
+      "question": "Does this run Git on my machine?",
+      "answer": "No. It only builds the command string for you to paste into a terminal."
+    },
+    {
+      "question": "How is this different from the cheat sheet?",
+      "answer": "The explorer focuses on parameterized commands you can customize; the cheat sheet is a broader searchable reference."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Everything runs in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "git-command-explorer"
+}

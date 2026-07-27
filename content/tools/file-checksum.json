@@ -1,0 +1,38 @@
+{
+  "slug": "file-checksum",
+  "name": "File Checksum",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Compute MD5, SHA-1, or SHA-256 of any file in your browser — verify against an expected digest.",
+  "description": "Drop or choose a file to hash locally with MD5, SHA-1, or SHA-256. Copy the digest, toggle uppercase, and optionally compare to an expected checksum. File bytes never leave your device.",
+  "keywords": [
+    "file checksum",
+    "file hash",
+    "md5 file",
+    "sha256 file",
+    "verify checksum"
+  ],
+  "relatedSlugs": [
+    "sha-256-hash",
+    "sha-1-hash",
+    "md5-hash-generator",
+    "base64-encode-decode"
+  ],
+  "faqs": [
+    {
+      "question": "Is my file uploaded?",
+      "answer": "No. Hashing runs entirely in your browser using local algorithms."
+    },
+    {
+      "question": "Which algorithms are available?",
+      "answer": "MD5, SHA-1, and SHA-256. Prefer SHA-256 for integrity checks; MD5/SHA-1 remain useful for legacy verify workflows."
+    },
+    {
+      "question": "How does compare work?",
+      "answer": "Paste an expected digest (spaces or colons are ignored). The tool reports whether it matches the computed hash."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "file-checksum"
+}

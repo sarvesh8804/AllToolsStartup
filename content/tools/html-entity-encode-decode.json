@@ -1,0 +1,27 @@
+{
+  "slug": "html-entity-encode-decode",
+  "name": "HTML Entity Encode / Decode",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Escape or unescape HTML entities (&amp;, &lt;, numeric codes) — locally in your browser.",
+  "description": "Encode special characters for safe HTML embedding, optionally turning non-ASCII into decimal or hex numeric entities. Decode named and numeric entities back to text. Runs entirely locally.",
+  "keywords": ["html entities", "html encode", "html decode", "escape html", "amp lt gt"],
+  "relatedSlugs": ["url-encode-decode", "html-formatter", "html-minifier"],
+  "faqs": [
+    {
+      "question": "Which characters are escaped by default?",
+      "answer": "& < > \" and ' become &amp; &lt; &gt; &quot; and &#39;."
+    },
+    {
+      "question": "Can I encode emoji and accents?",
+      "answer": "Yes. Enable “Encode non-ASCII” to emit &#…; or &#x…; entities."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. Encoding and decoding run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "html-entity-encode-decode"
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "sip-calculator",
+  "name": "SIP Calculator",
+  "family": "calculators",
+  "category": "Finance Calculators",
+  "status": "shipped",
+  "summary": "Estimate SIP maturity value, total invested, and returns from monthly contributions — locally.",
+  "description": "Enter monthly investment, expected annual return, and tenure in years. See projected maturity value, total invested, estimated returns, and an optional year-by-year schedule. Uses the common SIP annuity-due formula (monthly compounding).",
+  "keywords": [
+    "sip calculator",
+    "systematic investment plan",
+    "mutual fund sip",
+    "maturity value",
+    "monthly investment"
+  ],
+  "relatedSlugs": [
+    "emi-loan-calculator",
+    "percentage-calculator",
+    "gst-sales-tax-calculator",
+    "tip-calculator"
+  ],
+  "faqs": [
+    {
+      "question": "Which SIP formula is used?",
+      "answer": "The common Indian SIP (annuity-due) formula: FV = P × (((1+i)^n − 1) / i) × (1+i), where i is the monthly rate and n is the number of months."
+    },
+    {
+      "question": "Are returns guaranteed?",
+      "answer": "No. Expected return is an assumption you enter. Real mutual fund performance varies and this is not investment advice."
+    },
+    {
+      "question": "Can expected return be zero?",
+      "answer": "Yes. At 0%, maturity equals total invested (monthly amount × months)."
+    },
+    {
+      "question": "Is my data uploaded?",
+      "answer": "No. Calculations run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "sip-calculator"
+}

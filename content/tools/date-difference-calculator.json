@@ -1,0 +1,42 @@
+{
+  "slug": "date-difference-calculator",
+  "name": "Date Difference Calculator",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Find the difference between two dates in years, months, days, weeks, and more — locally.",
+  "description": "Pick a start and end date to see calendar difference (Y/M/D), total days, weeks, and derived hours/minutes/seconds. Handles reverse order with signed day counts. Leap years included via UTC calendar math.",
+  "keywords": [
+    "date difference",
+    "days between dates",
+    "date calculator",
+    "how many days",
+    "duration between dates"
+  ],
+  "relatedSlugs": [
+    "age-calculator",
+    "unix-timestamp-converter",
+    "timezone-converter",
+    "cron-expression-explainer"
+  ],
+  "faqs": [
+    {
+      "question": "How is the calendar difference calculated?",
+      "answer": "Years, months, and days use the same borrowing rules as exact-age math between the earlier and later date."
+    },
+    {
+      "question": "What if the end date is before the start?",
+      "answer": "Signed days become negative. The Y/M/D breakdown still shows the absolute span between the two dates."
+    },
+    {
+      "question": "Do hours include time of day?",
+      "answer": "No. Inputs are calendar dates; hours/minutes/seconds are absoluteDays × 24/60/60."
+    },
+    {
+      "question": "Is my data uploaded?",
+      "answer": "No. Calculations run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "date-difference-calculator"
+}

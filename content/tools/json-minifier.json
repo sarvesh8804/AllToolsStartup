@@ -1,0 +1,42 @@
+{
+  "slug": "json-minifier",
+  "name": "JSON Minifier",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Minify JSON by removing whitespace — validate and shrink locally in your browser.",
+  "description": "Paste pretty-printed JSON and get a compact single-line result. Invalid JSON shows a clear error. Pair with JSON Formatter when you need to beautify again.",
+  "keywords": [
+    "json minifier",
+    "minify json",
+    "compress json",
+    "json compact",
+    "remove json whitespace"
+  ],
+  "relatedSlugs": [
+    "json-formatter",
+    "json-validator",
+    "json-to-yaml",
+    "csv-to-json"
+  ],
+  "faqs": [
+    {
+      "question": "Does minifying change values?",
+      "answer": "No. It parses then re-serializes with JSON.stringify, so structure and values stay the same — only whitespace is removed."
+    },
+    {
+      "question": "What about trailing commas?",
+      "answer": "Standard JSON does not allow trailing commas. Fix them first (or use JSON Validator for hints)."
+    },
+    {
+      "question": "Need indentation back?",
+      "answer": "Use the JSON Formatter tool."
+    },
+    {
+      "question": "Is my JSON uploaded?",
+      "answer": "No. Minification runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-minifier"
+}

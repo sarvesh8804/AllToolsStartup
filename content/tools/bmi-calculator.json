@@ -1,0 +1,42 @@
+{
+  "slug": "bmi-calculator",
+  "name": "BMI Calculator",
+  "family": "calculators",
+  "category": "Health & Everyday",
+  "status": "shipped",
+  "summary": "Calculate Body Mass Index from metric or imperial height and weight — locally.",
+  "description": "Enter weight and height in metric (kg/cm) or imperial (lb/ft/in) to get BMI and a WHO adult category (underweight, normal, overweight, obese). Educational screening estimate only — not medical advice.",
+  "keywords": [
+    "bmi calculator",
+    "body mass index",
+    "metric bmi",
+    "imperial bmi",
+    "who bmi"
+  ],
+  "relatedSlugs": [
+    "age-calculator",
+    "percentage-calculator",
+    "gpa-calculator",
+    "tip-calculator"
+  ],
+  "faqs": [
+    {
+      "question": "How is BMI calculated?",
+      "answer": "BMI = weight(kg) ÷ height(m)². Imperial inputs are converted to metric first."
+    },
+    {
+      "question": "What categories are shown?",
+      "answer": "WHO adult bands: Underweight (<18.5), Normal (18.5–24.9), Overweight (25–29.9), Obese (≥30)."
+    },
+    {
+      "question": "Is BMI a medical diagnosis?",
+      "answer": "No. BMI is a screening estimate and does not account for muscle mass, age, sex, or ethnicity. Not medical advice."
+    },
+    {
+      "question": "Is my data uploaded?",
+      "answer": "No. Calculations run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "bmi-calculator"
+}

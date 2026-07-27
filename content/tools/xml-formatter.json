@@ -1,0 +1,38 @@
+{
+  "slug": "xml-formatter",
+  "name": "XML Formatter",
+  "family": "tools",
+  "category": "XML & YAML & Config",
+  "status": "shipped",
+  "summary": "Pretty-print or minify XML with consistent indentation — locally in your browser.",
+  "description": "Paste XML to beautify nested elements with 2- or 4-space indent. Preserve declarations, comments, and CDATA. Optionally minify back into the input. Formatting is best-effort and runs entirely locally.",
+  "keywords": [
+    "xml formatter",
+    "xml beautifier",
+    "pretty print xml",
+    "format xml",
+    "minify xml"
+  ],
+  "relatedSlugs": [
+    "xml-to-json",
+    "json-to-xml",
+    "html-formatter",
+    "json-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "Does it validate XML?",
+      "answer": "No. It focuses on indentation and readability. Invalid markup is still formatted best-effort."
+    },
+    {
+      "question": "Are CDATA sections preserved?",
+      "answer": "Yes. CDATA blocks are kept intact during format and minify."
+    },
+    {
+      "question": "Is my XML uploaded?",
+      "answer": "No. Formatting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "xml-formatter"
+}

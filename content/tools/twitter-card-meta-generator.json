@@ -1,0 +1,38 @@
+{
+  "slug": "twitter-card-meta-generator",
+  "name": "Twitter Card Meta Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Generate twitter:* meta tags for summary, large image, player, and app cards — with a live preview.",
+  "description": "Pick a Twitter/X card type and fill title, description, image, site, and creator to get copy-ready twitter:* HTML. Supports player iframe fields and app store ids. Includes a simple card preview and validation tips. Runs locally.",
+  "keywords": [
+    "twitter card generator",
+    "twitter meta tags",
+    "x card meta",
+    "summary large image",
+    "twitter:card"
+  ],
+  "relatedSlugs": [
+    "open-graph-meta-generator",
+    "meta-tags-preview",
+    "html-formatter",
+    "slug-generator"
+  ],
+  "faqs": [
+    {
+      "question": "Which card types are supported?",
+      "answer": "summary, summary_large_image, player, and app — with the fields each type commonly needs."
+    },
+    {
+      "question": "Do I need absolute image URLs?",
+      "answer": "Yes. Social scrapers expect a publicly reachable absolute HTTPS URL for twitter:image."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "twitter-card-meta-generator"
+}

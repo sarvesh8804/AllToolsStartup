@@ -1,0 +1,38 @@
+{
+  "slug": "css-box-shadow-generator",
+  "name": "CSS Box Shadow Generator",
+  "family": "tools",
+  "category": "CSS & Design Dev",
+  "status": "shipped",
+  "summary": "Design multi-layer box-shadows with a live preview and copy-ready CSS — locally.",
+  "description": "Tune offset, blur, spread, color, and inset per layer. Stack multiple shadows, preview live, and copy a box-shadow declaration or rule. Everything runs in your browser.",
+  "keywords": [
+    "box shadow generator",
+    "css box-shadow",
+    "shadow css",
+    "inset shadow",
+    "css shadow maker"
+  ],
+  "relatedSlugs": [
+    "css-gradient-generator",
+    "css-formatter",
+    "css-minifier",
+    "hex-to-rgb"
+  ],
+  "faqs": [
+    {
+      "question": "Can I stack multiple shadows?",
+      "answer": "Yes. Add layers and enable/disable them individually. Enabled layers are joined with commas."
+    },
+    {
+      "question": "What does inset do?",
+      "answer": "Inset draws the shadow inside the element instead of outside."
+    },
+    {
+      "question": "Is my CSS uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "css-box-shadow-generator"
+}

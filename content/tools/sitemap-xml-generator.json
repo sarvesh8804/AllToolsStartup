@@ -1,0 +1,27 @@
+{
+  "slug": "sitemap-xml-generator",
+  "name": "Sitemap XML Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Build a sitemap.xml from a manual list of URLs — locally in your browser.",
+  "description": "Paste http(s) URLs one per line, optionally set lastmod, changefreq, and priority, and copy a standards-shaped urlset. Ideal for small sites and static lists. Nothing is crawled or uploaded.",
+  "keywords": ["sitemap generator", "sitemap.xml", "xml sitemap", "urlset", "seo sitemap"],
+  "relatedSlugs": ["robots-txt-generator", "meta-tags-preview", "open-graph-meta-generator"],
+  "faqs": [
+    {
+      "question": "Does it crawl my site?",
+      "answer": "No. You provide the URL list manually."
+    },
+    {
+      "question": "What URL format is required?",
+      "answer": "Absolute http or https URLs. Relative paths are rejected."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. XML is built entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "sitemap-xml-generator"
+}

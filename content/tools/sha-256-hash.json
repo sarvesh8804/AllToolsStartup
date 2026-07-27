@@ -7,7 +7,7 @@
   "summary": "Compute the SHA-256 hash of any text instantly and locally.",
   "description": "Generate a SHA-256 digest for any UTF-8 text. Useful for checksums, fingerprints and integrity checks. Hashing runs in your browser with no network calls.",
   "keywords": ["sha256", "sha-256", "hash", "checksum", "digest"],
-  "relatedSlugs": ["md5-hash-generator", "base64-encode-decode"],
+  "relatedSlugs": ["sha-1-hash", "md5-hash-generator", "base64-encode-decode"],
   "faqs": [
     {
       "question": "Is the hashing done on a server?",

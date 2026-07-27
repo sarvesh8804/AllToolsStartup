@@ -2,20 +2,38 @@
   "slug": "csv-to-json",
   "name": "CSV to JSON",
   "family": "tools",
-  "category": "JSON & Data Formats",
+  "category": "CSV & Spreadsheets",
   "status": "shipped",
-  "summary": "Convert CSV spreadsheets to JSON arrays of objects — locally in your browser.",
-  "description": "Paste CSV with a header row to get a JSON array of objects. Quoted fields, commas inside quotes, and simple type inference (numbers, booleans, null) are supported.",
-  "keywords": ["csv to json", "csv converter", "spreadsheet json", "parse csv"],
-  "relatedSlugs": ["json-to-csv", "json-formatter", "json-to-yaml"],
+  "summary": "Convert CSV to JSON with advanced options — delimiter, headers, type inference, array or object output.",
+  "description": "Paste CSV and convert to JSON locally. Advanced options: delimiter (comma, semicolon, tab, pipe), header row toggle, type inference, trim fields, skip empty rows, and output as objects or arrays. Quoted fields and commas inside quotes are supported.",
+  "keywords": [
+    "csv to json",
+    "csv converter",
+    "spreadsheet json",
+    "parse csv",
+    "csv delimiter"
+  ],
+  "relatedSlugs": [
+    "json-to-csv",
+    "csv-viewer-table",
+    "json-formatter",
+    "json-to-yaml",
+    "csv-to-excel-client-side",
+    "excel-to-csv",
+    "csv-to-sql-insert"
+  ],
   "faqs": [
     {
+      "question": "What advanced options are available?",
+      "answer": "Delimiter, first-row headers, infer numbers/booleans/null, trim fields, skip empty rows, and objects vs arrays output."
+    },
+    {
       "question": "Must the first row be headers?",
-      "answer": "Yes for this tool. Each header becomes an object key."
+      "answer": "Only if “First row is header” is on. With headers off and object output, keys become column_1, column_2, …"
     },
     {
       "question": "How are numbers and booleans handled?",
-      "answer": "Bare numbers become JSON numbers. true/false/null become booleans/null. Everything else stays a string."
+      "answer": "When type inference is on, bare numbers become JSON numbers and true/false/null become booleans/null. Turn inference off to keep everything as strings."
     },
     {
       "question": "Is my CSV uploaded?",

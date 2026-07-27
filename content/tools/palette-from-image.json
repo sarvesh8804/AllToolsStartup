@@ -1,0 +1,38 @@
+{
+  "slug": "palette-from-image",
+  "name": "Palette from Image",
+  "family": "tools",
+  "category": "Colors",
+  "status": "shipped",
+  "summary": "Extract a dominant color palette from any image — locally in your browser.",
+  "description": "Upload a PNG, JPEG, WebP, GIF, or BMP to pull out dominant colors with HEX/RGB values and share percentages. Copy individual colors, a HEX list, or CSS custom properties. Image data never leaves your device.",
+  "keywords": [
+    "color palette from image",
+    "extract colors from image",
+    "image color picker",
+    "dominant colors",
+    "palette generator"
+  ],
+  "relatedSlugs": [
+    "color-picker",
+    "hex-to-rgb",
+    "rgb-to-hex",
+    "color-contrast-checker"
+  ],
+  "faqs": [
+    {
+      "question": "How are colors chosen?",
+      "answer": "The image is downscaled, pixels are quantized into buckets, and the most frequent distinct colors are returned (with a minimum distance filter so near-duplicates collapse)."
+    },
+    {
+      "question": "Is my image uploaded?",
+      "answer": "No. Extraction uses Canvas in your browser only."
+    },
+    {
+      "question": "Why might transparent areas be ignored?",
+      "answer": "Pixels below a mid alpha threshold are skipped so checkerboard / cutout edges do not pollute the palette."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "palette-from-image"
+}

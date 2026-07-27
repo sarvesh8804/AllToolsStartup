@@ -1,0 +1,38 @@
+{
+  "slug": "countdown-timer-builder",
+  "name": "Countdown Timer Builder",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Build a live countdown to any date — preview, theme it, and download self-contained HTML.",
+  "description": "Set a target date/time, title, subtitle, and which units to show. Preview the countdown live, tweak accent colors, then copy or download a self-contained HTML page with an inline timer. No external scripts required.",
+  "keywords": [
+    "countdown timer",
+    "countdown builder",
+    "event countdown",
+    "launch countdown",
+    "html countdown"
+  ],
+  "relatedSlugs": [
+    "pomodoro-timer",
+    "date-difference-calculator",
+    "unix-timestamp-converter",
+    "world-clock"
+  ],
+  "faqs": [
+    {
+      "question": "What does the download include?",
+      "answer": "A single HTML file with CSS and a small script that updates every second. Host it anywhere static files work."
+    },
+    {
+      "question": "Which timezone is used?",
+      "answer": "The picker uses your local timezone; the embed stores an absolute ISO timestamp so visitors count down to the same instant."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Preview and HTML generation run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "countdown-timer-builder"
+}

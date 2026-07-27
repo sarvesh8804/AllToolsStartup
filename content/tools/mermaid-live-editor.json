@@ -1,0 +1,39 @@
+{
+  "slug": "mermaid-live-editor",
+  "name": "Mermaid Live Editor",
+  "family": "tools",
+  "category": "Markdown & Docs",
+  "status": "shipped",
+  "summary": "Edit Mermaid diagrams with a live preview, then copy SVG or a self-contained embed HTML page.",
+  "description": "Write Mermaid source for flowcharts, sequence diagrams, ER diagrams, Gantt charts, and more. Preview updates in your browser, export SVG, or generate embeddable HTML that loads Mermaid from a CDN. Live preview uses a bundled Mermaid build so your diagram never leaves the device.",
+  "keywords": [
+    "mermaid",
+    "mermaid editor",
+    "mermaid live",
+    "flowchart editor",
+    "sequence diagram",
+    "mermaid embed"
+  ],
+  "relatedSlugs": [
+    "markdown-preview",
+    "markdown-to-html",
+    "countdown-timer-builder",
+    "svg-optimizer"
+  ],
+  "faqs": [
+    {
+      "question": "Is my diagram uploaded?",
+      "answer": "No. The live preview renders with Mermaid bundled in this page. Nothing is sent to a server."
+    },
+    {
+      "question": "What does Embed HTML do?",
+      "answer": "It builds a self-contained HTML file with your diagram. When opened elsewhere, that page loads Mermaid from jsDelivr to render — useful for docs sites or sharing a static file."
+    },
+    {
+      "question": "Which diagram types work?",
+      "answer": "Common Mermaid types: flowchart, sequence, class, ER, Gantt, pie, state, and others supported by Mermaid 11. Invalid syntax shows an error in the preview pane."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "mermaid-live-editor"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "line-counter",
+  "name": "Line Counter",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Count total, blank, and non-empty lines, plus line endings and length stats — locally.",
+  "description": "Paste any text to see total lines, blank vs non-empty, whitespace-only lines, longest/shortest/average length, CRLF/LF/CR detection, and whether a trailing newline is present. Complements the Word Counter with line-focused metrics.",
+  "keywords": [
+    "line counter",
+    "count lines",
+    "blank lines",
+    "line endings",
+    "crlf lf"
+  ],
+  "relatedSlugs": [
+    "word-counter",
+    "character-counter",
+    "sort-lines",
+    "remove-duplicate-lines"
+  ],
+  "faqs": [
+    {
+      "question": "How are lines split?",
+      "answer": "On LF, CR, or CRLF. An empty string counts as 0 lines; a trailing newline adds a final blank line."
+    },
+    {
+      "question": "Blank vs whitespace-only?",
+      "answer": "Blank lines have length 0. Whitespace-only lines contain spaces/tabs but no visible text."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. Counting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "line-counter"
+}

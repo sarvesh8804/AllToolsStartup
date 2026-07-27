@@ -1,0 +1,27 @@
+{
+  "slug": "readme-badges-generator",
+  "name": "Readme Badges Generator",
+  "family": "tools",
+  "category": "Markdown & Docs",
+  "status": "shipped",
+  "summary": "Generate shields.io badge markdown for GitHub, npm, license, and more.",
+  "description": "Pick badge presets, set GitHub/npm details and style, preview live badges, and copy markdown for your README. Works offline for generation; badge images load from shields.io when previewed.",
+  "keywords": ["readme badges", "shields.io", "github badges", "npm badge", "markdown badges"],
+  "relatedSlugs": ["readme-generator", "markdown-preview", "gitignore-generator"],
+  "faqs": [
+    {
+      "question": "Where do badge images come from?",
+      "answer": "Markdown points at shields.io URLs. The preview loads those images from the network; the markdown itself is generated locally."
+    },
+    {
+      "question": "Does the build badge need a real workflow?",
+      "answer": "It assumes a ci.yml workflow on the main branch. Rename the path in the markdown if your workflow file differs."
+    },
+    {
+      "question": "Is my project data uploaded to Forge?",
+      "answer": "No. Forge only builds the markdown in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "readme-badges-generator"
+}

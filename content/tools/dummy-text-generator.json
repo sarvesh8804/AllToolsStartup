@@ -1,0 +1,38 @@
+{
+  "slug": "dummy-text-generator",
+  "name": "Dummy Text Generator",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Generate English placeholder paragraphs with control over sentences and word length — in your browser.",
+  "description": "Create readable English dummy copy for layouts and mockups. Choose paragraph count, sentences per paragraph, and words per sentence. Output is deterministic (not Latin Lorem Ipsum). Nothing is uploaded.",
+  "keywords": [
+    "dummy text",
+    "placeholder text",
+    "filler text",
+    "dummy paragraphs",
+    "sample text generator"
+  ],
+  "relatedSlugs": [
+    "lorem-ipsum-generator",
+    "word-counter",
+    "line-counter",
+    "reading-time-estimator"
+  ],
+  "faqs": [
+    {
+      "question": "How is this different from Lorem Ipsum?",
+      "answer": "This tool generates English placeholder sentences so mockups look closer to real copy. Use the Lorem Ipsum Generator for classic Latin filler."
+    },
+    {
+      "question": "Is the text random?",
+      "answer": "No. It cycles a fixed English word list, so the same settings always produce the same output."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "dummy-text-generator"
+}

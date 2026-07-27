@@ -1,0 +1,37 @@
+{
+  "slug": "vcard-qr-generator",
+  "name": "vCard QR Generator",
+  "family": "tools",
+  "category": "QR & Barcodes",
+  "status": "shipped",
+  "summary": "Build a contact vCard QR code — name, phone, email, org, address — download PNG or SVG.",
+  "description": "Fill in contact fields to generate a vCard 3.0 payload and QR code. Download PNG or SVG for sharing. Everything runs locally; contact details are not uploaded.",
+  "keywords": [
+    "vcard qr",
+    "contact qr code",
+    "vcf qr generator",
+    "business card qr",
+    "qr contact"
+  ],
+  "relatedSlugs": [
+    "wifi-qr-generator",
+    "qr-code-generator",
+    "qr-code-reader"
+  ],
+  "faqs": [
+    {
+      "question": "Which vCard version is used?",
+      "answer": "vCard 3.0 — widely supported by phone cameras and contact apps."
+    },
+    {
+      "question": "Is a last name required?",
+      "answer": "No. Either first or last name (or both) is enough to build FN."
+    },
+    {
+      "question": "Are my details uploaded?",
+      "answer": "No. The vCard and QR are generated entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "vcard-qr-generator"
+}

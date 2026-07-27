@@ -7,7 +7,7 @@
   "summary": "Generate a QR code from any text or URL and download it as PNG or SVG — all in your browser.",
   "description": "Create QR codes for links, Wi‑Fi notes, contact strings, or plain text. Choose error-correction level and size, then download PNG or SVG. Generation runs entirely on your device.",
   "keywords": ["qr code", "qr generator", "qrcode", "download qr", "svg qr"],
-  "relatedSlugs": ["slug-generator", "url-encode-decode"],
+  "relatedSlugs": ["qr-code-reader", "wifi-qr-generator", "slug-generator", "url-encode-decode"],
   "faqs": [
     {
       "question": "Is my content uploaded?",

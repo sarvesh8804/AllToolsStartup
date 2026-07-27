@@ -77,11 +77,11 @@ _Plus ~50 hub days (H) + ~94 SEO days (S) + 15 monetization days (M) interleaved
 
 | Field | Value |
 |---|---|
-| **Today’s phase** | `P031` |
-| **Last shipped** | `P030` |
-| **Tools live (shipped)** | 53 / 755 |
+| **Today’s phase** | `P080` |
+| **Last shipped** | `P079` |
+| **Tools live (shipped)** | 144 / 755 |
 | **Production URL** | _set after Vercel deploy_ |
-| **Notes** | P030 shipped (Data Storage Converter). Next: GST / Sales Tax; SIP Calculator. |
+| **Notes** | P079 shipped (Word Frequency Counter; HTML Table Generator). Next: CSV to Markdown; Accessible Palette Generator. |
 
 ---
 

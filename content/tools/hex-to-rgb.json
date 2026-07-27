@@ -7,7 +7,7 @@
   "summary": "Convert HEX colors to RGB and HSL — instantly in your browser.",
   "description": "Paste a hex or rgb() color to see HEX, short HEX, RGB channels, and HSL. Includes a color picker and one-click copy for each format.",
   "keywords": ["hex to rgb", "color converter", "hex converter", "rgb", "hsl"],
-  "relatedSlugs": ["color-contrast-checker", "gitignore-generator"],
+  "relatedSlugs": ["rgb-to-hex", "color-picker", "color-contrast-checker"],
   "faqs": [
     {
       "question": "Does it accept 3-digit hex?",

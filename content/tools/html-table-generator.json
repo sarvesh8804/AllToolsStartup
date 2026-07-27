@@ -1,0 +1,38 @@
+{
+  "slug": "html-table-generator",
+  "name": "HTML Table Generator",
+  "family": "tools",
+  "category": "Web & HTML",
+  "status": "shipped",
+  "summary": "Build an HTML table with headers, alignment, caption, and accessibility attributes — then copy the markup.",
+  "description": "Edit a visual grid and get clean HTML with optional thead/tbody, scope=\"col\", caption, border, CSS class, and column alignment. Paste TSV to import. Preview updates live; nothing is uploaded.",
+  "keywords": [
+    "html table generator",
+    "create html table",
+    "table markup",
+    "thead tbody",
+    "accessible table"
+  ],
+  "relatedSlugs": [
+    "markdown-table-generator",
+    "html-formatter",
+    "csv-viewer-table",
+    "html-to-markdown"
+  ],
+  "faqs": [
+    {
+      "question": "Is the preview safe?",
+      "answer": "Cell values are HTML-escaped in the generated markup, so angle brackets in your data become entities."
+    },
+    {
+      "question": "What does scope=\"col\" do?",
+      "answer": "It marks header cells as column headers for assistive technology when accessibility mode is on."
+    },
+    {
+      "question": "Can I import a spreadsheet snippet?",
+      "answer": "Yes — use Paste TSV with a tab-separated first header row and data rows."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "html-table-generator"
+}

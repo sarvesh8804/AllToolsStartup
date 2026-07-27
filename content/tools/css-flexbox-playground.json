@@ -1,0 +1,38 @@
+{
+  "slug": "css-flexbox-playground",
+  "name": "CSS Flexbox Playground",
+  "family": "tools",
+  "category": "CSS & Design Dev",
+  "status": "shipped",
+  "summary": "Tune flex-direction, wrap, justify, align, and gap with a live preview and copy-ready CSS.",
+  "description": "Interactive Flexbox playground: adjust flex-direction, flex-wrap, justify-content, align-items, align-content, and gap. Preview items live and copy a .flex-container CSS rule. Everything runs in your browser.",
+  "keywords": [
+    "flexbox playground",
+    "css flexbox",
+    "flexbox generator",
+    "justify-content",
+    "align-items"
+  ],
+  "relatedSlugs": [
+    "css-box-shadow-generator",
+    "css-gradient-generator",
+    "css-formatter",
+    "css-minifier"
+  ],
+  "faqs": [
+    {
+      "question": "What CSS is generated?",
+      "answer": "A .flex-container rule with display:flex plus the properties you set (direction, wrap, justify, align, gap)."
+    },
+    {
+      "question": "Does align-content always matter?",
+      "answer": "align-content mainly affects multi-line flex containers (when items wrap onto more than one line)."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. The playground runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "css-flexbox-playground"
+}

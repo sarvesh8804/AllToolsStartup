@@ -1,0 +1,27 @@
+{
+  "slug": "xml-to-json",
+  "name": "XML to JSON",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Convert XML to JSON with @attributes and arrays for repeated tags — locally.",
+  "description": "Paste XML and get structured JSON. Element attributes become @name fields, text becomes strings (or #text when mixed), and repeated sibling tags become arrays. Best-effort for well-formed XML without namespaces complexity. Runs entirely locally.",
+  "keywords": ["xml to json", "convert xml json", "xml json converter", "parse xml"],
+  "relatedSlugs": ["json-to-xml", "yaml-to-json", "json-formatter"],
+  "faqs": [
+    {
+      "question": "Are namespaces fully supported?",
+      "answer": "Prefixed names are kept as-is. Complex namespace rewriting is out of scope for this tool."
+    },
+    {
+      "question": "How are repeated tags handled?",
+      "answer": "Sibling elements with the same name become a JSON array."
+    },
+    {
+      "question": "Is my XML uploaded?",
+      "answer": "No. Parsing runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "xml-to-json"
+}

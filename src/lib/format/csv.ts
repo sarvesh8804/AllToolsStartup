@@ -2,6 +2,14 @@ export type CsvParseOptions = {
   delimiter?: string;
   /** Treat first row as headers (default true). */
   headers?: boolean;
+  /** Infer numbers / booleans / null (default true). */
+  inferTypes?: boolean;
+  /** Trim whitespace around fields (default true). */
+  trimFields?: boolean;
+  /** Drop blank rows (default true). */
+  skipEmptyRows?: boolean;
+  /** objects = array of records; arrays = array of row arrays. */
+  output?: "objects" | "arrays";
 };
 
 export type CsvToJsonResult =
@@ -44,7 +52,8 @@ export function parseCsvLine(line: string, delimiter = ","): string[] {
   return fields;
 }
 
-function splitCsvRows(input: string): string[] {
+/** Split CSV text into raw row strings (respects quoted newlines). */
+export function splitCsvRows(input: string): string[] {
   const rows: string[] = [];
   let cur = "";
   let inQuotes = false;
@@ -80,13 +89,27 @@ function inferValue(raw: string): string | number | boolean | null {
   return raw;
 }
 
+function prepareField(
+  raw: string,
+  options: { trimFields: boolean; inferTypes: boolean },
+): string | number | boolean | null {
+  const value = options.trimFields ? raw.trim() : raw;
+  if (!options.inferTypes) return value;
+  return inferValue(value);
+}
+
 export function csvToJson(
   input: string,
   options: CsvParseOptions & { spaces?: number } = {},
 ): CsvToJsonResult {
   const delimiter = options.delimiter ?? ",";
   const headers = options.headers !== false;
+  const inferTypes = options.inferTypes !== false;
+  const trimFields = options.trimFields !== false;
+  const skipEmptyRows = options.skipEmptyRows !== false;
+  const output = options.output ?? "objects";
   const spaces = options.spaces ?? 2;
+  const fieldOpts = { trimFields, inferTypes };
 
   const trimmed = input.replace(/^\uFEFF/, "").trim();
   if (!trimmed) {
@@ -94,28 +117,70 @@ export function csvToJson(
   }
 
   try {
-    const lines = splitCsvRows(trimmed);
+    let lines = splitCsvRows(trimmed);
+    if (skipEmptyRows) {
+      lines = lines.filter((line) => line.trim().length > 0);
+    }
     if (lines.length === 0) {
       return { ok: false, error: "CSV has no rows." };
     }
 
     const parsed = lines.map((line) => parseCsvLine(line, delimiter));
 
-    if (!headers) {
-      const rows = parsed.map((cols) => cols.map(inferValue));
+    if (output === "arrays" || !headers) {
+      const rows =
+        headers && output === "arrays"
+          ? parsed.slice(1).map((cols) =>
+              cols.map((c) => prepareField(c, fieldOpts)),
+            )
+          : parsed.map((cols) => cols.map((c) => prepareField(c, fieldOpts)));
+
+      const columns =
+        headers && output === "arrays"
+          ? parsed[0].map((h, i) => {
+              const name = trimFields ? h.trim() : h;
+              return name || `column_${i + 1}`;
+            })
+          : parsed[0]?.map((_, i) => `column_${i + 1}`) ?? [];
+
+      // Headerless objects mode
+      if (!headers && output === "objects") {
+        const width = Math.max(...parsed.map((r) => r.length), 0);
+        const cols = Array.from(
+          { length: width },
+          (_, i) => `column_${i + 1}`,
+        );
+        const objectRows = parsed.map((cells) => {
+          const obj: Record<string, unknown> = {};
+          for (let i = 0; i < width; i += 1) {
+            obj[cols[i]] = prepareField(cells[i] ?? "", fieldOpts);
+          }
+          return obj;
+        });
+        return {
+          ok: true,
+          rows: objectRows,
+          columns: cols,
+          json: JSON.stringify(objectRows, null, spaces) + "\n",
+        };
+      }
+
       return {
         ok: true,
         rows,
-        columns: parsed[0]?.map((_, i) => `column_${i + 1}`) ?? [],
+        columns,
         json: JSON.stringify(rows, null, spaces) + "\n",
       };
     }
 
-    const columns = parsed[0].map((h, i) => h.trim() || `column_${i + 1}`);
+    const columns = parsed[0].map((h, i) => {
+      const name = trimFields ? h.trim() : h;
+      return name || `column_${i + 1}`;
+    });
     const rows = parsed.slice(1).map((cols) => {
       const obj: Record<string, unknown> = {};
       for (let i = 0; i < columns.length; i += 1) {
-        obj[columns[i]] = inferValue(cols[i] ?? "");
+        obj[columns[i]] = prepareField(cols[i] ?? "", fieldOpts);
       }
       return obj;
     });

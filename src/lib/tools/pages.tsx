@@ -11,8 +11,12 @@ import { ToolShell } from "@/components/tool/ToolShell";
 import { ToolWorkbench } from "@/components/tool/ToolWorkbench";
 import {
   createPageMetadata,
+  familyBreadcrumbs,
   faqJsonLd,
+  itemListJsonLd,
+  metaDescription,
   toolBreadcrumbs,
+  toolFaqJsonLd,
   webApplicationJsonLd,
 } from "@/lib/seo";
 import {
@@ -20,6 +24,7 @@ import {
   FAMILY_LABELS,
   toolPath,
 } from "@/lib/urls";
+import { HUB_CONTENT } from "@/lib/seo/hubs";
 import { FamilyHub } from "@/components/home/FamilyHub";
 import type { ToolFamily } from "@/types/tool";
 import { TOOL_FAMILIES } from "@/types/tool";
@@ -29,9 +34,13 @@ export function isToolFamily(value: string): value is ToolFamily {
 }
 
 export function familyHubMetadata(family: ToolFamily): Metadata {
+  const hub = HUB_CONTENT[family];
+  const description = metaDescription(
+    `${FAMILY_DESCRIPTIONS[family]} ${hub.intro[0]}`,
+  );
   return createPageMetadata({
     title: FAMILY_LABELS[family],
-    description: FAMILY_DESCRIPTIONS[family],
+    description,
     path: `/${family}`,
   });
 }
@@ -46,16 +55,44 @@ export async function toolPageMetadata(
 ): Promise<Metadata> {
   const tool = getToolByFamilySlug(family, slug);
   if (!tool) return {};
+  const description = metaDescription(
+    tool.description?.trim() || tool.summary,
+  );
   return createPageMetadata({
-    title: tool.name,
-    description: tool.summary,
+    title: `${tool.name} Online`,
+    description,
     path: toolPath(tool.family, tool.slug),
     noIndex: tool.status !== "shipped",
   });
 }
 
 export function FamilyIndexPage({ family }: { family: ToolFamily }) {
-  return <FamilyHub family={family} shipped={getShippedByFamily(family)} />;
+  const shipped = getShippedByFamily(family);
+  const hub = HUB_CONTENT[family];
+  const schemas = [
+    familyBreadcrumbs(family),
+    itemListJsonLd(
+      FAMILY_LABELS[family],
+      shipped.map((t) => ({
+        name: t.name,
+        path: toolPath(t.family, t.slug),
+      })),
+    ),
+    faqJsonLd(hub.faqs),
+  ].filter(Boolean);
+
+  return (
+    <>
+      {schemas.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+      <FamilyHub family={family} shipped={shipped} />
+    </>
+  );
 }
 
 export function ToolPage({
@@ -85,7 +122,7 @@ export function ToolPage({
   const schemas = [
     toolBreadcrumbs(tool),
     webApplicationJsonLd(tool),
-    faqJsonLd(tool),
+    toolFaqJsonLd(tool),
   ].filter(Boolean);
 
   return (

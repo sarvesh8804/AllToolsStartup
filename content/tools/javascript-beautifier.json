@@ -1,0 +1,43 @@
+{
+  "slug": "javascript-beautifier",
+  "name": "JavaScript Beautifier",
+  "family": "tools",
+  "category": "Code Formatters",
+  "status": "shipped",
+  "summary": "Beautify messy JavaScript with indentation — locally in your browser.",
+  "description": "Paste minified or messy JavaScript and get a readable, indented result. Preserves strings, comments, and regex literals. Optional minify-into-input. Lightweight heuristic formatter — not Prettier.",
+  "keywords": [
+    "javascript beautifier",
+    "js formatter",
+    "pretty print javascript",
+    "format js",
+    "unminify javascript"
+  ],
+  "relatedSlugs": [
+    "javascript-minifier",
+    "html-formatter",
+    "css-formatter",
+    "sql-formatter",
+    "markdown-to-html"
+  ],
+  "faqs": [
+    {
+      "question": "Is this Prettier?",
+      "answer": "No. It is a lightweight brace/semicolon-aware beautifier that keeps strings and comments intact. Complex edge cases may differ from Prettier."
+    },
+    {
+      "question": "Can I minify?",
+      "answer": "Use “Minify into input” here, or open the dedicated JavaScript Minifier for comment stripping and size stats."
+    },
+    {
+      "question": "TypeScript / JSX?",
+      "answer": "Plain JS works best. JSX/TS syntax may format imperfectly because this is not a full language parser."
+    },
+    {
+      "question": "Is my code uploaded?",
+      "answer": "No. Formatting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "javascript-beautifier"
+}

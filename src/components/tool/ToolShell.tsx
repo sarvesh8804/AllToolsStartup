@@ -4,6 +4,7 @@ import type { ToolDefinition } from "@/types/tool";
 import { PrivacyBadge } from "@/components/tool/PrivacyBadge";
 import { FaqList } from "@/components/tool/FaqList";
 import { RelatedTools } from "@/components/tool/RelatedTools";
+import { ToolSeoSections } from "@/components/tool/ToolSeoSections";
 import { FAMILY_LABELS, familyPath } from "@/lib/urls";
 
 export function ToolShell({
@@ -55,6 +56,7 @@ export function ToolShell({
 
       <div className="mt-8">{children}</div>
 
+      <ToolSeoSections tool={tool} />
       <FaqList faqs={tool.faqs} />
       <RelatedTools tools={related} />
     </div>

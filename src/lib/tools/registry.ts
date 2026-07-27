@@ -57,11 +57,41 @@ export function getToolByFamilySlug(
   return getAllTools().find((t) => t.family === family && t.slug === slug);
 }
 
-export function getRelatedTools(tool: ToolDefinition): ToolDefinition[] {
+/**
+ * Explicit relatedSlugs first, then same category, then same family —
+ * enough links for crawl paths without editing every JSON by hand.
+ */
+export function getRelatedTools(
+  tool: ToolDefinition,
+  limit = 8,
+): ToolDefinition[] {
   const bySlug = new Map(getAllTools().map((t) => [t.slug, t]));
-  return tool.relatedSlugs
-    .map((slug) => bySlug.get(slug))
-    .filter((t): t is ToolDefinition => t != null && t.status === "shipped");
+  const seen = new Set<string>([tool.slug]);
+  const out: ToolDefinition[] = [];
+
+  const push = (candidate: ToolDefinition | undefined) => {
+    if (!candidate || candidate.status !== "shipped") return;
+    if (seen.has(candidate.slug)) return;
+    seen.add(candidate.slug);
+    out.push(candidate);
+  };
+
+  for (const slug of tool.relatedSlugs) {
+    if (out.length >= limit) break;
+    push(bySlug.get(slug));
+  }
+
+  for (const candidate of getShippedTools()) {
+    if (out.length >= limit) break;
+    if (candidate.category === tool.category) push(candidate);
+  }
+
+  for (const candidate of getShippedByFamily(tool.family)) {
+    if (out.length >= limit) break;
+    push(candidate);
+  }
+
+  return out;
 }
 
 export function getSearchIndex() {

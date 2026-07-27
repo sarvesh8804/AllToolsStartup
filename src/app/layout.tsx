@@ -27,7 +27,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   ...createPageMetadata({
     title: SITE_NAME,
-    description: `${SITE_TAGLINE} Free browser-based tools that run locally — formatters, PDF, images, calculators.`,
+    description: `${SITE_TAGLINE}. Everything runs securely inside your browser — formatters, PDF, images, calculators, and converters. No account required.`,
     path: "/",
   }),
   metadataBase: new URL(SITE_URL),

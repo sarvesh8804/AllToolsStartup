@@ -1,0 +1,27 @@
+{
+  "slug": "fake-email-generator",
+  "name": "Fake Email Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Generate synthetic email addresses for fixtures and mockups — locally in your browser.",
+  "description": "Create 1–100 fake emails on a domain you choose, or mix example.* domains. Use a seed for reproducible lists and copy plain text or JSON. For development demos only — these are not real mailboxes.",
+  "keywords": ["fake email", "dummy email", "test email generator", "mock email", "synthetic email"],
+  "relatedSlugs": ["fake-name-generator", "fake-user-json-generator", "fake-address-generator"],
+  "faqs": [
+    {
+      "question": "Can I send mail to these addresses?",
+      "answer": "No. They are placeholders for UI and API fixtures. Prefer domains like example.com."
+    },
+    {
+      "question": "Can I reproduce the same list?",
+      "answer": "Yes. Enable a deterministic seed."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "fake-email-generator"
+}

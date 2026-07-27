@@ -1,0 +1,38 @@
+{
+  "slug": "image-to-base64",
+  "name": "Image to Base64",
+  "family": "image",
+  "category": "Image Tools",
+  "status": "shipped",
+  "summary": "Convert an image to a Base64 data URL, raw string, CSS background, or HTML img tag — in your browser.",
+  "description": "Drop a PNG, JPEG, WebP, GIF, BMP, or SVG and get Base64 output as a data URL, raw Base64, CSS background-image, or an HTML img snippet. Encoding runs entirely locally so files never leave your device.",
+  "keywords": [
+    "image to base64",
+    "base64 image",
+    "data url image",
+    "encode image base64",
+    "css background base64"
+  ],
+  "relatedSlugs": [
+    "image-compressor",
+    "base64-encode-decode",
+    "base64-url-safe",
+    "webp-converter"
+  ],
+  "faqs": [
+    {
+      "question": "Is my image uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    },
+    {
+      "question": "Data URL vs raw Base64?",
+      "answer": "A data URL includes the MIME prefix (data:image/…;base64,) and can be pasted into HTML or CSS. Raw Base64 is only the encoded bytes."
+    },
+    {
+      "question": "How large can the image be?",
+      "answer": "Limited by your browser memory. Very large images produce long Base64 strings that may be awkward to paste into markup."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "image-to-base64"
+}

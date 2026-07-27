@@ -1,0 +1,42 @@
+{
+  "slug": "csv-to-excel-client-side",
+  "name": "CSV to Excel (XLSX)",
+  "family": "tools",
+  "category": "CSV & Spreadsheets",
+  "status": "shipped",
+  "summary": "Convert CSV to a downloadable .xlsx workbook entirely in your browser.",
+  "description": "Paste CSV, choose delimiter and sheet name, then download a real Excel .xlsx file. Built client-side with SheetJS — nothing is uploaded to a server.",
+  "keywords": [
+    "csv to excel",
+    "csv to xlsx",
+    "convert csv to spreadsheet",
+    "download xlsx",
+    "csv excel converter"
+  ],
+  "relatedSlugs": [
+    "excel-to-csv",
+    "csv-to-json",
+    "csv-viewer-table",
+    "json-to-csv"
+  ],
+  "faqs": [
+    {
+      "question": "Is the Excel file built on a server?",
+      "answer": "No. The .xlsx workbook is generated in your browser and downloaded locally."
+    },
+    {
+      "question": "Which delimiters are supported?",
+      "answer": "Comma, semicolon, tab, and pipe."
+    },
+    {
+      "question": "Can I name the sheet?",
+      "answer": "Yes — up to 31 characters (Excel’s sheet-name limit)."
+    },
+    {
+      "question": "Is my CSV uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "csv-to-excel-client-side"
+}

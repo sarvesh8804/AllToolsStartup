@@ -1,0 +1,27 @@
+{
+  "slug": "keyword-density-checker",
+  "name": "Keyword Density Checker",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Measure word and phrase density in your copy — locally in your browser.",
+  "description": "Paste draft text to see total words, unique keywords, and density percentages. Ignore stop words, set a minimum length, track focus keywords or phrases, and review the top terms. Nothing is uploaded.",
+  "keywords": ["keyword density", "seo density", "keyword checker", "word frequency", "phrase density"],
+  "relatedSlugs": ["word-counter", "character-counter", "meta-tags-preview"],
+  "faqs": [
+    {
+      "question": "How is density calculated?",
+      "answer": "Density is occurrences ÷ total words × 100. Stop words can be excluded from the ranking list, but the denominator still uses all words."
+    },
+    {
+      "question": "Can I check multi-word phrases?",
+      "answer": "Yes. Add phrases to the focus field (one per line or comma-separated)."
+    },
+    {
+      "question": "Is my text uploaded?",
+      "answer": "No. Analysis runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "keyword-density-checker"
+}

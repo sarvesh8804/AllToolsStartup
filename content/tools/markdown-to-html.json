@@ -1,0 +1,42 @@
+{
+  "slug": "markdown-to-html",
+  "name": "Markdown to HTML",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Convert Markdown to HTML locally — headings, lists, tables, code fences, and more.",
+  "description": "Paste Markdown and get HTML output in your browser. Supports headings, bold/italic, links, images, lists (including task lists), blockquotes, fenced code blocks, horizontal rules, and GFM-style tables. Optional wrap in an article element.",
+  "keywords": [
+    "markdown to html",
+    "md to html",
+    "convert markdown",
+    "markdown converter",
+    "gfm html"
+  ],
+  "relatedSlugs": [
+    "markdown-preview",
+    "html-formatter",
+    "javascript-beautifier",
+    "text-diff"
+  ],
+  "faqs": [
+    {
+      "question": "Is this full CommonMark?",
+      "answer": "No. It covers common Markdown and GFM features (tables, strikethrough, task lists) for everyday conversion — not a complete spec implementation."
+    },
+    {
+      "question": "Is HTML in the source escaped?",
+      "answer": "Yes. Raw angle brackets in text are escaped so pasted Markdown cannot inject tags unless you deliberately write Markdown that produces them (links, images)."
+    },
+    {
+      "question": "Need a live preview instead?",
+      "answer": "Use Markdown Preview to render GFM visually side-by-side."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "markdown-to-html"
+}

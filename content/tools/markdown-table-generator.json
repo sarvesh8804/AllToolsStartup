@@ -1,0 +1,27 @@
+{
+  "slug": "markdown-table-generator",
+  "name": "Markdown Table Generator",
+  "family": "tools",
+  "category": "Markdown & Docs",
+  "status": "shipped",
+  "summary": "Build GitHub-flavored Markdown tables from an editable grid — locally in your browser.",
+  "description": "Set columns and rows, edit headers and cells, choose left/center/right alignment per column, and copy pretty or compact Markdown. Pipe characters in cells are escaped. Nothing is uploaded.",
+  "keywords": ["markdown table", "gfm table", "md table generator", "github table", "readme table"],
+  "relatedSlugs": ["readme-generator", "markdown-preview", "markdown-to-html"],
+  "faqs": [
+    {
+      "question": "Does it support column alignment?",
+      "answer": "Yes. Each column can be left, center, or right using standard GFM alignment markers."
+    },
+    {
+      "question": "What if a cell contains a pipe?",
+      "answer": "Pipes are escaped as \\| so the table stays valid."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "markdown-table-generator"
+}

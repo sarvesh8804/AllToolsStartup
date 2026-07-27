@@ -1,0 +1,38 @@
+{
+  "slug": "passphrase-generator",
+  "name": "Passphrase Generator",
+  "family": "tools",
+  "category": "Security & Crypto (educational, client)",
+  "status": "shipped",
+  "summary": "Generate memorable diceware-style passphrases from a 1,024-word dictionary — entirely in your browser.",
+  "description": "Build strong, readable passphrases with 3–12 words, custom separators, optional capitalization, and optional digit/symbol suffixes. Entropy is estimated from dictionary size. Uses your browser’s CSPRNG. Educational client-side tool — not a password manager.",
+  "keywords": [
+    "passphrase generator",
+    "diceware",
+    "word password",
+    "memorable password",
+    "xkcd password"
+  ],
+  "relatedSlugs": [
+    "password-generator",
+    "random-password-generator",
+    "password-strength-meter",
+    "uuid-v4-generator"
+  ],
+  "faqs": [
+    {
+      "question": "How strong is a six-word passphrase?",
+      "answer": "With a 1,024-word list, each word contributes about 10 bits. Six words are roughly 60 bits before optional digit/symbol extras."
+    },
+    {
+      "question": "Is this the EFF diceware list?",
+      "answer": "No. Forge uses a fixed 1,024-word client dictionary sized for the browser bundle. Increase word count if you need more entropy."
+    },
+    {
+      "question": "Are passphrases uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "passphrase-generator"
+}

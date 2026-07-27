@@ -1,0 +1,42 @@
+{
+  "slug": "gpa-calculator",
+  "name": "GPA Calculator",
+  "family": "calculators",
+  "category": "Student Tools",
+  "status": "shipped",
+  "summary": "Compute a weighted 4.0 GPA from course credits and letter grades — locally.",
+  "description": "Add courses with credit hours and letter grades (A through F, including plus/minus). See GPA, total credits, and quality points using a common US 4.0 scale. Schools vary — verify against your registrar.",
+  "keywords": [
+    "gpa calculator",
+    "grade point average",
+    "weighted gpa",
+    "4.0 scale",
+    "college gpa"
+  ],
+  "relatedSlugs": [
+    "percentage-calculator",
+    "bmi-calculator",
+    "age-calculator",
+    "emi-loan-calculator"
+  ],
+  "faqs": [
+    {
+      "question": "Which grade scale is used?",
+      "answer": "A common US 4.0 letter map: A=4.0, A-=3.7, B+=3.3, B=3.0, B-=2.7, C+=2.3, C=2.0, C-=1.7, D+=1.3, D=1.0, D-=0.7, F=0."
+    },
+    {
+      "question": "How is weighted GPA calculated?",
+      "answer": "GPA = Σ(grade points × credits) ÷ Σ(credits)."
+    },
+    {
+      "question": "Will this match my school’s GPA?",
+      "answer": "Not always. Institutions use different plus/minus maps and weighting rules. Confirm with your registrar."
+    },
+    {
+      "question": "Is my data uploaded?",
+      "answer": "No. Calculations run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "gpa-calculator"
+}

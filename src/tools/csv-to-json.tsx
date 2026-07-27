@@ -16,11 +16,35 @@ CSV to JSON,JSON & Data Formats,true
 export function CsvToJsonTool() {
   const [input, setInput] = useState(SAMPLE);
   const [indent, setIndent] = useState(2);
+  const [delimiter, setDelimiter] = useState(",");
+  const [headers, setHeaders] = useState(true);
+  const [inferTypes, setInferTypes] = useState(true);
+  const [trimFields, setTrimFields] = useState(true);
+  const [skipEmptyRows, setSkipEmptyRows] = useState(true);
+  const [output, setOutput] = useState<"objects" | "arrays">("objects");
   const [started, setStarted] = useState(false);
 
   const result = useMemo(
-    () => csvToJson(input, { spaces: indent }),
-    [input, indent],
+    () =>
+      csvToJson(input, {
+        spaces: indent,
+        delimiter,
+        headers,
+        inferTypes,
+        trimFields,
+        skipEmptyRows,
+        output,
+      }),
+    [
+      input,
+      indent,
+      delimiter,
+      headers,
+      inferTypes,
+      trimFields,
+      skipEmptyRows,
+      output,
+    ],
   );
 
   const onChange = useCallback(
@@ -34,9 +58,46 @@ export function CsvToJsonTool() {
     [started],
   );
 
+  const markStart = () => {
+    if (!started) {
+      setStarted(true);
+      track({ name: "tool_start", tool: "csv-to-json", family: "tools" });
+    }
+  };
+
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-3">
+        <label className="flex items-center gap-2 text-sm text-[var(--muted)]">
+          Delimiter
+          <select
+            value={delimiter}
+            onChange={(e) => {
+              markStart();
+              setDelimiter(e.target.value);
+            }}
+            className="rounded-md border border-[var(--border)] bg-[var(--surface)] px-2 py-1 text-[var(--foreground)]"
+          >
+            <option value=",">Comma</option>
+            <option value=";">Semicolon</option>
+            <option value={"\t"}>Tab</option>
+            <option value="|">Pipe</option>
+          </select>
+        </label>
+        <label className="flex items-center gap-2 text-sm text-[var(--muted)]">
+          Output
+          <select
+            value={output}
+            onChange={(e) => {
+              markStart();
+              setOutput(e.target.value as "objects" | "arrays");
+            }}
+            className="rounded-md border border-[var(--border)] bg-[var(--surface)] px-2 py-1 text-[var(--foreground)]"
+          >
+            <option value="objects">Objects</option>
+            <option value="arrays">Arrays</option>
+          </select>
+        </label>
         <label className="flex items-center gap-2 text-sm text-[var(--muted)]">
           JSON indent
           <select
@@ -54,6 +115,32 @@ export function CsvToJsonTool() {
             {result.rows.length} rows · {result.columns.length} columns
           </p>
         ) : null}
+      </div>
+
+      <div className="flex flex-wrap gap-3">
+        {(
+          [
+            ["headers", headers, setHeaders, "First row is header"],
+            ["infer", inferTypes, setInferTypes, "Infer types"],
+            ["trim", trimFields, setTrimFields, "Trim fields"],
+            ["skip", skipEmptyRows, setSkipEmptyRows, "Skip empty rows"],
+          ] as const
+        ).map(([key, value, setter, label]) => (
+          <label
+            key={key}
+            className="flex items-center gap-2 text-sm text-[var(--muted)]"
+          >
+            <input
+              type="checkbox"
+              checked={value}
+              onChange={(e) => {
+                markStart();
+                setter(e.target.checked);
+              }}
+            />
+            {label}
+          </label>
+        ))}
       </div>
 
       {!result.ok ? <ToolErrorState message={result.error} /> : null}

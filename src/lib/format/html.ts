@@ -108,10 +108,40 @@ export function formatHtml(input: string, indentSize = 2): string {
     .trim() + (input.trim() ? "\n" : "");
 }
 
-export function minifyHtml(input: string): string {
-  return input
-    .replace(/<!--[\s\S]*?-->/g, "")
-    .replace(/>\s+</g, "><")
-    .replace(/\s{2,}/g, " ")
-    .trim();
+export type HtmlMinifyOptions = {
+  /** Strip HTML comments (default true). */
+  removeComments?: boolean;
+  /** Collapse whitespace between tags and runs of spaces (default true). */
+  collapseWhitespace?: boolean;
+  /** Also trim text node edges between tags more aggressively (default true). */
+  trimTextNodes?: boolean;
+};
+
+export const DEFAULT_HTML_MINIFY_OPTIONS: Required<HtmlMinifyOptions> = {
+  removeComments: true,
+  collapseWhitespace: true,
+  trimTextNodes: true,
+};
+
+export function minifyHtml(
+  input: string,
+  options: HtmlMinifyOptions = {},
+): string {
+  const opts = { ...DEFAULT_HTML_MINIFY_OPTIONS, ...options };
+  let out = input;
+
+  if (opts.removeComments) {
+    out = out.replace(/<!--[\s\S]*?-->/g, "");
+  }
+
+  if (opts.collapseWhitespace) {
+    out = out.replace(/>\s+</g, "><");
+    out = out.replace(/\s{2,}/g, " ");
+  }
+
+  if (opts.trimTextNodes) {
+    out = out.replace(/>\s+/g, ">").replace(/\s+</g, "<");
+  }
+
+  return out.trim();
 }

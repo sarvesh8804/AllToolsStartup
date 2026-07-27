@@ -1,0 +1,27 @@
+{
+  "slug": "htaccess-redirect-generator",
+  "name": "htaccess Redirect Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Generate Apache .htaccess redirects, HTTPS, and www rules — locally in your browser.",
+  "description": "Add 301/302 (and related) redirects, optionally force HTTPS or www/apex hosts, and copy a ready-to-review .htaccess snippet. Always test on staging; Apache modules and hosts vary.",
+  "keywords": ["htaccess", "htaccess redirect", "apache redirect", "301 redirect", "force https"],
+  "relatedSlugs": ["robots-txt-generator", "sitemap-xml-generator", "gitignore-generator"],
+  "faqs": [
+    {
+      "question": "Will this work on Nginx?",
+      "answer": "No. This outputs Apache .htaccess / mod_rewrite style rules. Nginx needs different config."
+    },
+    {
+      "question": "Should I paste this blindly into production?",
+      "answer": "No. Review order of rules, existing config, and test redirects before deploying."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "htaccess-redirect-generator"
+}
