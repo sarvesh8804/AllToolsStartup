@@ -25,6 +25,33 @@ export function isPngFile(file: { type: string; name: string }): boolean {
   return /\.png$/i.test(file.name);
 }
 
+export function isJpegFile(file: { type: string; name: string }): boolean {
+  if (file.type === "image/jpeg" || file.type === "image/jpg") return true;
+  return /\.jpe?g$/i.test(file.name);
+}
+
+export function isWebpFile(file: { type: string; name: string }): boolean {
+  if (file.type === "image/webp") return true;
+  return /\.webp$/i.test(file.name);
+}
+
+/** PNG / JPEG / WebP — formats this converter suite accepts. */
+export function isConvertibleImageFile(file: {
+  type: string;
+  name: string;
+}): boolean {
+  return isPngFile(file) || isJpegFile(file) || isWebpFile(file);
+}
+
+export function detectImageMime(
+  file: { type: string; name: string },
+): OutputImageFormat | null {
+  if (isPngFile(file)) return "image/png";
+  if (isJpegFile(file)) return "image/jpeg";
+  if (isWebpFile(file)) return "image/webp";
+  return null;
+}
+
 export function isRasterImageFile(file: { type: string; name: string }): boolean {
   if (file.type.startsWith("image/") && file.type !== "image/svg+xml") {
     return true;

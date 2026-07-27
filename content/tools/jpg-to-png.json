@@ -1,0 +1,27 @@
+{
+  "slug": "jpg-to-png",
+  "name": "JPG to PNG",
+  "family": "image",
+  "category": "Image Tools",
+  "status": "shipped",
+  "summary": "Convert JPG / JPEG images to PNG in your browser — no upload required.",
+  "description": "Drop a JPEG photo, preview the PNG result, and download a .png file. Conversion uses the Canvas API on your device so the image never leaves your machine.",
+  "keywords": ["jpg to png", "jpeg to png", "convert jpg", "image converter"],
+  "relatedSlugs": ["png-to-jpg", "webp-converter", "image-resizer"],
+  "faqs": [
+    {
+      "question": "Will the PNG be larger?",
+      "answer": "Often yes. JPEG is lossy and compact; PNG is lossless, so file size usually grows."
+    },
+    {
+      "question": "Is my photo uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    },
+    {
+      "question": "Can I convert PNG to JPG?",
+      "answer": "Yes — use the PNG to JPG tool."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "jpg-to-png"
+}

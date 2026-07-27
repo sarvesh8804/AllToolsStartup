@@ -2,9 +2,13 @@ import { describe, expect, it } from "vitest";
 import {
   changeExtension,
   clampJpegQuality,
+  detectImageMime,
   formatBytes,
+  isConvertibleImageFile,
+  isJpegFile,
   isPngFile,
   isRasterImageFile,
+  isWebpFile,
   mimeToExtension,
   normalizeHexColor,
   qualityToPercent,
@@ -46,6 +50,24 @@ describe("file sniffers", () => {
     expect(isPngFile({ type: "image/png", name: "x.bin" })).toBe(true);
     expect(isPngFile({ type: "", name: "x.PNG" })).toBe(true);
     expect(isPngFile({ type: "image/jpeg", name: "x.jpg" })).toBe(false);
+  });
+
+  it("detects JPEG", () => {
+    expect(isJpegFile({ type: "image/jpeg", name: "a" })).toBe(true);
+    expect(isJpegFile({ type: "", name: "shot.JPEG" })).toBe(true);
+    expect(isJpegFile({ type: "image/png", name: "a.png" })).toBe(false);
+  });
+
+  it("detects WebP", () => {
+    expect(isWebpFile({ type: "image/webp", name: "a" })).toBe(true);
+    expect(isWebpFile({ type: "", name: "a.webp" })).toBe(true);
+  });
+
+  it("detects convertible + mime", () => {
+    expect(isConvertibleImageFile({ type: "", name: "a.jpg" })).toBe(true);
+    expect(isConvertibleImageFile({ type: "", name: "a.gif" })).toBe(false);
+    expect(detectImageMime({ type: "", name: "a.png" })).toBe("image/png");
+    expect(detectImageMime({ type: "", name: "a.txt" })).toBe(null);
   });
 
   it("detects raster images", () => {

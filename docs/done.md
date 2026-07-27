@@ -16,13 +16,13 @@
 
 | Field | Value |
 |---|---|
-| **Last completed phase** | `P020` |
-| **Next phase to do** | `P021` |
+| **Last completed phase** | `P030` |
+| **Next phase to do** | `P031` |
 | **Production live?** | Ready (deploy on push / Vercel) |
 | **Production URL** | — _(set after first Vercel deploy)_ |
 | **Foundation done** | 12 / 12 |
-| **Tool phases done** | 20 / 472 |
-| **Tools shipped** | 39 / 755 |
+| **Tool phases done** | 30 / 472 |
+| **Tools shipped** | 53 / 755 |
 | **Hub phases done** | 0 / 50 |
 | **SEO phases done** | 0 / 94 |
 | **Monetization phases done** | 0 / 15 |
@@ -60,6 +60,16 @@ Newest at top. One line per completed phase.
 
 | Date | Phase | Notes / commit / URL |
 |---|---|---|
+| 2026-07-27 | `P030` | Data Storage Converter (SI + IEC units) on `/convert` + tests |
+| 2026-07-27 | `P029` | Length / Weight / Temperature converters on `/convert` + tests |
+| 2026-07-27 | `P028` | PDF to Images (PDF.js render → PNG/JPEG) on `/pdf` + tests |
+| 2026-07-27 | `P027` | PDF Rotate (90/180/270, all or range) on `/pdf` + tests |
+| 2026-07-27 | `P026` | PDF Split (range / every page / chunks) on `/pdf` + tests |
+| 2026-07-27 | `P025` | PDF Merge (pdf-lib, reorder, encrypted reject) on `/pdf` + tests |
+| 2026-07-27 | `P024` | Images to PDF (pdf-lib, reorder, A4/Letter/fit) on `/pdf` + tests |
+| 2026-07-27 | `P023` | Favicon Generator (ICO + PNGs + HTML snippet) on `/image` + tests |
+| 2026-07-27 | `P022` | Image Compressor + EXIF Remover (Canvas strip/detect) on `/image` + tests |
+| 2026-07-27 | `P021` | JPG to PNG + WebP Converter (PNG/JPEG/WebP) on `/image` + tests |
 | 2026-07-26 | `P020` | Image Resizer + PNG to JPG (Canvas, local-only) on `/image` + tests |
 | 2026-07-26 | `P019` | Regex Tester (flags, matches/groups, replace preview) on `/tools` + tests |
 | 2026-07-26 | `P018` | Timezone Converter (Intl/IANA, DST-aware) on `/convert` + tests |
@@ -143,16 +153,16 @@ _472 phases · 755 tools. Check the box when the whole phase (all tools listed) 
 | [x] | `P018` | Timezone Converter | M | `/convert` |
 | [x] | `P019` | Regex Tester | M | `/tools` |
 | [x] | `P020` | Image Resizer; PNG to JPG | E/M | `/image` |
-| [ ] | `P021` | JPG to PNG; WebP Converter | E/M | `/image` |
-| [ ] | `P022` | Image Compressor; EXIF Remover | M | `/image` |
-| [ ] | `P023` | Favicon Generator from Image | M | `/image` |
-| [ ] | `P024` | Images to PDF | M | `/pdf` |
-| [ ] | `P025` | PDF Merge | H | `/pdf` |
-| [ ] | `P026` | PDF Split | H | `/pdf` |
-| [ ] | `P027` | PDF Rotate | M | `/pdf` |
-| [ ] | `P028` | PDF to Images | H | `/pdf` |
-| [ ] | `P029` | Unit Converter (length); Unit Converter (weight); Unit Converter (temperature) | E | `/convert` |
-| [ ] | `P030` | Unit Converter (data storage) | E | `/convert` |
+| [x] | `P021` | JPG to PNG; WebP Converter | E/M | `/image` |
+| [x] | `P022` | Image Compressor; EXIF Remover | M | `/image` |
+| [x] | `P023` | Favicon Generator from Image | M | `/image` |
+| [x] | `P024` | Images to PDF | M | `/pdf` |
+| [x] | `P025` | PDF Merge | H | `/pdf` |
+| [x] | `P026` | PDF Split | H | `/pdf` |
+| [x] | `P027` | PDF Rotate | M | `/pdf` |
+| [x] | `P028` | PDF to Images | H | `/pdf` |
+| [x] | `P029` | Unit Converter (length); Unit Converter (weight); Unit Converter (temperature) | E | `/convert` |
+| [x] | `P030` | Unit Converter (data storage) | E | `/convert` |
 | [ ] | `P031` | GST / Sales Tax Calculator; SIP Calculator | E | `/calculators` |
 | [ ] | `P032` | BMI Calculator; GPA Calculator | E | `/calculators` |
 | [ ] | `P033` | Meta Tags Preview (SERP); CSV Viewer / Table | E | `/tools` |

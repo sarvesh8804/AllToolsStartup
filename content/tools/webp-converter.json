@@ -1,0 +1,27 @@
+{
+  "slug": "webp-converter",
+  "name": "WebP Converter",
+  "family": "image",
+  "category": "Image Tools",
+  "status": "shipped",
+  "summary": "Convert between WebP, PNG, and JPEG with quality control — all client-side.",
+  "description": "Upload PNG, JPEG, or WebP, pick an output format, set quality for lossy formats, and download the result. Transparency can be filled when exporting to JPEG. Nothing is uploaded.",
+  "keywords": ["webp converter", "png to webp", "jpg to webp", "webp to png", "convert webp"],
+  "relatedSlugs": ["png-to-jpg", "jpg-to-png", "image-resizer"],
+  "faqs": [
+    {
+      "question": "Does every browser encode WebP?",
+      "answer": "Modern Chromium, Firefox, and Safari do. If encoding fails, try another format or update your browser."
+    },
+    {
+      "question": "What about transparent PNGs to JPEG?",
+      "answer": "JPEG has no alpha. Choose a background color to fill transparent pixels."
+    },
+    {
+      "question": "Is the image uploaded?",
+      "answer": "No. Conversion stays in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "webp-converter"
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "temperature-converter",
+  "name": "Temperature Converter",
+  "family": "convert",
+  "category": "Converters (Units & Misc)",
+  "status": "shipped",
+  "summary": "Convert Celsius, Fahrenheit, and Kelvin instantly — private and client-side.",
+  "description": "Enter a temperature in °C, °F, or K and see the other scales update. Negative Kelvin is rejected. No values leave your browser.",
+  "keywords": ["temperature converter", "celsius to fahrenheit", "fahrenheit to celsius", "kelvin converter"],
+  "relatedSlugs": ["length-converter", "weight-converter", "number-base-converter"],
+  "faqs": [
+    {
+      "question": "Which scales are supported?",
+      "answer": "Celsius, Fahrenheit, and Kelvin."
+    },
+    {
+      "question": "Why can’t Kelvin be negative?",
+      "answer": "Absolute zero is 0 K. Values below that are physically invalid."
+    },
+    {
+      "question": "Is this uploaded?",
+      "answer": "No. Conversion runs entirely on your device."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "temperature-converter"
+}

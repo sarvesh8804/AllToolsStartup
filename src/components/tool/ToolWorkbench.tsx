@@ -235,6 +235,86 @@ const PngToJpgTool = dynamic(
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
 );
 
+const JpgToPngTool = dynamic(
+  () => import("@/tools/jpg-to-png").then((m) => m.JpgToPngTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const WebpConverterTool = dynamic(
+  () => import("@/tools/webp-converter").then((m) => m.WebpConverterTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ImageCompressorTool = dynamic(
+  () =>
+    import("@/tools/image-compressor").then((m) => m.ImageCompressorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ExifRemoverTool = dynamic(
+  () => import("@/tools/exif-remover").then((m) => m.ExifRemoverTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const FaviconGeneratorTool = dynamic(
+  () =>
+    import("@/tools/favicon-generator-from-image").then(
+      (m) => m.FaviconGeneratorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ImagesToPdfTool = dynamic(
+  () => import("@/tools/images-to-pdf").then((m) => m.ImagesToPdfTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const PdfMergeTool = dynamic(
+  () => import("@/tools/pdf-merge").then((m) => m.PdfMergeTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const PdfSplitTool = dynamic(
+  () => import("@/tools/pdf-split").then((m) => m.PdfSplitTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const PdfRotateTool = dynamic(
+  () => import("@/tools/pdf-rotate").then((m) => m.PdfRotateTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const PdfToImagesTool = dynamic(
+  () => import("@/tools/pdf-to-images").then((m) => m.PdfToImagesTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const LengthConverterTool = dynamic(
+  () => import("@/tools/length-converter").then((m) => m.LengthConverterTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const WeightConverterTool = dynamic(
+  () => import("@/tools/weight-converter").then((m) => m.WeightConverterTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const TemperatureConverterTool = dynamic(
+  () =>
+    import("@/tools/temperature-converter").then(
+      (m) => m.TemperatureConverterTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const DataStorageConverterTool = dynamic(
+  () =>
+    import("@/tools/data-storage-converter").then(
+      (m) => m.DataStorageConverterTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
 const REGISTRY = {
   "json-formatter": JsonFormatterTool,
   "json-validator": JsonValidatorTool,
@@ -275,6 +355,20 @@ const REGISTRY = {
   "regex-tester": RegexTesterTool,
   "image-resizer": ImageResizerTool,
   "png-to-jpg": PngToJpgTool,
+  "jpg-to-png": JpgToPngTool,
+  "webp-converter": WebpConverterTool,
+  "image-compressor": ImageCompressorTool,
+  "exif-remover": ExifRemoverTool,
+  "favicon-generator-from-image": FaviconGeneratorTool,
+  "images-to-pdf": ImagesToPdfTool,
+  "pdf-merge": PdfMergeTool,
+  "pdf-split": PdfSplitTool,
+  "pdf-rotate": PdfRotateTool,
+  "pdf-to-images": PdfToImagesTool,
+  "length-converter": LengthConverterTool,
+  "weight-converter": WeightConverterTool,
+  "temperature-converter": TemperatureConverterTool,
+  "data-storage-converter": DataStorageConverterTool,
 } as const;
 
 export function ToolWorkbench({ component }: { component?: string }) {

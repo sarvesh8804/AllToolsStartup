@@ -1,0 +1,27 @@
+{
+  "slug": "pdf-merge",
+  "name": "PDF Merge",
+  "family": "pdf",
+  "category": "PDF Tools",
+  "status": "shipped",
+  "summary": "Combine multiple PDFs into one file in your browser — no upload, private merge.",
+  "description": "Drop two or more PDFs, reorder pages of files with up/down controls, and download a single merged PDF. Processing uses pdf-lib entirely on your device. Encrypted PDFs are not supported.",
+  "keywords": ["merge pdf", "combine pdf", "join pdf", "pdf merger", "merge pdf online free", "private pdf merge"],
+  "relatedSlugs": ["pdf-split", "pdf-rotate", "images-to-pdf"],
+  "faqs": [
+    {
+      "question": "Are my PDFs uploaded?",
+      "answer": "No. Merge runs entirely in your browser with pdf-lib."
+    },
+    {
+      "question": "Can I merge password-protected PDFs?",
+      "answer": "Not yet. Encrypted files show a clear unsupported message."
+    },
+    {
+      "question": "Do mixed page sizes work?",
+      "answer": "Yes. Each page keeps its original size."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "pdf-merge"
+}

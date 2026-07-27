@@ -1,0 +1,27 @@
+{
+  "slug": "image-compressor",
+  "name": "Image Compressor",
+  "family": "image",
+  "category": "Image Tools",
+  "status": "shipped",
+  "summary": "Compress images with quality and max-size controls, then download a smaller file — in your browser.",
+  "description": "Drop a photo, pick quality and optional max dimension, choose JPEG/WebP/PNG output, and compare before/after file sizes. Compression uses the Canvas API locally so nothing is uploaded.",
+  "keywords": ["image compressor", "compress image", "reduce image size", "optimize photo", "compress jpeg"],
+  "relatedSlugs": ["image-resizer", "exif-remover", "webp-converter"],
+  "faqs": [
+    {
+      "question": "Is my image uploaded?",
+      "answer": "No. Compression runs entirely in your browser."
+    },
+    {
+      "question": "JPEG, WebP, or PNG?",
+      "answer": "JPEG and WebP shrink photos best. PNG is lossless and may not get smaller."
+    },
+    {
+      "question": "Does this remove EXIF?",
+      "answer": "Re-encoding drops most metadata. Use EXIF Remover when privacy is the main goal."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "image-compressor"
+}

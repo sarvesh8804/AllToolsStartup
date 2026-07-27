@@ -1,0 +1,27 @@
+{
+  "slug": "pdf-to-images",
+  "name": "PDF to Images",
+  "family": "pdf",
+  "category": "PDF Tools",
+  "status": "shipped",
+  "summary": "Convert PDF pages to PNG or JPEG images in your browser — no upload required.",
+  "description": "Drop a PDF, pick resolution and format, choose all pages or a range, and download each page as an image. Rendering uses PDF.js locally on your device. Encrypted PDFs are not supported.",
+  "keywords": ["pdf to images", "pdf to png", "pdf to jpg", "convert pdf pages", "pdf screenshot"],
+  "relatedSlugs": ["images-to-pdf", "pdf-split", "pdf-rotate"],
+  "faqs": [
+    {
+      "question": "Is my PDF uploaded?",
+      "answer": "No. Pages are rendered with PDF.js entirely in your browser."
+    },
+    {
+      "question": "Why is there a page limit?",
+      "answer": "Rendering many high-DPI pages can exhaust browser memory. Select a range of up to 40 pages per run."
+    },
+    {
+      "question": "PNG or JPEG?",
+      "answer": "PNG keeps sharp text and transparency. JPEG is smaller for photo-heavy pages."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "pdf-to-images"
+}

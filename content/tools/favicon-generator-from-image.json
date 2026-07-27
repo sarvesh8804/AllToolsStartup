@@ -1,0 +1,27 @@
+{
+  "slug": "favicon-generator-from-image",
+  "name": "Favicon Generator from Image",
+  "family": "image",
+  "category": "Image Tools",
+  "status": "shipped",
+  "summary": "Turn any logo into favicon.ico plus PNG sizes (16–512) with an HTML snippet — in your browser.",
+  "description": "Upload an image, center-crop to a square, add optional padding and background, then download a multi-size favicon.ico, Apple touch icon, and Android Chrome PNGs. Includes ready-to-paste head link tags. Everything runs locally.",
+  "keywords": ["favicon generator", "favicon.ico", "apple touch icon", "generate favicon", "png to ico"],
+  "relatedSlugs": ["image-resizer", "image-compressor", "png-to-jpg"],
+  "faqs": [
+    {
+      "question": "What sizes are generated?",
+      "answer": "16, 32, 48 (packed into favicon.ico), plus 180 (Apple), 192, and 512 PNGs."
+    },
+    {
+      "question": "Is my logo uploaded?",
+      "answer": "No. Generation uses the Canvas API in your browser."
+    },
+    {
+      "question": "Non-square source images?",
+      "answer": "We center-crop to the largest square before resizing."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "favicon-generator-from-image"
+}

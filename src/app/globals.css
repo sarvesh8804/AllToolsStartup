@@ -55,3 +55,23 @@ body {
   background: #f7f1c4 !important;
   border-right: 1px solid var(--border) !important;
 }
+
+@keyframes forge-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes forge-scale-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

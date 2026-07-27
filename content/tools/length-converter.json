@@ -1,0 +1,27 @@
+{
+  "slug": "length-converter",
+  "name": "Length Converter",
+  "family": "convert",
+  "category": "Converters (Units & Misc)",
+  "status": "shipped",
+  "summary": "Convert length between metric and imperial units — meters, feet, miles, and more — in your browser.",
+  "description": "Enter a length and see millimeters, centimeters, meters, kilometers, inches, feet, yards, and miles update instantly. Conversion math runs locally with no upload.",
+  "keywords": ["length converter", "meters to feet", "km to miles", "inch to cm", "unit converter length"],
+  "relatedSlugs": ["data-storage-converter", "weight-converter", "temperature-converter"],
+  "faqs": [
+    {
+      "question": "Which length units are supported?",
+      "answer": "mm, cm, m, km, inches, feet, yards, and miles."
+    },
+    {
+      "question": "Is data uploaded?",
+      "answer": "No. All conversion happens in your browser."
+    },
+    {
+      "question": "How accurate is it?",
+      "answer": "Factors use standard SI definitions (e.g. 1 in = 0.0254 m exactly)."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "length-converter"
+}

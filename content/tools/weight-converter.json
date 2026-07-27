@@ -1,0 +1,27 @@
+{
+  "slug": "weight-converter",
+  "name": "Weight Converter",
+  "family": "convert",
+  "category": "Converters (Units & Misc)",
+  "status": "shipped",
+  "summary": "Convert weight and mass between grams, kilograms, pounds, ounces, and more — locally.",
+  "description": "Type a mass value and instantly convert across milligrams, grams, kilograms, metric tons, ounces, pounds, and stones. Everything runs in your browser.",
+  "keywords": ["weight converter", "kg to lbs", "pounds to kg", "oz to grams", "mass converter"],
+  "relatedSlugs": ["length-converter", "temperature-converter", "number-base-converter"],
+  "faqs": [
+    {
+      "question": "Weight or mass?",
+      "answer": "These are mass units under standard gravity (everyday “weight” conversion)."
+    },
+    {
+      "question": "Is my input uploaded?",
+      "answer": "No. Conversion is client-side only."
+    },
+    {
+      "question": "Which units are included?",
+      "answer": "mg, g, kg, metric ton, ounce, pound, and stone."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "weight-converter"
+}

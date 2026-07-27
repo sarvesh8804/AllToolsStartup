@@ -1,0 +1,27 @@
+{
+  "slug": "pdf-split",
+  "name": "PDF Split",
+  "family": "pdf",
+  "category": "PDF Tools",
+  "status": "shipped",
+  "summary": "Split a PDF by page range, every page, or fixed chunks — privately in your browser.",
+  "description": "Upload one PDF, extract pages (e.g. 1-3,5), split every page into its own file, or cut into N-page chunks. Downloads stay on your device via pdf-lib. Encrypted PDFs are not supported.",
+  "keywords": ["split pdf", "extract pdf pages", "pdf splitter", "separate pdf pages", "split pdf online free"],
+  "relatedSlugs": ["pdf-to-images", "pdf-merge", "pdf-rotate"],
+  "faqs": [
+    {
+      "question": "Is my PDF uploaded?",
+      "answer": "No. Splitting runs entirely in your browser."
+    },
+    {
+      "question": "How do page ranges work?",
+      "answer": "Use commas and hyphens, like 1-3,5,8-. Open-ended ranges go through the last page."
+    },
+    {
+      "question": "Can I split password-protected PDFs?",
+      "answer": "Not yet. Encrypted files show a clear unsupported message."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "pdf-split"
+}

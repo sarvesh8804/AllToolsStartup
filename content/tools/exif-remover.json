@@ -1,0 +1,27 @@
+{
+  "slug": "exif-remover",
+  "name": "EXIF Remover",
+  "family": "image",
+  "category": "Image Tools",
+  "status": "shipped",
+  "summary": "Strip EXIF and other metadata from photos before sharing — all processing stays on your device.",
+  "description": "Upload a JPEG, PNG, or WebP. We scan for EXIF and common metadata, then re-encode a clean copy without GPS, camera, or embedded tags. Nothing leaves your browser.",
+  "keywords": ["exif remover", "strip exif", "remove metadata", "remove gps from photo", "privacy photo"],
+  "relatedSlugs": ["image-compressor", "image-resizer", "png-to-jpg"],
+  "faqs": [
+    {
+      "question": "How does stripping work?",
+      "answer": "Pixels are redrawn to a canvas and exported as a new file. Original metadata containers are not copied."
+    },
+    {
+      "question": "Will quality change?",
+      "answer": "PNG stays lossless. JPEG/WebP use high-quality re-encode (~92%) which may differ slightly from the source."
+    },
+    {
+      "question": "Is the photo uploaded?",
+      "answer": "No. Detection and stripping run locally."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "exif-remover"
+}

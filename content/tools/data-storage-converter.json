@@ -1,0 +1,27 @@
+{
+  "slug": "data-storage-converter",
+  "name": "Data Storage Converter",
+  "family": "convert",
+  "category": "Converters (Units & Misc)",
+  "status": "shipped",
+  "summary": "Convert bits, bytes, KB/MB/GB and KiB/MiB/GiB — SI and binary prefixes, in your browser.",
+  "description": "Convert digital storage between bits, bytes, decimal SI units (KB, MB, GB, TB, PB) and binary IEC units (KiB, MiB, GiB, TiB). Clear labels avoid the classic KB vs KiB confusion. Runs entirely locally.",
+  "keywords": ["data storage converter", "mb to gb", "kb to mb", "bytes converter", "gib to gb", "file size converter"],
+  "relatedSlugs": ["length-converter", "weight-converter", "number-base-converter"],
+  "faqs": [
+    {
+      "question": "What’s the difference between MB and MiB?",
+      "answer": "MB uses powers of 1000 (SI). MiB uses powers of 1024 (IEC). Operating systems often show GiB while drive makers advertise GB."
+    },
+    {
+      "question": "Are bits supported?",
+      "answer": "Yes. 8 bits = 1 byte."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. Conversion is client-side only."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "data-storage-converter"
+}

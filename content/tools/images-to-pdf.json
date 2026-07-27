@@ -1,0 +1,27 @@
+{
+  "slug": "images-to-pdf",
+  "name": "Images to PDF",
+  "family": "pdf",
+  "category": "PDF Tools",
+  "status": "shipped",
+  "summary": "Combine PNG, JPEG, or WebP images into a multi-page PDF — entirely in your browser.",
+  "description": "Drop one or more images, reorder pages, choose fit-to-image or A4/Letter with margins, and download a PDF. WebP and other formats are converted locally. Nothing is uploaded to a server.",
+  "keywords": ["images to pdf", "jpg to pdf", "png to pdf", "convert images to pdf", "photo to pdf"],
+  "relatedSlugs": ["pdf-merge", "pdf-to-images", "image-compressor"],
+  "faqs": [
+    {
+      "question": "Are my photos uploaded?",
+      "answer": "No. The PDF is built with pdf-lib in your browser."
+    },
+    {
+      "question": "What does Fit to image mean?",
+      "answer": "Each page matches that image’s aspect ratio and pixel size (scaled to PDF points)."
+    },
+    {
+      "question": "Which formats work?",
+      "answer": "PNG and JPEG embed directly. WebP, GIF, and BMP are converted to PNG first via Canvas."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "images-to-pdf"
+}

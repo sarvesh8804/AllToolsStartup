@@ -77,11 +77,11 @@ _Plus ~50 hub days (H) + ~94 SEO days (S) + 15 monetization days (M) interleaved
 
 | Field | Value |
 |---|---|
-| **Today’s phase** | `P021` |
-| **Last shipped** | `P020` |
-| **Tools live (shipped)** | 39 / 755 |
+| **Today’s phase** | `P031` |
+| **Last shipped** | `P030` |
+| **Tools live (shipped)** | 53 / 755 |
 | **Production URL** | _set after Vercel deploy_ |
-| **Notes** | P020 shipped (Image Resizer; PNG to JPG). Next: JPG to PNG; WebP Converter. |
+| **Notes** | P030 shipped (Data Storage Converter). Next: GST / Sales Tax; SIP Calculator. |
 
 ---
 
