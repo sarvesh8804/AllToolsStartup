@@ -530,6 +530,82 @@ const HtmlTableGeneratorTool = dynamic(
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
 );
 
+const CsvToMarkdownTool = dynamic(
+  () => import("@/tools/csv-to-markdown").then((m) => m.CsvToMarkdownTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const AccessiblePaletteGeneratorTool = dynamic(
+  () =>
+    import("@/tools/accessible-palette-generator").then(
+      (m) => m.AccessiblePaletteGeneratorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const HexToHslTool = dynamic(
+  () => import("@/tools/hex-to-hsl").then((m) => m.HexToHslTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CommitMessageHelperTool = dynamic(
+  () =>
+    import("@/tools/commit-message-helper").then(
+      (m) => m.CommitMessageHelperTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ConventionalCommitBuilderTool = dynamic(
+  () =>
+    import("@/tools/conventional-commit-builder").then(
+      (m) => m.ConventionalCommitBuilderTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const JsonToMarkdownTableTool = dynamic(
+  () =>
+    import("@/tools/json-to-markdown-table").then(
+      (m) => m.JsonToMarkdownTableTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const DnsRecordTypesCheatsheetTool = dynamic(
+  () =>
+    import("@/tools/dns-record-types-cheatsheet").then(
+      (m) => m.DnsRecordTypesCheatsheetTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const PortNumberReferenceTool = dynamic(
+  () =>
+    import("@/tools/port-number-reference").then(
+      (m) => m.PortNumberReferenceTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const UrlParserBuilderTool = dynamic(
+  () =>
+    import("@/tools/url-parser-builder").then((m) => m.UrlParserBuilderTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const UserAgentParserTool = dynamic(
+  () =>
+    import("@/tools/user-agent-parser").then((m) => m.UserAgentParserTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const SqlJoinVisualizerTool = dynamic(
+  () =>
+    import("@/tools/sql-join-visualizer").then((m) => m.SqlJoinVisualizerTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
 const RgbToHexTool = dynamic(
   () => import("@/tools/rgb-to-hex").then((m) => m.RgbToHexTool),
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
@@ -1008,6 +1084,17 @@ const REGISTRY = {
   "word-frequency-counter": WordFrequencyCounterTool,
   "markdown-table-generator": MarkdownTableGeneratorTool,
   "html-table-generator": HtmlTableGeneratorTool,
+  "csv-to-markdown": CsvToMarkdownTool,
+  "accessible-palette-generator": AccessiblePaletteGeneratorTool,
+  "hex-to-hsl": HexToHslTool,
+  "commit-message-helper": CommitMessageHelperTool,
+  "conventional-commit-builder": ConventionalCommitBuilderTool,
+  "json-to-markdown-table": JsonToMarkdownTableTool,
+  "dns-record-types-cheatsheet": DnsRecordTypesCheatsheetTool,
+  "port-number-reference": PortNumberReferenceTool,
+  "url-parser-builder": UrlParserBuilderTool,
+  "user-agent-parser": UserAgentParserTool,
+  "sql-join-visualizer": SqlJoinVisualizerTool,
   "rgb-to-hex": RgbToHexTool,
   "pomodoro-timer": PomodoroTimerTool,
   "fake-address-generator": FakeAddressGeneratorTool,

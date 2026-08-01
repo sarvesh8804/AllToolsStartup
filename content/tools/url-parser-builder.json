@@ -1,0 +1,40 @@
+{
+  "slug": "url-parser-builder",
+  "name": "URL Parser / Builder",
+  "family": "tools",
+  "category": "Networking & HTTP",
+  "status": "shipped",
+  "summary": "Parse URLs into components or build a URL from protocol, host, path, query, and hash.",
+  "description": "Paste any URL to see protocol, hostname, port, path, query parameters, hash, and auth parts. Switch to Build mode to compose a URL from fields, or send a parsed URL to the builder for editing.",
+  "keywords": [
+    "url parser",
+    "url builder",
+    "parse url",
+    "query string",
+    "url components",
+    "decode url"
+  ],
+  "relatedSlugs": [
+    "url-encode-decode",
+    "http-status-code-reference",
+    "dns-record-types-cheatsheet",
+    "port-number-reference",
+    "base64-encode-decode"
+  ],
+  "faqs": [
+    {
+      "question": "What if I paste a URL without https://?",
+      "answer": "Bare hostnames get https:// prepended automatically for parsing (e.g. example.com/path)."
+    },
+    {
+      "question": "Are credentials shown?",
+      "answer": "Usernames are shown in plain text. Passwords are masked in the parse view but included when building URLs."
+    },
+    {
+      "question": "Is my URL sent to a server?",
+      "answer": "No. Parsing and building run entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "url-parser-builder"
+}

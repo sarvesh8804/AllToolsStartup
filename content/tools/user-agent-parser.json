@@ -1,0 +1,40 @@
+{
+  "slug": "user-agent-parser",
+  "name": "User-Agent Parser",
+  "family": "tools",
+  "category": "Networking & HTTP",
+  "status": "shipped",
+  "summary": "Parse User-Agent strings into browser, OS, device, and bot detection fields.",
+  "description": "Paste any HTTP User-Agent string to see browser name and version, rendering engine, operating system, device type, and whether it looks like a bot or crawler. Includes sample UAs for Chrome, Safari, Firefox, curl, and Googlebot.",
+  "keywords": [
+    "user agent parser",
+    "ua parser",
+    "browser detection",
+    "bot detection",
+    "user agent string",
+    "http headers"
+  ],
+  "relatedSlugs": [
+    "url-parser-builder",
+    "http-status-code-reference",
+    "dns-record-types-cheatsheet",
+    "port-number-reference",
+    "jwt-decoder"
+  ],
+  "faqs": [
+    {
+      "question": "How accurate is the parsing?",
+      "answer": "Common browsers, mobile devices, curl, and well-known bots are recognized with regex heuristics. Custom or rare UAs may show Unknown for some fields."
+    },
+    {
+      "question": "Is my User-Agent sent to a server?",
+      "answer": "No. Parsing runs entirely in your browser."
+    },
+    {
+      "question": "Can I detect bots?",
+      "answer": "Yes. Known crawler patterns (Googlebot, Bingbot, etc.) are flagged in the Bot field."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "user-agent-parser"
+}

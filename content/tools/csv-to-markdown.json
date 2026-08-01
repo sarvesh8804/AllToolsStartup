@@ -1,0 +1,44 @@
+{
+  "slug": "csv-to-markdown",
+  "name": "CSV to Markdown",
+  "family": "tools",
+  "category": "CSV & Spreadsheets",
+  "status": "shipped",
+  "summary": "Convert CSV to a GitHub-flavored Markdown pipe table — delimiter, headers, and column alignment.",
+  "description": "Paste CSV and get a ready-to-paste Markdown table for README files, docs, and wikis. Options: delimiter (comma, semicolon, tab, pipe), header row toggle, trim fields, skip empty rows, pretty column padding, and global column alignment. Quoted fields and embedded commas are supported.",
+  "keywords": [
+    "csv to markdown",
+    "csv markdown table",
+    "spreadsheet markdown",
+    "convert csv to md table",
+    "gfm table"
+  ],
+  "relatedSlugs": [
+    "csv-to-json",
+    "markdown-table-generator",
+    "html-table-generator",
+    "csv-viewer-table",
+    "markdown-preview",
+    "json-to-csv"
+  ],
+  "faqs": [
+    {
+      "question": "What Markdown format is used?",
+      "answer": "GitHub-flavored Markdown pipe tables with a header row and alignment row (e.g. | :--- | ---: |)."
+    },
+    {
+      "question": "Can I convert CSV without a header row?",
+      "answer": "Yes — turn off “First row is header” and columns are named Column 1, Column 2, …"
+    },
+    {
+      "question": "Are pipes in cell values escaped?",
+      "answer": "Yes. Pipe characters inside cells are escaped as \\| so the table stays valid."
+    },
+    {
+      "question": "Is my CSV uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "csv-to-markdown"
+}

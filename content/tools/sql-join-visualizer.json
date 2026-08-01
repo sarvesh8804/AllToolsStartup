@@ -1,0 +1,40 @@
+{
+  "slug": "sql-join-visualizer",
+  "name": "SQL JOIN Visualizer",
+  "family": "tools",
+  "category": "SQL & Databases",
+  "status": "shipped",
+  "summary": "Visualize INNER, LEFT, RIGHT, and FULL JOIN results with sample tables and generated SQL.",
+  "description": "Pick two sample tables, choose join keys and join type, and see the resulting rows plus the equivalent SQL statement. Great for learning how JOINs include or exclude unmatched rows.",
+  "keywords": [
+    "sql join",
+    "join visualizer",
+    "inner join",
+    "left join",
+    "sql tutorial",
+    "database join"
+  ],
+  "relatedSlugs": [
+    "sql-minifier",
+    "json-to-markdown-table",
+    "csv-to-markdown",
+    "graphql-formatter",
+    "json-diff"
+  ],
+  "faqs": [
+    {
+      "question": "What sample data is used?",
+      "answer": "Built-in users, orders, and departments tables with a few rows each. You can mix users with orders or departments."
+    },
+    {
+      "question": "Does this run real SQL?",
+      "answer": "No. Join logic is simulated in JavaScript to show row-by-row results without a database."
+    },
+    {
+      "question": "What does NULL mean in the result?",
+      "answer": "NULL means that side of the join had no matching row—for example, a user with no orders in a LEFT JOIN."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "sql-join-visualizer"
+}

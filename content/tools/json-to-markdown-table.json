@@ -1,0 +1,43 @@
+{
+  "slug": "json-to-markdown-table",
+  "name": "JSON to Markdown Table",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Convert a JSON array of objects to a GitHub-flavored Markdown pipe table.",
+  "description": "Paste JSON (array of objects) and get a ready-to-paste Markdown table for README files and docs. Options: pretty column padding, sort keys A–Z, column alignment. Nested values are JSON-stringified in cells.",
+  "keywords": [
+    "json to markdown table",
+    "json markdown table",
+    "array to markdown",
+    "json table converter",
+    "gfm table from json"
+  ],
+  "relatedSlugs": [
+    "csv-to-markdown",
+    "json-to-csv",
+    "csv-to-json",
+    "markdown-table-generator",
+    "json-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "What JSON shape is required?",
+      "answer": "A JSON array where each item is a plain object. Keys become column headers; values become cell text."
+    },
+    {
+      "question": "How are nested objects handled?",
+      "answer": "Objects and arrays are serialized with JSON.stringify so the table stays valid."
+    },
+    {
+      "question": "How are columns ordered?",
+      "answer": "By default, keys follow first-seen order across rows. Enable “Sort column keys A–Z” for alphabetical headers."
+    },
+    {
+      "question": "Is my JSON uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-to-markdown-table"
+}

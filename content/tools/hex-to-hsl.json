@@ -1,0 +1,43 @@
+{
+  "slug": "hex-to-hsl",
+  "name": "HEX to HSL",
+  "family": "tools",
+  "category": "Colors",
+  "status": "shipped",
+  "summary": "Convert HEX, RGB, or HSL colors to HSL channels and CSS hsl() syntax — with live sliders.",
+  "description": "Paste a hex (#rrggbb), rgb(), or hsl() color to see hue, saturation, lightness, classic and modern CSS hsl() strings, and the equivalent HEX/RGB. Adjust HSL sliders to explore nearby colors interactively.",
+  "keywords": [
+    "hex to hsl",
+    "hsl converter",
+    "color hsl",
+    "css hsl",
+    "hue saturation lightness"
+  ],
+  "relatedSlugs": [
+    "hex-to-rgb",
+    "rgb-to-hex",
+    "color-picker",
+    "color-contrast-checker",
+    "accessible-palette-generator"
+  ],
+  "faqs": [
+    {
+      "question": "What is modern hsl() syntax?",
+      "answer": "CSS Color Level 4 uses space-separated values: hsl(210 50% 50%) instead of commas."
+    },
+    {
+      "question": "Can I paste hsl() as input?",
+      "answer": "Yes. Both hsl(210, 50%, 50%) and hsl(210 50% 50%) are accepted."
+    },
+    {
+      "question": "Do the sliders change the hex value?",
+      "answer": "Yes. Moving hue, saturation, or lightness updates the preview and HEX/RGB outputs in real time."
+    },
+    {
+      "question": "Is my color uploaded?",
+      "answer": "No. Conversion runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "hex-to-hsl"
+}

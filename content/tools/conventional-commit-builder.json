@@ -1,0 +1,43 @@
+{
+  "slug": "conventional-commit-builder",
+  "name": "Conventional Commit Builder",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Build Conventional Commits messages — type, scope, breaking change, body, and footers.",
+  "description": "Compose commits in the Conventional Commits format: feat/fix/docs type, optional scope, description, breaking-change bang, body, BREAKING CHANGE footer, and issue references. Live header preview and length guidance included.",
+  "keywords": [
+    "conventional commits",
+    "commit message format",
+    "feat fix chore",
+    "breaking change commit",
+    "semantic commit"
+  ],
+  "relatedSlugs": [
+    "commit-message-helper",
+    "git-command-explorer",
+    "git-cheat-sheet-interactive",
+    "readme-generator",
+    "gitignore-generator"
+  ],
+  "faqs": [
+    {
+      "question": "What is Conventional Commits?",
+      "answer": "A lightweight convention: type(scope): description, optional body/footer, and BREAKING CHANGE for incompatible API changes."
+    },
+    {
+      "question": "When do I use the breaking toggle?",
+      "answer": "When the commit introduces an incompatible change. The header gets a ! after the type/scope and a BREAKING CHANGE footer is added."
+    },
+    {
+      "question": "Which types are supported?",
+      "answer": "feat, fix, docs, style, refactor, perf, test, build, ci, chore, and revert — the common Conventional Commits set."
+    },
+    {
+      "question": "Is my message uploaded?",
+      "answer": "No. Formatting runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "conventional-commit-builder"
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "dns-record-types-cheatsheet",
+  "name": "DNS Record Types Cheatsheet",
+  "family": "tools",
+  "category": "Networking & HTTP",
+  "status": "shipped",
+  "summary": "Searchable cheatsheet of DNS record types — A, AAAA, CNAME, MX, TXT, NS, and DNSSEC records.",
+  "description": "Browse and search common DNS resource record types with plain-language descriptions and copyable zone-file examples. Filter by category: address, mail, authority, service discovery, and security.",
+  "keywords": [
+    "dns records",
+    "dns cheatsheet",
+    "a record",
+    "cname",
+    "mx record",
+    "txt record",
+    "dnssec"
+  ],
+  "relatedSlugs": [
+    "port-number-reference",
+    "url-parser-builder",
+    "http-status-code-reference",
+    "htaccess-redirect-generator",
+    "robots-txt-generator"
+  ],
+  "faqs": [
+    {
+      "question": "Which records are most common for websites?",
+      "answer": "A or AAAA for the site IP, CNAME for www aliases, and TXT for SPF/DKIM/DMARC or domain verification."
+    },
+    {
+      "question": "Can I copy examples?",
+      "answer": "Yes — click any record row to copy its example zone line to the clipboard."
+    },
+    {
+      "question": "Does this configure my DNS?",
+      "answer": "No. This is a reference only. Changes are made at your DNS provider or registrar."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "dns-record-types-cheatsheet"
+}

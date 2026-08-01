@@ -16,17 +16,17 @@
 
 | Field | Value |
 |---|---|
-| **Last completed phase** | `P079` |
-| **Next phase to do** | `P080` |
+| **Last completed phase** | `P084` |
+| **Next phase to do** | `P085` |
 | **Production live?** | Ready (deploy on push / Vercel) |
 | **Production URL** | — _(set after first Vercel deploy)_ |
 | **Foundation done** | 12 / 12 |
-| **Tool phases done** | 79 / 472 |
-| **Tools shipped** | 144 / 755 |
+| **Tool phases done** | 84 / 472 |
+| **Tools shipped** | 155 / 755 |
 | **Hub phases done** | 0 / 50 |
 | **SEO phases done** | 1 / 94 _(platform SEO pass after P030)_ |
 | **Monetization phases done** | 0 / 15 |
-| **Last updated** | 2026-07-27 |
+| **Last updated** | 2026-08-01 |
 
 ### Progress bar (manual)
 
@@ -60,6 +60,11 @@ Newest at top. One line per completed phase.
 
 | Date | Phase | Notes / commit / URL |
 |---|---|---|
+| 2026-08-01 | `P084` | User-Agent Parser + SQL JOIN Visualizer on `/tools` + tests |
+| 2026-08-01 | `P083` | DNS Record Types Cheatsheet + Port Number Reference + URL Parser / Builder on `/tools` + tests |
+| 2026-08-01 | `P082` | Conventional Commit Builder + JSON to Markdown Table on `/tools` + tests |
+| 2026-08-01 | `P081` | HEX to HSL + Commit Message Helper on `/tools` + tests |
+| 2026-07-29 | `P080` | CSV to Markdown + Accessible Palette Generator on `/tools` + tests |
 | 2026-07-27 | `P079` | Word Frequency Counter + HTML Table Generator on `/tools` + tests |
 | 2026-07-27 | `P078` | Dummy Text Generator + Invisible Character Remover + Line Counter on `/tools` + tests |
 | 2026-07-27 | `P077` | Regex Explainer (static rules) on `/tools` + tests |
@@ -262,11 +267,11 @@ _472 phases · 755 tools. Check the box when the whole phase (all tools listed) 
 | [x] | `P077` | Regex Explainer (static rules) | H | `/tools` |
 | [x] | `P078` | Dummy Text Generator (paragraphs); Invisible Character Remover; Line Counter | E | `/tools` |
 | [x] | `P079` | Word Frequency Counter; HTML Table Generator | E | `/tools` |
-| [ ] | `P080` | CSV to Markdown; Accessible Palette Generator | E/M | `/tools` |
-| [ ] | `P081` | HEX to HSL; Commit Message Helper | E | `/tools` |
-| [ ] | `P082` | Conventional Commit Builder; JSON to Markdown Table | E | `/tools` |
-| [ ] | `P083` | DNS Record Types Cheatsheet; Port Number Reference; URL Parser / Builder | E | `/tools` |
-| [ ] | `P084` | User-Agent Parser; SQL JOIN Visualizer | E/M | `/tools` |
+| [x] | `P080` | CSV to Markdown; Accessible Palette Generator | E/M | `/tools` |
+| [x] | `P081` | HEX to HSL; Commit Message Helper | E | `/tools` |
+| [x] | `P082` | Conventional Commit Builder; JSON to Markdown Table | E | `/tools` |
+| [x] | `P083` | DNS Record Types Cheatsheet; Port Number Reference; URL Parser / Builder | E | `/tools` |
+| [x] | `P084` | User-Agent Parser; SQL JOIN Visualizer | E/M | `/tools` |
 | [ ] | `P085` | Caesar Cipher; Markdown TOC Generator; Morse to Text | E | `/tools` |
 | [ ] | `P086` | Text to Morse; HTML Entity Reference | E | `/tools` |
 | [ ] | `P087` | JSON-LD Formatter; CSV to HTML Table | E | `/tools` |

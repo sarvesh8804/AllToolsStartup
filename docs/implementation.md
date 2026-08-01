@@ -77,11 +77,11 @@ _Plus ~50 hub days (H) + ~94 SEO days (S) + 15 monetization days (M) interleaved
 
 | Field | Value |
 |---|---|
-| **Today’s phase** | `P080` |
-| **Last shipped** | `P079` |
-| **Tools live (shipped)** | 144 / 755 |
+| **Today’s phase** | `P085` |
+| **Last shipped** | `P084` |
+| **Tools live (shipped)** | 155 / 755 |
 | **Production URL** | _set after Vercel deploy_ |
-| **Notes** | P079 shipped (Word Frequency Counter; HTML Table Generator). Next: CSV to Markdown; Accessible Palette Generator. |
+| **Notes** | P084 shipped (User-Agent Parser; SQL JOIN Visualizer). Next: Caesar Cipher; Markdown TOC Generator; Morse to Text. |
 
 ---
 

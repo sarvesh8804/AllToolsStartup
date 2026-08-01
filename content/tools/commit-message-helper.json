@@ -1,0 +1,43 @@
+{
+  "slug": "commit-message-helper",
+  "name": "Commit Message Helper",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Compose git commit messages with subject/body/footer — 72-char wrap, length checks, and co-author lines.",
+  "description": "Write a clear commit subject, optional body, issue footer, and co-author trailers. Get a ready-to-paste message with 72-character body wrapping, subject length guidance (50/72), imperative-mood hints, and Co-authored-by formatting.",
+  "keywords": [
+    "commit message",
+    "git commit",
+    "commit message helper",
+    "git commit template",
+    "co-authored-by"
+  ],
+  "relatedSlugs": [
+    "git-command-explorer",
+    "git-cheat-sheet-interactive",
+    "readme-generator",
+    "gitignore-generator",
+    "gitignore-builder"
+  ],
+  "faqs": [
+    {
+      "question": "What is the ideal subject length?",
+      "answer": "Aim for ≤ 50 characters so subjects stay readable in git log and GitHub. Hard limit guidance is 72 characters."
+    },
+    {
+      "question": "How is the body formatted?",
+      "answer": "Paragraphs are preserved and long lines are wrapped at 72 characters — the convention for git commit bodies."
+    },
+    {
+      "question": "How do I add co-authors?",
+      "answer": "Enter one person per line as Name <email@example.com>. Co-authored-by trailers are appended automatically."
+    },
+    {
+      "question": "Is this Conventional Commits?",
+      "answer": "This helper focuses on general best practices (subject, body, footer). For type(scope): format, use the Conventional Commit Builder tool."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "commit-message-helper"
+}

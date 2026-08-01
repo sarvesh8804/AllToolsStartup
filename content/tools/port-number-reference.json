@@ -1,0 +1,41 @@
+{
+  "slug": "port-number-reference",
+  "name": "Port Number Reference",
+  "family": "tools",
+  "category": "Networking & HTTP",
+  "status": "shipped",
+  "summary": "Search common TCP/UDP port numbers — HTTP, SSH, mail, databases, and more.",
+  "description": "Quick reference for well-known ports: 80/443 web, 22 SSH, 25/587 mail, 53 DNS, 3306 MySQL, 5432 PostgreSQL, and others. Search by port number or service name and copy with one click.",
+  "keywords": [
+    "port numbers",
+    "tcp ports",
+    "udp ports",
+    "port reference",
+    "443",
+    "22 ssh",
+    "3306 mysql"
+  ],
+  "relatedSlugs": [
+    "dns-record-types-cheatsheet",
+    "url-parser-builder",
+    "http-status-code-reference",
+    "htaccess-redirect-generator",
+    "git-command-explorer"
+  ],
+  "faqs": [
+    {
+      "question": "Are these the only ports for each service?",
+      "answer": "No. These are common defaults. Production setups may use custom ports or reverse proxies."
+    },
+    {
+      "question": "Why is port 22 listed twice?",
+      "answer": "SSH and SFTP both typically use TCP 22. The reference notes both use cases."
+    },
+    {
+      "question": "Can I search by service name?",
+      "answer": "Yes. Try postgres, redis, https, or any keyword from the descriptions."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "port-number-reference"
+}

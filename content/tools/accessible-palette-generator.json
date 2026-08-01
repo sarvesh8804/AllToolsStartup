@@ -1,0 +1,45 @@
+{
+  "slug": "accessible-palette-generator",
+  "name": "Accessible Palette Generator",
+  "family": "tools",
+  "category": "Colors",
+  "status": "shipped",
+  "summary": "Generate WCAG-aware color palettes from a brand color — semantic tokens, contrast pairs, CSS variables.",
+  "description": "Enter a primary/brand color and get a semantic palette for light or dark UI themes. Each token is tuned for readable text and UI contrast at WCAG AA or AAA. Review contrast pairs with pass/fail badges, preview swatches, and export CSS custom properties or JSON design tokens.",
+  "keywords": [
+    "accessible palette",
+    "wcag color palette",
+    "design tokens",
+    "color system generator",
+    "accessible colors",
+    "css variables palette"
+  ],
+  "relatedSlugs": [
+    "color-contrast-checker",
+    "complementary-color-finder",
+    "color-picker",
+    "hex-to-rgb",
+    "rgb-to-hex",
+    "palette-from-image"
+  ],
+  "faqs": [
+    {
+      "question": "What tokens are generated?",
+      "answer": "Background, foreground, primary, primary-foreground, secondary, muted, muted-foreground, accent, and border — similar to common design-system naming."
+    },
+    {
+      "question": "How is contrast calculated?",
+      "answer": "WCAG 2 relative luminance. AA targets 4.5:1 for normal text and 3:1 for large text/UI; AAA targets 7:1 and 4.5:1 respectively."
+    },
+    {
+      "question": "Can I use this for dark mode?",
+      "answer": "Yes. Switch Theme to Dark to generate a dark canvas with adjusted foreground and surface colors."
+    },
+    {
+      "question": "Is my color sent to a server?",
+      "answer": "No. Palette generation runs entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "accessible-palette-generator"
+}
