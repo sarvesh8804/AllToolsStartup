@@ -1,0 +1,40 @@
+{
+  "slug": "text-to-morse",
+  "name": "Text to Morse",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Encode plain text into International Morse code with dots, dashes, and word separators.",
+  "description": "Type or paste text to get Morse code with spaces between letters and a slash or pipe between words. Supports A–Z, digits, and common punctuation using standard International Morse.",
+  "keywords": [
+    "text to morse",
+    "morse encoder",
+    "morse code generator",
+    "encode morse",
+    "dots and dashes",
+    "morse translator"
+  ],
+  "relatedSlugs": [
+    "morse-to-text",
+    "caesar-cipher",
+    "case-converter",
+    "character-counter",
+    "dummy-text-generator"
+  ],
+  "faqs": [
+    {
+      "question": "How are words separated?",
+      "answer": "Choose a slash (/) or pipe (|) between words. Letters within a word are separated by spaces."
+    },
+    {
+      "question": "What characters can I encode?",
+      "answer": "Letters A–Z, digits 0–9, and punctuation including period, comma, question mark, exclamation, slash, and at-sign."
+    },
+    {
+      "question": "Can I decode Morse here?",
+      "answer": "Use the Morse to Text tool for decoding dot-dash input."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "text-to-morse"
+}

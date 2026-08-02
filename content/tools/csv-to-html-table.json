@@ -1,0 +1,40 @@
+{
+  "slug": "csv-to-html-table",
+  "name": "CSV to HTML Table",
+  "family": "tools",
+  "category": "CSV & Spreadsheets",
+  "status": "shipped",
+  "summary": "Convert CSV into a clean HTML table with escaped cells and optional accessibility markup.",
+  "description": "Paste CSV and get ready-to-embed HTML with thead/tbody sections, optional caption, column alignment, and scope attributes on header cells. Cell values are HTML-escaped for safe output.",
+  "keywords": [
+    "csv to html table",
+    "csv to html",
+    "html table generator",
+    "convert csv",
+    "spreadsheet to html",
+    "data table html"
+  ],
+  "relatedSlugs": [
+    "csv-to-markdown",
+    "html-table-generator",
+    "csv-viewer-table",
+    "csv-to-json",
+    "html-to-markdown"
+  ],
+  "faqs": [
+    {
+      "question": "Is the HTML escaped?",
+      "answer": "Yes. Ampersands, angle brackets, and quotes in cell values are escaped so the table is safe to embed."
+    },
+    {
+      "question": "Can I use a custom delimiter?",
+      "answer": "Yes. Choose comma, semicolon, tab, or pipe delimiters."
+    },
+    {
+      "question": "What if my CSV has no header row?",
+      "answer": "Uncheck “First row is header” to auto-generate Column 1, Column 2, and so on."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "csv-to-html-table"
+}

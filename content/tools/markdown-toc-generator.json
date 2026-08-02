@@ -1,0 +1,40 @@
+{
+  "slug": "markdown-toc-generator",
+  "name": "Markdown TOC Generator",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Generate a Markdown table of contents with anchor links from heading lines.",
+  "description": "Paste a Markdown document and get a nested table of contents with GitHub-style anchor slugs. Choose bullet or numbered lists and filter by heading level. Headings inside fenced code blocks are ignored.",
+  "keywords": [
+    "markdown toc",
+    "table of contents",
+    "markdown headings",
+    "anchor links",
+    "markdown generator",
+    "documentation tools"
+  ],
+  "relatedSlugs": [
+    "markdown-preview",
+    "html-to-markdown",
+    "markdown-to-html",
+    "markdown-table-generator",
+    "reading-time-estimator"
+  ],
+  "faqs": [
+    {
+      "question": "Which heading syntax is supported?",
+      "answer": "Standard ATX headings (# through ######) on their own line."
+    },
+    {
+      "question": "How are anchor slugs built?",
+      "answer": "Lowercase text, spaces become hyphens, and duplicate titles get -1, -2 suffixes — similar to GitHub."
+    },
+    {
+      "question": "Can I limit which headings appear?",
+      "answer": "Yes. Set minimum and maximum heading levels (H1–H6) in the options."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "markdown-toc-generator"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "binary-encode-decode",
+  "name": "Binary Encode / Decode",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Convert text to 8-bit binary and back — UTF-8 bytes with optional spacing.",
+  "description": "Encode plain text into groups of eight 0s and 1s, or decode binary back to readable text. Supports spaced or continuous byte output. Useful for learning character encoding and quick binary conversions.",
+  "keywords": [
+    "binary encoder",
+    "binary decoder",
+    "text to binary",
+    "binary to text",
+    "utf-8 binary",
+    "8 bit binary"
+  ],
+  "relatedSlugs": [
+    "base64-encode-decode",
+    "number-base-converter",
+    "base64-url-safe",
+    "url-encode-decode",
+    "html-entity-encode-decode"
+  ],
+  "faqs": [
+    {
+      "question": "How are characters encoded?",
+      "answer": "Text is encoded as UTF-8 bytes, each shown as an 8-bit binary string."
+    },
+    {
+      "question": "Can I decode without spaces?",
+      "answer": "Yes. Choose “No separator” for encode, or paste continuous binary — decode groups every 8 digits."
+    },
+    {
+      "question": "Does this handle emoji?",
+      "answer": "Yes. Multi-byte UTF-8 characters produce multiple 8-bit groups."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "binary-encode-decode"
+}

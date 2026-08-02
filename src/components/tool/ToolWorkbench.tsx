@@ -606,6 +606,112 @@ const SqlJoinVisualizerTool = dynamic(
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
 );
 
+const CaesarCipherTool = dynamic(
+  () => import("@/tools/caesar-cipher").then((m) => m.CaesarCipherTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const MarkdownTocGeneratorTool = dynamic(
+  () =>
+    import("@/tools/markdown-toc-generator").then(
+      (m) => m.MarkdownTocGeneratorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const MorseToTextTool = dynamic(
+  () => import("@/tools/morse-to-text").then((m) => m.MorseToTextTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const TextToMorseTool = dynamic(
+  () => import("@/tools/text-to-morse").then((m) => m.TextToMorseTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const HtmlEntityReferenceTool = dynamic(
+  () =>
+    import("@/tools/html-entity-reference").then(
+      (m) => m.HtmlEntityReferenceTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const JsonLdFormatterTool = dynamic(
+  () =>
+    import("@/tools/json-ld-formatter").then((m) => m.JsonLdFormatterTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CsvToHtmlTableTool = dynamic(
+  () =>
+    import("@/tools/csv-to-html-table").then((m) => m.CsvToHtmlTableTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const DayOfWeekFinderTool = dynamic(
+  () =>
+    import("@/tools/day-of-week-finder").then((m) => m.DayOfWeekFinderTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const BinaryEncodeDecodeTool = dynamic(
+  () =>
+    import("@/tools/binary-encode-decode").then(
+      (m) => m.BinaryEncodeDecodeTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const HexEncodeDecodeTool = dynamic(
+  () =>
+    import("@/tools/hex-encode-decode").then((m) => m.HexEncodeDecodeTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const NanoidGeneratorTool = dynamic(
+  () =>
+    import("@/tools/nanoid-generator").then((m) => m.NanoidGeneratorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const UlidGeneratorTool = dynamic(
+  () => import("@/tools/ulid-generator").then((m) => m.UlidGeneratorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const UnicodeEscapeUnescapeTool = dynamic(
+  () =>
+    import("@/tools/unicode-escape-unescape").then(
+      (m) => m.UnicodeEscapeUnescapeTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ApiKeyStyleTokenGeneratorTool = dynamic(
+  () =>
+    import("@/tools/api-key-style-token-generator").then(
+      (m) => m.ApiKeyStyleTokenGeneratorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ColorfulAvatarGeneratorTool = dynamic(
+  () =>
+    import("@/tools/colorful-avatar-generator").then(
+      (m) => m.ColorfulAvatarGeneratorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const LoremPicsumAlternativePlaceholderTool = dynamic(
+  () =>
+    import("@/tools/lorem-picsum-alternative-placeholder").then(
+      (m) => m.LoremPicsumAlternativePlaceholderTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
 const RgbToHexTool = dynamic(
   () => import("@/tools/rgb-to-hex").then((m) => m.RgbToHexTool),
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
@@ -1095,6 +1201,22 @@ const REGISTRY = {
   "url-parser-builder": UrlParserBuilderTool,
   "user-agent-parser": UserAgentParserTool,
   "sql-join-visualizer": SqlJoinVisualizerTool,
+  "caesar-cipher": CaesarCipherTool,
+  "markdown-toc-generator": MarkdownTocGeneratorTool,
+  "morse-to-text": MorseToTextTool,
+  "text-to-morse": TextToMorseTool,
+  "html-entity-reference": HtmlEntityReferenceTool,
+  "json-ld-formatter": JsonLdFormatterTool,
+  "csv-to-html-table": CsvToHtmlTableTool,
+  "day-of-week-finder": DayOfWeekFinderTool,
+  "binary-encode-decode": BinaryEncodeDecodeTool,
+  "hex-encode-decode": HexEncodeDecodeTool,
+  "nanoid-generator": NanoidGeneratorTool,
+  "ulid-generator": UlidGeneratorTool,
+  "unicode-escape-unescape": UnicodeEscapeUnescapeTool,
+  "api-key-style-token-generator": ApiKeyStyleTokenGeneratorTool,
+  "colorful-avatar-generator": ColorfulAvatarGeneratorTool,
+  "lorem-picsum-alternative-placeholder": LoremPicsumAlternativePlaceholderTool,
   "rgb-to-hex": RgbToHexTool,
   "pomodoro-timer": PomodoroTimerTool,
   "fake-address-generator": FakeAddressGeneratorTool,

@@ -1,0 +1,40 @@
+{
+  "slug": "ulid-generator",
+  "name": "ULID Generator",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Generate sortable ULIDs with millisecond timestamps and secure randomness.",
+  "description": "Create lexicographically sortable 26-character ULIDs. Optionally set a custom Unix millisecond timestamp. Batch mode increments time by 1 ms per ID for ordered lists.",
+  "keywords": [
+    "ulid generator",
+    "ulid",
+    "sortable id",
+    "unique id",
+    "timestamp id",
+    "lexicographic id"
+  ],
+  "relatedSlugs": [
+    "uuid-v4-generator",
+    "nanoid-generator",
+    "uuid-bulk-generator",
+    "unix-timestamp-converter",
+    "password-generator"
+  ],
+  "faqs": [
+    {
+      "question": "What is a ULID?",
+      "answer": "A Universally Unique Lexicographically Sortable Identifier — 48 bits of timestamp plus 80 bits of randomness, encoded in Crockford Base32."
+    },
+    {
+      "question": "Why are batch ULIDs sortable?",
+      "answer": "Each generated ID in a batch uses a timestamp one millisecond later than the previous, preserving sort order."
+    },
+    {
+      "question": "Can I decode the timestamp?",
+      "answer": "Yes. The tool shows the ISO time decoded from the first ULID in the list."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "ulid-generator"
+}

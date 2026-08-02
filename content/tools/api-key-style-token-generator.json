@@ -1,0 +1,40 @@
+{
+  "slug": "api-key-style-token-generator",
+  "name": "API Key Style Token Generator",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Generate Stripe-like or custom-prefix API key tokens for demos and local development.",
+  "description": "Create secret-style tokens such as sk_live_… or pk_test_… plus custom prefix patterns. Adjustable count and secret length using secure browser randomness.",
+  "keywords": [
+    "api key generator",
+    "token generator",
+    "stripe key format",
+    "sk_live",
+    "pk_test",
+    "fake api key"
+  ],
+  "relatedSlugs": [
+    "nanoid-generator",
+    "uuid-v4-generator",
+    "password-generator",
+    "ulid-generator",
+    "passphrase-generator"
+  ],
+  "faqs": [
+    {
+      "question": "Are these real API keys?",
+      "answer": "No. They mimic common key shapes for mockups, tests, and documentation — they are not issued by any provider."
+    },
+    {
+      "question": "What is Stripe-like format?",
+      "answer": "Patterns such as sk_live_<random> or pk_test_<random>, similar to keys many payment APIs use."
+    },
+    {
+      "question": "Is generation secure?",
+      "answer": "Tokens use crypto.getRandomValues locally. Do not treat demo keys as production secrets."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "api-key-style-token-generator"
+}

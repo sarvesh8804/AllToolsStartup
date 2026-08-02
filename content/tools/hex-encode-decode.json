@@ -1,0 +1,40 @@
+{
+  "slug": "hex-encode-decode",
+  "name": "Hex Encode / Decode",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Convert text to hexadecimal bytes and decode hex back to UTF-8 text.",
+  "description": "Encode plain text as hex pairs or decode hexadecimal input with optional spaces and 0x prefixes. Supports uppercase output and spaced bytes when encoding.",
+  "keywords": [
+    "hex encoder",
+    "hex decoder",
+    "text to hex",
+    "hex to text",
+    "hexadecimal converter",
+    "utf-8 hex"
+  ],
+  "relatedSlugs": [
+    "binary-encode-decode",
+    "base64-encode-decode",
+    "number-base-converter",
+    "url-encode-decode",
+    "html-entity-encode-decode"
+  ],
+  "faqs": [
+    {
+      "question": "How is text encoded?",
+      "answer": "Characters are converted to UTF-8 bytes, then each byte is shown as two hexadecimal digits."
+    },
+    {
+      "question": "Can I paste spaced or 0x-prefixed hex?",
+      "answer": "Yes. Decode strips spaces and optional 0x prefixes before converting back to text."
+    },
+    {
+      "question": "Why does decode fail?",
+      "answer": "Hex must have an even number of digits and only contain 0-9 and A-F."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "hex-encode-decode"
+}

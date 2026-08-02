@@ -1,0 +1,40 @@
+{
+  "slug": "json-ld-formatter",
+  "name": "JSON-LD Formatter",
+  "family": "tools",
+  "category": "Web & HTML",
+  "status": "shipped",
+  "summary": "Format, minify, and validate JSON-LD structured data with optional script-tag wrapping.",
+  "description": "Paste schema.org JSON-LD and get pretty-printed or minified output. Optionally wrap the result in a script tag for HTML. Highlights common issues like missing @context or @type.",
+  "keywords": [
+    "json-ld formatter",
+    "structured data",
+    "schema.org",
+    "json ld validator",
+    "seo structured data",
+    "application/ld+json"
+  ],
+  "relatedSlugs": [
+    "json-formatter",
+    "open-graph-meta-generator",
+    "meta-tags-preview",
+    "twitter-card-meta-generator",
+    "html-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "What is JSON-LD?",
+      "answer": "JSON-LD is a JSON format for linked data, commonly used in script tags to describe pages for search engines using schema.org vocabulary."
+    },
+    {
+      "question": "Does this validate against Google?",
+      "answer": "No. It checks JSON syntax and common JSON-LD fields locally. Use Google's Rich Results Test for live validation."
+    },
+    {
+      "question": "Can I copy a ready-to-paste script tag?",
+      "answer": "Yes. Enable the script wrapper option to get a complete application/ld+json block."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-ld-formatter"
+}

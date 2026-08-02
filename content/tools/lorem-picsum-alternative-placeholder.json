@@ -1,0 +1,39 @@
+{
+  "slug": "lorem-picsum-alternative-placeholder",
+  "name": "Lorem Picsum Alternative Placeholder",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Create placeholder images locally — custom size, gradient, and label without external photo services.",
+  "description": "Generate SVG or PNG placeholder blocks for wireframes and layouts. Set width, height, optional custom text, and a color seed for reproducible gradients. Works offline with no calls to picsum.photos or similar APIs.",
+  "keywords": [
+    "placeholder image",
+    "lorem picsum alternative",
+    "dummy image",
+    "placeholder generator",
+    "mock image",
+    "wireframe placeholder"
+  ],
+  "relatedSlugs": [
+    "dummy-text-generator",
+    "accessible-palette-generator",
+    "csv-to-html-table",
+    "colorful-avatar-generator"
+  ],
+  "faqs": [
+    {
+      "question": "How is this different from picsum.photos?",
+      "answer": "This tool renders placeholders in your browser. No network request, no random stock photos — just sized gradient blocks with optional labels."
+    },
+    {
+      "question": "What is the color seed?",
+      "answer": "A number that picks the gradient hues. Use the same seed for consistent colors across exports."
+    },
+    {
+      "question": "Can I download PNG?",
+      "answer": "Yes. PNG export uses the Canvas API locally from the generated SVG."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "lorem-picsum-alternative-placeholder"
+}

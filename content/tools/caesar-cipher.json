@@ -1,0 +1,40 @@
+{
+  "slug": "caesar-cipher",
+  "name": "Caesar Cipher",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Encode and decode text with a Caesar cipher — adjustable shift from 1 to 25.",
+  "description": "Shift letters through the alphabet while leaving numbers, punctuation, and spaces unchanged. Use shift 13 for classic ROT13. Switch between encode and decode modes with a live preview.",
+  "keywords": [
+    "caesar cipher",
+    "rot13",
+    "cipher encoder",
+    "letter shift",
+    "decode cipher",
+    "classical cipher"
+  ],
+  "relatedSlugs": [
+    "base64-encode-decode",
+    "url-encode-decode",
+    "html-entity-encode-decode",
+    "morse-to-text",
+    "case-converter"
+  ],
+  "faqs": [
+    {
+      "question": "What is ROT13?",
+      "answer": "ROT13 is a Caesar cipher with shift 13. Because the alphabet has 26 letters, encoding twice returns the original text."
+    },
+    {
+      "question": "Are numbers encrypted?",
+      "answer": "No. Only A–Z and a–z are shifted; digits and symbols stay as typed."
+    },
+    {
+      "question": "Is this secure?",
+      "answer": "No. Caesar ciphers are educational and puzzle tools — use modern encryption for real secrets."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "caesar-cipher"
+}

@@ -77,11 +77,11 @@ _Plus ~50 hub days (H) + ~94 SEO days (S) + 15 monetization days (M) interleaved
 
 | Field | Value |
 |---|---|
-| **Today’s phase** | `P085` |
-| **Last shipped** | `P084` |
-| **Tools live (shipped)** | 155 / 755 |
+| **Today’s phase** | `P091` |
+| **Last shipped** | `P090` |
+| **Tools live (shipped)** | 171 / 755 |
 | **Production URL** | _set after Vercel deploy_ |
-| **Notes** | P084 shipped (User-Agent Parser; SQL JOIN Visualizer). Next: Caesar Cipher; Markdown TOC Generator; Morse to Text. |
+| **Notes** | P091 shipped (Colorful Avatar Generator; Lorem Picsum Alternative Placeholder). Next: JSON Escape / Unescape; Barcode Generator Code128. |
 
 ---
 

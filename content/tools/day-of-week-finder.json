@@ -1,0 +1,40 @@
+{
+  "slug": "day-of-week-finder",
+  "name": "Day of Week Finder",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Find the day of the week for any date — full name, ISO weekday, and day of year.",
+  "description": "Pick or type a calendar date to see the weekday name, short label, ISO weekday number (Monday = 1), JavaScript getDay value, day of year, and whether the year is a leap year.",
+  "keywords": [
+    "day of week",
+    "what day is",
+    "weekday finder",
+    "date to day",
+    "calendar day",
+    "day name"
+  ],
+  "relatedSlugs": [
+    "week-number-calculator",
+    "date-difference-calculator",
+    "age-calculator",
+    "add-subtract-dates",
+    "business-days-calculator"
+  ],
+  "faqs": [
+    {
+      "question": "Which calendar does this use?",
+      "answer": "Gregorian calendar dates in YYYY-MM-DD form, evaluated in UTC to avoid timezone shifts."
+    },
+    {
+      "question": "What is ISO weekday?",
+      "answer": "Monday = 1 through Sunday = 7, per ISO 8601."
+    },
+    {
+      "question": "Can I find week numbers too?",
+      "answer": "Use the Week Number Calculator for ISO and US week numbering."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "day-of-week-finder"
+}

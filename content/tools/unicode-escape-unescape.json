@@ -1,0 +1,40 @@
+{
+  "slug": "unicode-escape-unescape",
+  "name": "Unicode Escape / Unescape",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Escape text to JavaScript Unicode sequences or decode \\u escapes back to characters.",
+  "description": "Convert plain text into \\uXXXX and \\u{...} escapes, or unescape JavaScript-style sequences including \\xNN and common short escapes like \\n and \\t.",
+  "keywords": [
+    "unicode escape",
+    "unicode unescape",
+    "javascript unicode",
+    "\\u decoder",
+    "escape sequences",
+    "code point escape"
+  ],
+  "relatedSlugs": [
+    "hex-encode-decode",
+    "html-entity-encode-decode",
+    "binary-encode-decode",
+    "url-encode-decode",
+    "json-formatter"
+  ],
+  "faqs": [
+    {
+      "question": "Which escape formats are supported?",
+      "answer": "\\uXXXX for BMP characters, \\u{1F680} for astral code points, \\xNN bytes, and short escapes like \\n and \\t."
+    },
+    {
+      "question": "Does escape keep ASCII readable?",
+      "answer": "By default only non-ASCII characters are escaped. Enable “Escape ASCII too” to encode every character."
+    },
+    {
+      "question": "Is this the same as HTML entities?",
+      "answer": "No. Use HTML Entity Encode / Decode for &amp; and numeric HTML entities."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "unicode-escape-unescape"
+}

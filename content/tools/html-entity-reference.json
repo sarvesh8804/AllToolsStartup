@@ -1,0 +1,40 @@
+{
+  "slug": "html-entity-reference",
+  "name": "HTML Entity Reference",
+  "family": "tools",
+  "category": "Web & HTML",
+  "status": "shipped",
+  "summary": "Searchable reference of common HTML character entities with named, decimal, and hex forms.",
+  "description": "Browse essential escapes, typography symbols, currency signs, math glyphs, arrows, and Greek letters. Click any form to copy — named (&amp;nbsp;), decimal (&#160;), or hexadecimal (&#xA0;).",
+  "keywords": [
+    "html entities",
+    "character reference",
+    "html entity list",
+    "named entities",
+    "html escape",
+    "unicode html"
+  ],
+  "relatedSlugs": [
+    "html-entity-encode-decode",
+    "html-formatter",
+    "html-minifier",
+    "html-to-markdown",
+    "meta-tags-preview"
+  ],
+  "faqs": [
+    {
+      "question": "When should I use HTML entities?",
+      "answer": "Escape &, <, >, and quotes in HTML text and attributes. Use named entities for symbols that are hard to type or might break encoding."
+    },
+    {
+      "question": "Named vs numeric entities?",
+      "answer": "Named entities like &copy; are readable. Decimal (&#169;) and hex (&#xA9;) work for any Unicode code point."
+    },
+    {
+      "question": "Need to encode or decode a string?",
+      "answer": "Use HTML Entity Encode / Decode for batch conversion of arbitrary text."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "html-entity-reference"
+}

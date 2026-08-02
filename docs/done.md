@@ -16,17 +16,17 @@
 
 | Field | Value |
 |---|---|
-| **Last completed phase** | `P084` |
-| **Next phase to do** | `P085` |
+| **Last completed phase** | `P091` |
+| **Next phase to do** | `P092` |
 | **Production live?** | Ready (deploy on push / Vercel) |
 | **Production URL** | — _(set after first Vercel deploy)_ |
 | **Foundation done** | 12 / 12 |
-| **Tool phases done** | 84 / 472 |
-| **Tools shipped** | 155 / 755 |
+| **Tool phases done** | 91 / 472 |
+| **Tools shipped** | 171 / 755 |
 | **Hub phases done** | 0 / 50 |
 | **SEO phases done** | 1 / 94 _(platform SEO pass after P030)_ |
 | **Monetization phases done** | 0 / 15 |
-| **Last updated** | 2026-08-01 |
+| **Last updated** | 2026-08-02 |
 
 ### Progress bar (manual)
 
@@ -60,6 +60,13 @@ Newest at top. One line per completed phase.
 
 | Date | Phase | Notes / commit / URL |
 |---|---|---|
+| 2026-08-02 | `P091` | Colorful Avatar Generator (SVG) + Lorem Picsum Alternative Placeholder on `/tools` + tests |
+| 2026-08-02 | `P090` | Unicode Escape / Unescape + API Key Style Token Generator on `/tools` + tests |
+| 2026-08-02 | `P089` | Hex Encode / Decode + NanoID Generator + ULID Generator on `/tools` + tests |
+| 2026-08-02 | `P088` | Day of Week Finder + Binary Encode / Decode on `/tools` + tests |
+| 2026-08-02 | `P087` | JSON-LD Formatter + CSV to HTML Table on `/tools` + tests |
+| 2026-08-02 | `P086` | Text to Morse + HTML Entity Reference on `/tools` + tests |
+| 2026-08-02 | `P085` | Caesar Cipher + Markdown TOC Generator + Morse to Text on `/tools` + tests |
 | 2026-08-01 | `P084` | User-Agent Parser + SQL JOIN Visualizer on `/tools` + tests |
 | 2026-08-01 | `P083` | DNS Record Types Cheatsheet + Port Number Reference + URL Parser / Builder on `/tools` + tests |
 | 2026-08-01 | `P082` | Conventional Commit Builder + JSON to Markdown Table on `/tools` + tests |
@@ -272,13 +279,13 @@ _472 phases · 755 tools. Check the box when the whole phase (all tools listed) 
 | [x] | `P082` | Conventional Commit Builder; JSON to Markdown Table | E | `/tools` |
 | [x] | `P083` | DNS Record Types Cheatsheet; Port Number Reference; URL Parser / Builder | E | `/tools` |
 | [x] | `P084` | User-Agent Parser; SQL JOIN Visualizer | E/M | `/tools` |
-| [ ] | `P085` | Caesar Cipher; Markdown TOC Generator; Morse to Text | E | `/tools` |
-| [ ] | `P086` | Text to Morse; HTML Entity Reference | E | `/tools` |
-| [ ] | `P087` | JSON-LD Formatter; CSV to HTML Table | E | `/tools` |
-| [ ] | `P088` | Day of Week Finder; Binary Encode / Decode | E | `/tools` |
-| [ ] | `P089` | Hex Encode / Decode; NanoID Generator; ULID Generator | E | `/tools` |
-| [ ] | `P090` | Unicode Escape / Unescape; API Key Style Token Generator | E | `/tools` |
-| [ ] | `P091` | Colorful Avatar Generator (SVG); Lorem Picsum Alternative Placeholder | E/M | `/tools` |
+| [x] | `P085` | Caesar Cipher; Markdown TOC Generator; Morse to Text | E | `/tools` |
+| [x] | `P086` | Text to Morse; HTML Entity Reference | E | `/tools` |
+| [x] | `P087` | JSON-LD Formatter; CSV to HTML Table | E | `/tools` |
+| [x] | `P088` | Day of Week Finder; Binary Encode / Decode | E | `/tools` |
+| [x] | `P089` | Hex Encode / Decode; NanoID Generator; ULID Generator | E | `/tools` |
+| [x] | `P090` | Unicode Escape / Unescape; API Key Style Token Generator | E | `/tools` |
+| [x] | `P091` | Colorful Avatar Generator (SVG); Lorem Picsum Alternative Placeholder | E/M | `/tools` |
 | [ ] | `P092` | JSON Escape / Unescape; Barcode Generator (Code128) | E/M | `/tools` |
 | [ ] | `P093` | CSV to SQL INSERT Bulk; QR Code for OTP Setup | M | `/tools` |
 | [ ] | `P094` | Binary to Text; Remove Extra Spaces; Reverse Text | E | `/tools` |

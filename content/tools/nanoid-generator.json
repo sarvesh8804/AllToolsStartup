@@ -1,0 +1,40 @@
+{
+  "slug": "nanoid-generator",
+  "name": "NanoID Generator",
+  "family": "tools",
+  "category": "Encoding & Hashing",
+  "status": "shipped",
+  "summary": "Generate compact URL-safe NanoIDs with adjustable length — cryptographically random.",
+  "description": "Create one or many NanoIDs using the standard URL-safe alphabet and secure browser randomness. Default length is 21 characters; customize count and size for tokens, keys, and filenames.",
+  "keywords": [
+    "nanoid generator",
+    "nanoid",
+    "short id",
+    "random id",
+    "url safe id",
+    "unique token"
+  ],
+  "relatedSlugs": [
+    "uuid-v4-generator",
+    "uuid-bulk-generator",
+    "ulid-generator",
+    "password-generator",
+    "passphrase-generator"
+  ],
+  "faqs": [
+    {
+      "question": "How is this different from UUID?",
+      "answer": "NanoIDs are shorter, URL-safe strings without hyphens. UUIDs are 128-bit standardized identifiers."
+    },
+    {
+      "question": "What alphabet is used?",
+      "answer": "The default NanoID URL-safe set: A–Z, a–z, 0–9, underscore, and hyphen."
+    },
+    {
+      "question": "Is generation secure?",
+      "answer": "Yes. IDs use crypto.getRandomValues in your browser — nothing is sent to a server."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "nanoid-generator"
+}

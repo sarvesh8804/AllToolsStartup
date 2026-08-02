@@ -1,0 +1,39 @@
+{
+  "slug": "colorful-avatar-generator",
+  "name": "Colorful Avatar Generator (SVG)",
+  "family": "tools",
+  "category": "Generators",
+  "status": "shipped",
+  "summary": "Generate colorful SVG avatars from a name — initials or abstract patterns, fully local.",
+  "description": "Type a name or label and get a deterministic SVG avatar with a hashed background color, readable initials, and circle, rounded, or square shapes. Copy or download the SVG for profiles, comments, and UI mocks — no server uploads.",
+  "keywords": [
+    "avatar generator",
+    "svg avatar",
+    "initials avatar",
+    "colorful avatar",
+    "profile picture generator",
+    "ui avatar"
+  ],
+  "relatedSlugs": [
+    "fake-name-generator",
+    "accessible-palette-generator",
+    "nanoid-generator",
+    "uuid-v4-generator"
+  ],
+  "faqs": [
+    {
+      "question": "Will the same name always look the same?",
+      "answer": "Yes. Colors and layout are derived from a hash of the name, so results are reproducible."
+    },
+    {
+      "question": "Can I use these commercially?",
+      "answer": "Yes. You generate the SVG locally and own the output."
+    },
+    {
+      "question": "Is anything uploaded?",
+      "answer": "No. SVG is built entirely in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "colorful-avatar-generator"
+}
