@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Syne, Source_Sans_3, IBM_Plex_Mono } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { getSearchIndex } from "@/lib/tools/registry";
@@ -47,6 +48,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col font-sans">
         <SiteShell searchItems={searchItems}>{children}</SiteShell>
+        <Analytics />
       </body>
     </html>
   );
