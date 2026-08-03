@@ -1,0 +1,17 @@
+{
+  "slug": "binary-to-text",
+  "name": "Binary to Text",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Decode 8-bit binary byte strings into readable UTF-8 text.",
+  "description": "Paste binary digits grouped as bytes (space-separated) and convert them back to plain text. A focused decoder companion to the full Binary Encode / Decode tool.",
+  "keywords": ["binary to text", "decode binary", "binary decoder", "binary string to text"],
+  "relatedSlugs": ["text-to-binary", "binary-encode-decode", "hex-encode-decode", "base64-encode-decode"],
+  "faqs": [
+    { "question": "What format should I paste?", "answer": "Eight-bit groups like 01001000 01100101 — spaces between bytes are optional." },
+    { "question": "UTF-8 support?", "answer": "Yes. Bytes are decoded as UTF-8 text." }
+  ],
+  "privacyLocal": true,
+  "component": "binary-to-text"
+}

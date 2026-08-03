@@ -1,0 +1,17 @@
+{
+  "slug": "barcode-generator",
+  "name": "Barcode Generator (Code128)",
+  "family": "tools",
+  "category": "QR & Barcodes",
+  "status": "shipped",
+  "summary": "Generate Code 128 barcodes as SVG from ASCII text — copy or download locally.",
+  "description": "Create scannable Code 128 Set B barcodes for product SKUs, asset tags, and inventory labels. Adjust bar height and module width, preview instantly, and export SVG without sending data to a server.",
+  "keywords": ["barcode generator", "code 128", "code128 barcode", "svg barcode", "barcode maker"],
+  "relatedSlugs": ["qr-code-generator", "qr-code-reader", "uuid-v4-generator", "nanoid-generator"],
+  "faqs": [
+    { "question": "Which characters are supported?", "answer": "Code 128 Set B supports printable ASCII (space through tilde)." },
+    { "question": "What format is exported?", "answer": "SVG vector graphics — sharp at any size and easy to embed in print layouts." }
+  ],
+  "privacyLocal": true,
+  "component": "barcode-generator"
+}

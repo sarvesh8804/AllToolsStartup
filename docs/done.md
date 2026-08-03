@@ -16,17 +16,17 @@
 
 | Field | Value |
 |---|---|
-| **Last completed phase** | `P091` |
-| **Next phase to do** | `P092` |
+| **Last completed phase** | `P095` |
+| **Next phase to do** | `P096` |
 | **Production live?** | Ready (deploy on push / Vercel) |
 | **Production URL** | — _(set after first Vercel deploy)_ |
 | **Foundation done** | 12 / 12 |
-| **Tool phases done** | 91 / 472 |
-| **Tools shipped** | 171 / 755 |
+| **Tool phases done** | 95 / 472 |
+| **Tools shipped** | 180 / 755 |
 | **Hub phases done** | 0 / 50 |
 | **SEO phases done** | 1 / 94 _(platform SEO pass after P030)_ |
 | **Monetization phases done** | 0 / 15 |
-| **Last updated** | 2026-08-02 |
+| **Last updated** | 2026-08-03 |
 
 ### Progress bar (manual)
 
@@ -60,6 +60,10 @@ Newest at top. One line per completed phase.
 
 | Date | Phase | Notes / commit / URL |
 |---|---|---|
+| 2026-08-03 | `P095` | Text to Binary + Open Graph Preview on `/tools` + tests |
+| 2026-08-03 | `P094` | Binary to Text + Remove Extra Spaces + Reverse Text on `/tools` + tests |
+| 2026-08-03 | `P093` | CSV to SQL INSERT Bulk + QR Code for OTP Setup on `/tools` + tests |
+| 2026-08-03 | `P092` | JSON Escape / Unescape + Barcode Generator (Code128) on `/tools` + tests |
 | 2026-08-02 | `P091` | Colorful Avatar Generator (SVG) + Lorem Picsum Alternative Placeholder on `/tools` + tests |
 | 2026-08-02 | `P090` | Unicode Escape / Unescape + API Key Style Token Generator on `/tools` + tests |
 | 2026-08-02 | `P089` | Hex Encode / Decode + NanoID Generator + ULID Generator on `/tools` + tests |
@@ -286,10 +290,10 @@ _472 phases · 755 tools. Check the box when the whole phase (all tools listed) 
 | [x] | `P089` | Hex Encode / Decode; NanoID Generator; ULID Generator | E | `/tools` |
 | [x] | `P090` | Unicode Escape / Unescape; API Key Style Token Generator | E | `/tools` |
 | [x] | `P091` | Colorful Avatar Generator (SVG); Lorem Picsum Alternative Placeholder | E/M | `/tools` |
-| [ ] | `P092` | JSON Escape / Unescape; Barcode Generator (Code128) | E/M | `/tools` |
-| [ ] | `P093` | CSV to SQL INSERT Bulk; QR Code for OTP Setup | M | `/tools` |
-| [ ] | `P094` | Binary to Text; Remove Extra Spaces; Reverse Text | E | `/tools` |
-| [ ] | `P095` | Text to Binary; Open Graph Preview | E/M | `/tools` |
+| [x] | `P092` | JSON Escape / Unescape; Barcode Generator (Code128) | E/M | `/tools` |
+| [x] | `P093` | CSV to SQL INSERT Bulk; QR Code for OTP Setup | M | `/tools` |
+| [x] | `P094` | Binary to Text; Remove Extra Spaces; Reverse Text | E | `/tools` |
+| [x] | `P095` | Text to Binary; Open Graph Preview | E/M | `/tools` |
 | [ ] | `P096` | Schema Markup Generator (FAQ/HowTo); INI / ENV Parser | E/M | `/tools` |
 | [ ] | `P097` | CSS Animation Keyframes Builder; Clip-path Generator | M | `/tools` |
 | [ ] | `P098` | CSV Cleaner (trim, dedupe); CSV Diff | M | `/tools` |

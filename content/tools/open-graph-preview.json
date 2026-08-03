@@ -1,0 +1,17 @@
+{
+  "slug": "open-graph-preview",
+  "name": "Open Graph Preview",
+  "family": "tools",
+  "category": "Web & HTML",
+  "status": "shipped",
+  "summary": "Preview how your Open Graph tags will look on Facebook, X, LinkedIn, and Discord.",
+  "description": "Fill in og:title, description, image, and URL fields — or paste existing meta tags — then see approximate social share cards for major platforms. Client-side only; no live URL fetching.",
+  "keywords": ["open graph preview", "og preview", "social card preview", "twitter card preview", "link preview mock"],
+  "relatedSlugs": ["open-graph-meta-generator", "twitter-card-meta-generator", "json-ld-formatter", "sitemap-xml-generator"],
+  "faqs": [
+    { "question": "Does this fetch my live page?", "answer": "No. Previews are built from the fields you enter or meta tags you paste — nothing is scraped from the web." },
+    { "question": "How accurate is it?", "answer": "Layouts approximate common platforms; actual rendering may vary slightly by app and theme." }
+  ],
+  "privacyLocal": true,
+  "component": "open-graph-preview"
+}

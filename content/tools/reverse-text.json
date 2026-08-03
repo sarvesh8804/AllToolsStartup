@@ -1,0 +1,17 @@
+{
+  "slug": "reverse-text",
+  "name": "Reverse Text",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Reverse characters, words, or lines in any text string.",
+  "description": "Flip text backwards by character, reverse word order while keeping spacing, or reverse line order in multi-line input. Useful for puzzles, testing, and quick transforms.",
+  "keywords": ["reverse text", "flip text", "reverse words", "reverse string", "backwards text"],
+  "relatedSlugs": ["remove-extra-spaces", "case-converter", "slug-generator", "caesar-cipher"],
+  "faqs": [
+    { "question": "Unicode characters?", "answer": "Character mode reverses by Unicode code point for most everyday text and emoji." },
+    { "question": "Word mode?", "answer": "Reverses the order of words but keeps original spacing between them." }
+  ],
+  "privacyLocal": true,
+  "component": "reverse-text"
+}

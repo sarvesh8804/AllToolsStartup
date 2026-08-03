@@ -1,0 +1,17 @@
+{
+  "slug": "text-to-binary",
+  "name": "Text to Binary",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Encode plain text into 8-bit binary byte strings.",
+  "description": "Convert UTF-8 text into binary representation with space-separated bytes. Quick encoder for learning, debugging, and encoding workflows.",
+  "keywords": ["text to binary", "encode binary", "string to binary", "binary encoder"],
+  "relatedSlugs": ["binary-to-text", "binary-encode-decode", "hex-encode-decode", "text-to-morse"],
+  "faqs": [
+    { "question": "How are bytes separated?", "answer": "Each UTF-8 byte is shown as 8 bits with a space between bytes." },
+    { "question": "Emoji and Unicode?", "answer": "Yes — multi-byte UTF-8 characters produce multiple binary groups." }
+  ],
+  "privacyLocal": true,
+  "component": "text-to-binary"
+}

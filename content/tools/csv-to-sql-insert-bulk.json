@@ -1,0 +1,17 @@
+{
+  "slug": "csv-to-sql-insert-bulk",
+  "name": "CSV to SQL INSERT Bulk",
+  "family": "tools",
+  "category": "SQL & Databases",
+  "status": "shipped",
+  "summary": "Convert large CSV files into batched SQL INSERT statements with optional transactions.",
+  "description": "Paste CSV data and generate bulk INSERT statements with configurable batch size (default 100 rows per statement), dialect-specific quoting, optional BEGIN/COMMIT wrapper, and TRUNCATE prefix for reload workflows.",
+  "keywords": ["csv to sql bulk", "bulk insert sql", "csv sql generator", "import csv sql"],
+  "relatedSlugs": ["csv-to-sql-insert", "csv-to-json", "csv-to-markdown", "sql-formatter"],
+  "faqs": [
+    { "question": "How is this different from CSV to SQL INSERT?", "answer": "This tool defaults to larger batches and adds transaction wrapping and TRUNCATE options for bulk data loads." },
+    { "question": "Which databases are supported?", "answer": "PostgreSQL, MySQL, SQLite, and SQL Server quoting styles are available." }
+  ],
+  "privacyLocal": true,
+  "component": "csv-to-sql-insert-bulk"
+}

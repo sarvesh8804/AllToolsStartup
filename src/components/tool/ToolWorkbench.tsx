@@ -712,6 +712,61 @@ const LoremPicsumAlternativePlaceholderTool = dynamic(
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
 );
 
+const JsonEscapeUnescapeTool = dynamic(
+  () =>
+    import("@/tools/json-escape-unescape").then((m) => m.JsonEscapeUnescapeTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const BarcodeGeneratorTool = dynamic(
+  () =>
+    import("@/tools/barcode-generator").then((m) => m.BarcodeGeneratorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CsvToSqlInsertBulkTool = dynamic(
+  () =>
+    import("@/tools/csv-to-sql-insert-bulk").then(
+      (m) => m.CsvToSqlInsertBulkTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const QrCodeForOtpSetupTool = dynamic(
+  () =>
+    import("@/tools/qr-code-for-otp-setup").then(
+      (m) => m.QrCodeForOtpSetupTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const BinaryToTextTool = dynamic(
+  () => import("@/tools/binary-to-text").then((m) => m.BinaryToTextTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const TextToBinaryTool = dynamic(
+  () => import("@/tools/text-to-binary").then((m) => m.TextToBinaryTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const RemoveExtraSpacesTool = dynamic(
+  () =>
+    import("@/tools/remove-extra-spaces").then((m) => m.RemoveExtraSpacesTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ReverseTextTool = dynamic(
+  () => import("@/tools/reverse-text").then((m) => m.ReverseTextTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const OpenGraphPreviewTool = dynamic(
+  () =>
+    import("@/tools/open-graph-preview").then((m) => m.OpenGraphPreviewTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
 const RgbToHexTool = dynamic(
   () => import("@/tools/rgb-to-hex").then((m) => m.RgbToHexTool),
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
@@ -1217,6 +1272,15 @@ const REGISTRY = {
   "api-key-style-token-generator": ApiKeyStyleTokenGeneratorTool,
   "colorful-avatar-generator": ColorfulAvatarGeneratorTool,
   "lorem-picsum-alternative-placeholder": LoremPicsumAlternativePlaceholderTool,
+  "json-escape-unescape": JsonEscapeUnescapeTool,
+  "barcode-generator": BarcodeGeneratorTool,
+  "csv-to-sql-insert-bulk": CsvToSqlInsertBulkTool,
+  "qr-code-for-otp-setup": QrCodeForOtpSetupTool,
+  "binary-to-text": BinaryToTextTool,
+  "text-to-binary": TextToBinaryTool,
+  "remove-extra-spaces": RemoveExtraSpacesTool,
+  "reverse-text": ReverseTextTool,
+  "open-graph-preview": OpenGraphPreviewTool,
   "rgb-to-hex": RgbToHexTool,
   "pomodoro-timer": PomodoroTimerTool,
   "fake-address-generator": FakeAddressGeneratorTool,

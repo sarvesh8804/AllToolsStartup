@@ -1,0 +1,17 @@
+{
+  "slug": "qr-code-for-otp-setup",
+  "name": "QR Code for OTP Setup",
+  "family": "tools",
+  "category": "Security & Crypto",
+  "status": "shipped",
+  "summary": "Generate otpauth:// QR codes for TOTP authenticator app setup — local and educational.",
+  "description": "Build a standard otpauth:// TOTP URI from issuer, account, and Base32 secret, then render a QR code for Google Authenticator, 1Password, or Authy. Generate new secrets locally — nothing is stored on a server.",
+  "keywords": ["otp qr code", "totp qr", "2fa setup qr", "authenticator qr", "otpauth"],
+  "relatedSlugs": ["qr-code-generator", "password-generator", "passphrase-generator", "api-key-style-token-generator"],
+  "faqs": [
+    { "question": "Is this for production 2FA?", "answer": "Use only with secrets you control. This is an educational setup helper — verify URIs before scanning." },
+    { "question": "What secret format is required?", "answer": "Base32 (A–Z, 2–7), typically 16+ characters as provided by your identity provider." }
+  ],
+  "privacyLocal": true,
+  "component": "qr-code-for-otp-setup"
+}

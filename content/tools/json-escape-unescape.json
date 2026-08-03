@@ -1,0 +1,17 @@
+{
+  "slug": "json-escape-unescape",
+  "name": "JSON Escape / Unescape",
+  "family": "tools",
+  "category": "JSON & Data Formats",
+  "status": "shipped",
+  "summary": "Escape or unescape text for JSON string literals — quotes, newlines, and Unicode.",
+  "description": "Convert plain text into a JSON-safe escaped string (with optional wrapping quotes) or decode escaped JSON fragments back to readable text. Handles \\n, \\\", \\\\uXXXX, and more — all in your browser.",
+  "keywords": ["json escape", "json unescape", "escape json string", "json string encoder"],
+  "relatedSlugs": ["unicode-escape-unescape", "json-formatter", "json-validator", "html-entity-encode-decode"],
+  "faqs": [
+    { "question": "Does this produce valid JSON?", "answer": "Escape mode outputs a JSON string literal you can paste into JSON. Unescape mode accepts quoted or raw escaped text." },
+    { "question": "Unicode support?", "answer": "Yes — non-ASCII characters can be emitted as \\uXXXX or \\u{...} sequences." }
+  ],
+  "privacyLocal": true,
+  "component": "json-escape-unescape"
+}

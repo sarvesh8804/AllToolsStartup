@@ -1,0 +1,17 @@
+{
+  "slug": "remove-extra-spaces",
+  "name": "Remove Extra Spaces",
+  "family": "tools",
+  "category": "Text Tools",
+  "status": "shipped",
+  "summary": "Clean up doubled spaces, trim lines, or collapse all whitespace in text.",
+  "description": "Fix messy copy-paste text by collapsing repeated spaces per line, trimming line edges, or normalizing all whitespace into single spaces. Runs instantly in your browser.",
+  "keywords": ["remove extra spaces", "collapse whitespace", "trim spaces", "clean text spaces"],
+  "relatedSlugs": ["line-counter", "find-and-replace-batch", "invisible-character-remover", "word-frequency-counter"],
+  "faqs": [
+    { "question": "Will line breaks be kept?", "answer": "In per-line modes, yes — only spaces on each line are affected unless you choose collapse all." },
+    { "question": "Tabs?", "answer": "Repeated spaces and tabs on a line are collapsed to a single space in collapse mode." }
+  ],
+  "privacyLocal": true,
+  "component": "remove-extra-spaces"
+}
