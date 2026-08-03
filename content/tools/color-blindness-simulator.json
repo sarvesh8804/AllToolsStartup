@@ -1,0 +1,16 @@
+{
+  "slug": "color-blindness-simulator",
+  "name": "Color Blindness Simulator",
+  "family": "tools",
+  "category": "Colors",
+  "status": "shipped",
+  "summary": "Preview how a color appears under protanopia, deuteranopia, tritanopia, and achromatopsia.",
+  "description": "Enter any hex color and see approximate simulations for common color-vision deficiencies. Useful for accessibility reviews alongside contrast checking.",
+  "keywords": ["color blindness simulator", "protanopia", "deuteranopia", "color vision deficiency"],
+  "relatedSlugs": ["accessible-palette-generator", "complementary-color-finder", "hex-to-hsl", "rgb-to-hex"],
+  "faqs": [
+    { "question": "How accurate is this?", "answer": "It uses standard approximation matrices for quick design checks — not a medical diagnostic tool." }
+  ],
+  "privacyLocal": true,
+  "component": "color-blindness-simulator"
+}

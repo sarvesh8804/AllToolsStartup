@@ -767,6 +767,73 @@ const OpenGraphPreviewTool = dynamic(
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
 );
 
+const SchemaMarkupGeneratorTool = dynamic(
+  () =>
+    import("@/tools/schema-markup-generator").then(
+      (m) => m.SchemaMarkupGeneratorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const IniEnvParserTool = dynamic(
+  () => import("@/tools/ini-env-parser").then((m) => m.IniEnvParserTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CssAnimationKeyframesBuilderTool = dynamic(
+  () =>
+    import("@/tools/css-animation-keyframes-builder").then(
+      (m) => m.CssAnimationKeyframesBuilderTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ClipPathGeneratorTool = dynamic(
+  () =>
+    import("@/tools/clip-path-generator").then((m) => m.ClipPathGeneratorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CsvCleanerTool = dynamic(
+  () => import("@/tools/csv-cleaner").then((m) => m.CsvCleanerTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CsvDiffTool = dynamic(
+  () => import("@/tools/csv-diff").then((m) => m.CsvDiffTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const ColorBlindnessSimulatorTool = dynamic(
+  () =>
+    import("@/tools/color-blindness-simulator").then(
+      (m) => m.ColorBlindnessSimulatorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const RandomPaletteGeneratorTool = dynamic(
+  () =>
+    import("@/tools/random-palette-generator").then(
+      (m) => m.RandomPaletteGeneratorTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CalendarGeneratorTool = dynamic(
+  () =>
+    import("@/tools/calendar-generator").then((m) => m.CalendarGeneratorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const DockerRunToComposeConverterTool = dynamic(
+  () =>
+    import("@/tools/docker-run-to-compose-converter").then(
+      (m) => m.DockerRunToComposeConverterTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
 const RgbToHexTool = dynamic(
   () => import("@/tools/rgb-to-hex").then((m) => m.RgbToHexTool),
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
@@ -1281,6 +1348,16 @@ const REGISTRY = {
   "remove-extra-spaces": RemoveExtraSpacesTool,
   "reverse-text": ReverseTextTool,
   "open-graph-preview": OpenGraphPreviewTool,
+  "schema-markup-generator": SchemaMarkupGeneratorTool,
+  "ini-env-parser": IniEnvParserTool,
+  "css-animation-keyframes-builder": CssAnimationKeyframesBuilderTool,
+  "clip-path-generator": ClipPathGeneratorTool,
+  "csv-cleaner": CsvCleanerTool,
+  "csv-diff": CsvDiffTool,
+  "color-blindness-simulator": ColorBlindnessSimulatorTool,
+  "random-palette-generator": RandomPaletteGeneratorTool,
+  "calendar-generator": CalendarGeneratorTool,
+  "docker-run-to-compose-converter": DockerRunToComposeConverterTool,
   "rgb-to-hex": RgbToHexTool,
   "pomodoro-timer": PomodoroTimerTool,
   "fake-address-generator": FakeAddressGeneratorTool,

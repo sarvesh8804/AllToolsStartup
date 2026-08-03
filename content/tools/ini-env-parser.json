@@ -1,0 +1,17 @@
+{
+  "slug": "ini-env-parser",
+  "name": "INI / ENV Parser",
+  "family": "tools",
+  "category": "XML & YAML & Config",
+  "status": "shipped",
+  "summary": "Parse and convert .env, INI, and JSON config formats in your browser.",
+  "description": "Paste dotenv, INI, or JSON and convert between formats. Useful for migrating secrets, config files, and local development setup — all locally.",
+  "keywords": ["env parser", "ini parser", "dotenv to json", "ini to json", "config converter"],
+  "relatedSlugs": ["yaml-formatter", "json-formatter", "json-validator", "htaccess-redirect-generator"],
+  "faqs": [
+    { "question": "Are comments preserved?", "answer": "Comments are ignored during parsing. Converting back to .env or INI will not restore original comments." },
+    { "question": "Nested JSON to INI?", "answer": "Top-level object keys become INI sections; flat keys go under a default section." }
+  ],
+  "privacyLocal": true,
+  "component": "ini-env-parser"
+}

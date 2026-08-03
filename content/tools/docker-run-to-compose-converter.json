@@ -1,0 +1,17 @@
+{
+  "slug": "docker-run-to-compose-converter",
+  "name": "Docker Run to Compose Converter",
+  "family": "tools",
+  "category": "Git & DevOps",
+  "status": "shipped",
+  "summary": "Convert docker run commands into docker-compose.yml services.",
+  "description": "Paste a docker run one-liner and get an equivalent Compose service with image, ports, env vars, volumes, and restart policy mapped automatically.",
+  "keywords": ["docker run to compose", "docker compose converter", "docker run yaml"],
+  "relatedSlugs": ["dockerfile-generator", "gitignore-builder", "conventional-commit-builder", "readme-generator"],
+  "faqs": [
+    { "question": "Which flags are supported?", "answer": "Common flags: -d, --name, -p, -e, -v, --restart, plus image and command arguments." },
+    { "question": "Production ready?", "answer": "Treat output as a starting point — review networking, secrets, and health checks before deploying." }
+  ],
+  "privacyLocal": true,
+  "component": "docker-run-to-compose-converter"
+}

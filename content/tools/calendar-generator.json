@@ -1,0 +1,16 @@
+{
+  "slug": "calendar-generator",
+  "name": "Calendar Generator (print)",
+  "family": "tools",
+  "category": "Date & Time",
+  "status": "shipped",
+  "summary": "Generate a printable monthly calendar as HTML — pick year, month, and week start.",
+  "description": "Create a clean month grid you can print or save as HTML. Choose Monday or Sunday as the first day of the week and download a standalone file.",
+  "keywords": ["calendar generator", "printable calendar", "month calendar", "calendar html"],
+  "relatedSlugs": ["world-clock", "week-number-calculator", "day-of-week-finder", "meeting-time-planner"],
+  "faqs": [
+    { "question": "Can I print it?", "answer": "Yes. Download the HTML file and print from your browser — print styles are included." }
+  ],
+  "privacyLocal": true,
+  "component": "calendar-generator"
+}

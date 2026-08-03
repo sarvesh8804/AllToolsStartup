@@ -16,13 +16,13 @@
 
 | Field | Value |
 |---|---|
-| **Last completed phase** | `P095` |
-| **Next phase to do** | `P096` |
+| **Last completed phase** | `P100` |
+| **Next phase to do** | `P101` |
 | **Production live?** | Ready (deploy on push / Vercel) |
 | **Production URL** | — _(set after first Vercel deploy)_ |
 | **Foundation done** | 12 / 12 |
-| **Tool phases done** | 95 / 472 |
-| **Tools shipped** | 180 / 755 |
+| **Tool phases done** | 100 / 472 |
+| **Tools shipped** | 190 / 755 |
 | **Hub phases done** | 0 / 50 |
 | **SEO phases done** | 1 / 94 _(platform SEO pass after P030)_ |
 | **Monetization phases done** | 0 / 15 |
@@ -60,6 +60,11 @@ Newest at top. One line per completed phase.
 
 | Date | Phase | Notes / commit / URL |
 |---|---|---|
+| 2026-08-03 | `P100` | Calendar Generator (print) + Docker Run to Compose Converter on `/tools` + tests |
+| 2026-08-03 | `P099` | Color Blindness Simulator + Random Palette Generator on `/tools` + tests |
+| 2026-08-03 | `P098` | CSV Cleaner + CSV Diff on `/tools` + tests |
+| 2026-08-03 | `P097` | CSS Animation Keyframes Builder + Clip-path Generator on `/tools` + tests |
+| 2026-08-03 | `P096` | Schema Markup Generator (FAQ/HowTo) + INI / ENV Parser on `/tools` + tests |
 | 2026-08-03 | `P095` | Text to Binary + Open Graph Preview on `/tools` + tests |
 | 2026-08-03 | `P094` | Binary to Text + Remove Extra Spaces + Reverse Text on `/tools` + tests |
 | 2026-08-03 | `P093` | CSV to SQL INSERT Bulk + QR Code for OTP Setup on `/tools` + tests |
@@ -294,11 +299,11 @@ _472 phases · 755 tools. Check the box when the whole phase (all tools listed) 
 | [x] | `P093` | CSV to SQL INSERT Bulk; QR Code for OTP Setup | M | `/tools` |
 | [x] | `P094` | Binary to Text; Remove Extra Spaces; Reverse Text | E | `/tools` |
 | [x] | `P095` | Text to Binary; Open Graph Preview | E/M | `/tools` |
-| [ ] | `P096` | Schema Markup Generator (FAQ/HowTo); INI / ENV Parser | E/M | `/tools` |
-| [ ] | `P097` | CSS Animation Keyframes Builder; Clip-path Generator | M | `/tools` |
-| [ ] | `P098` | CSV Cleaner (trim, dedupe); CSV Diff | M | `/tools` |
-| [ ] | `P099` | Color Blindness Simulator; Random Palette Generator | E/M | `/tools` |
-| [ ] | `P100` | Calendar Generator (print); Docker Run to Compose Converter | M | `/tools` |
+| [x] | `P096` | Schema Markup Generator (FAQ/HowTo); INI / ENV Parser | E/M | `/tools` |
+| [x] | `P097` | CSS Animation Keyframes Builder; Clip-path Generator | M | `/tools` |
+| [x] | `P098` | CSV Cleaner (trim, dedupe); CSV Diff | M | `/tools` |
+| [x] | `P099` | Color Blindness Simulator; Random Palette Generator | E/M | `/tools` |
+| [x] | `P100` | Calendar Generator (print); Docker Run to Compose Converter | M | `/tools` |
 | [ ] | `P101` | Image Cropper | M | `/image` |
 | [ ] | `P102` | JSON Path Tester; JSON Pretty Print with Tree View | M | `/tools` |
 | [ ] | `P103` | CIDR Calculator; Fetch to cURL Converter | M | `/tools` |

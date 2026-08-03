@@ -1,0 +1,16 @@
+{
+  "slug": "css-animation-keyframes-builder",
+  "name": "CSS Animation Keyframes Builder",
+  "family": "tools",
+  "category": "CSS & Design Dev",
+  "status": "shipped",
+  "summary": "Build @keyframes CSS animations with live preview and copy-ready rules.",
+  "description": "Define animation name, duration, timing, and keyframe stops with transform and opacity. Preview the motion and copy the full @keyframes block plus animation shorthand.",
+  "keywords": ["css keyframes", "css animation generator", "keyframes builder", "@keyframes"],
+  "relatedSlugs": ["css-gradient-generator", "css-border-radius-generator", "css-box-shadow-generator", "css-flexbox-playground"],
+  "faqs": [
+    { "question": "Can I add more keyframes?", "answer": "Edit the default bounce preset offsets and transform values, then copy the generated CSS into your stylesheet." }
+  ],
+  "privacyLocal": true,
+  "component": "css-animation-keyframes-builder"
+}

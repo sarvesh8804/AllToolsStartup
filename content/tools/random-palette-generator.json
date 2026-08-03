@@ -1,0 +1,16 @@
+{
+  "slug": "random-palette-generator",
+  "name": "Random Palette Generator",
+  "family": "tools",
+  "category": "Colors",
+  "status": "shipped",
+  "summary": "Generate random color palettes with seeds — analogous, complementary, or triadic schemes.",
+  "description": "Roll harmonious 3–8 color palettes for mockups and side projects. Lock a seed for reproducible results and copy CSS custom properties.",
+  "keywords": ["random palette", "color palette generator", "seeded colors", "color scheme generator"],
+  "relatedSlugs": ["accessible-palette-generator", "complementary-color-finder", "css-gradient-generator", "color-blindness-simulator"],
+  "faqs": [
+    { "question": "Same seed, same colors?", "answer": "Yes — palette generation is deterministic for a given seed and scheme." }
+  ],
+  "privacyLocal": true,
+  "component": "random-palette-generator"
+}

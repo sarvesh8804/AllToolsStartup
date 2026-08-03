@@ -1,0 +1,16 @@
+{
+  "slug": "csv-diff",
+  "name": "CSV Diff",
+  "family": "tools",
+  "category": "CSV & Spreadsheets",
+  "status": "shipped",
+  "summary": "Compare two CSV files and highlight added, removed, and changed rows.",
+  "description": "Diff CSV exports side by side using an optional key column. See equal, changed, added, and removed rows in a summary table — all in your browser.",
+  "keywords": ["csv diff", "compare csv", "spreadsheet diff", "csv compare tool"],
+  "relatedSlugs": ["csv-cleaner", "csv-to-json", "csv-to-sql-insert-bulk", "find-and-replace-batch"],
+  "faqs": [
+    { "question": "What if headers differ?", "answer": "Columns are unioned; missing values are treated as empty when comparing." }
+  ],
+  "privacyLocal": true,
+  "component": "csv-diff"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "clip-path-generator",
+  "name": "Clip-path Generator",
+  "family": "tools",
+  "category": "CSS & Design Dev",
+  "status": "shipped",
+  "summary": "Generate CSS clip-path shapes — hexagon, star, circle, inset, and more.",
+  "description": "Pick a clip-path preset or tune circle, ellipse, and inset values with a live preview. Copy the CSS declaration for cards, images, and hero sections.",
+  "keywords": ["clip path generator", "css clip-path", "polygon clip", "shape mask css"],
+  "relatedSlugs": ["css-border-radius-generator", "css-box-shadow-generator", "css-gradient-generator", "accessible-palette-generator"],
+  "faqs": [
+    { "question": "Browser support?", "answer": "clip-path is widely supported in modern browsers for basic shapes." }
+  ],
+  "privacyLocal": true,
+  "component": "clip-path-generator"
+}

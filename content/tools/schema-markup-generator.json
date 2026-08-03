@@ -1,0 +1,17 @@
+{
+  "slug": "schema-markup-generator",
+  "name": "Schema Markup Generator (FAQ/HowTo)",
+  "family": "tools",
+  "category": "Web & HTML",
+  "status": "shipped",
+  "summary": "Generate FAQPage and HowTo JSON-LD structured data with copy-ready script tags.",
+  "description": "Build schema.org FAQ and HowTo markup from simple forms. Output minified or pretty JSON-LD, optionally wrapped in a script tag for your page head.",
+  "keywords": ["schema markup", "faq schema", "howto schema", "json-ld generator", "structured data"],
+  "relatedSlugs": ["json-ld-formatter", "open-graph-meta-generator", "open-graph-preview", "sitemap-xml-generator"],
+  "faqs": [
+    { "question": "FAQ vs HowTo?", "answer": "FAQPage is for question/answer pairs. HowTo is for step-by-step instructions." },
+    { "question": "Is this valid JSON-LD?", "answer": "Output follows schema.org types; always validate in Google's Rich Results Test before publishing." }
+  ],
+  "privacyLocal": true,
+  "component": "schema-markup-generator"
+}

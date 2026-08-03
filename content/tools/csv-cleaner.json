@@ -1,0 +1,16 @@
+{
+  "slug": "csv-cleaner",
+  "name": "CSV Cleaner (trim, dedupe)",
+  "family": "tools",
+  "category": "CSV & Spreadsheets",
+  "status": "shipped",
+  "summary": "Clean CSV files — trim fields, remove empty rows, and deduplicate records.",
+  "description": "Paste messy CSV exports and clean them locally: trim whitespace, drop blank rows, and dedupe by full row or a key column before import.",
+  "keywords": ["csv cleaner", "dedupe csv", "trim csv", "clean spreadsheet data"],
+  "relatedSlugs": ["csv-to-json", "csv-column-splitter", "csv-to-sql-insert", "csv-diff"],
+  "faqs": [
+    { "question": "How does dedupe work?", "answer": "By default entire rows are compared. Optionally set a key column like id or email." }
+  ],
+  "privacyLocal": true,
+  "component": "csv-cleaner"
+}
