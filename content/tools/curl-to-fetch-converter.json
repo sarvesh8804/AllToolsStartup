@@ -1,0 +1,23 @@
+{
+  "slug": "curl-to-fetch-converter",
+  "name": "cURL to Fetch Converter",
+  "family": "tools",
+  "category": "Networking & HTTP",
+  "status": "shipped",
+  "summary": "Convert curl commands into JavaScript fetch() snippets.",
+  "description": "Paste a curl one-liner with -X, -H, and -d flags to get an equivalent fetch() call for browsers or Node.",
+  "keywords": ["curl to fetch", "convert curl", "curl javascript", "fetch converter"],
+  "relatedSlugs": ["fetch-to-curl-converter", "url-parser-builder", "http-status-code-reference"],
+  "faqs": [
+    {
+      "question": "Which curl flags are supported?",
+      "answer": "Common flags: -X/--request, -H/--header, and -d/--data."
+    },
+    {
+      "question": "Complex shell quoting?",
+      "answer": "Simple quoted strings work best; nested shell escapes may need manual cleanup."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "curl-to-fetch-converter"
+}

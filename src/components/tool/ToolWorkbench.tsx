@@ -834,6 +834,63 @@ const DockerRunToComposeConverterTool = dynamic(
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
 );
 
+const ImageCropperTool = dynamic(
+  () => import("@/tools/image-cropper").then((m) => m.ImageCropperTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const JsonPathTesterTool = dynamic(
+  () => import("@/tools/json-path-tester").then((m) => m.JsonPathTesterTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const JsonPrettyPrintWithTreeViewTool = dynamic(
+  () =>
+    import("@/tools/json-pretty-print-with-tree-view").then(
+      (m) => m.JsonPrettyPrintWithTreeViewTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CidrCalculatorTool = dynamic(
+  () => import("@/tools/cidr-calculator").then((m) => m.CidrCalculatorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const SubnetCalculatorTool = dynamic(
+  () => import("@/tools/subnet-calculator").then((m) => m.SubnetCalculatorTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const FetchToCurlConverterTool = dynamic(
+  () =>
+    import("@/tools/fetch-to-curl-converter").then(
+      (m) => m.FetchToCurlConverterTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const CurlToFetchConverterTool = dynamic(
+  () =>
+    import("@/tools/curl-to-fetch-converter").then(
+      (m) => m.CurlToFetchConverterTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const SslCertificateDecoderTool = dynamic(
+  () =>
+    import("@/tools/ssl-certificate-decoder").then(
+      (m) => m.SslCertificateDecoderTool,
+    ),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
+const GrepOnlineTool = dynamic(
+  () => import("@/tools/grep-online").then((m) => m.GrepOnlineTool),
+  { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
+);
+
 const RgbToHexTool = dynamic(
   () => import("@/tools/rgb-to-hex").then((m) => m.RgbToHexTool),
   { ssr: false, loading: () => <ToolEmptyState message="Loading tool…" /> },
@@ -1358,6 +1415,15 @@ const REGISTRY = {
   "random-palette-generator": RandomPaletteGeneratorTool,
   "calendar-generator": CalendarGeneratorTool,
   "docker-run-to-compose-converter": DockerRunToComposeConverterTool,
+  "image-cropper": ImageCropperTool,
+  "json-path-tester": JsonPathTesterTool,
+  "json-pretty-print-with-tree-view": JsonPrettyPrintWithTreeViewTool,
+  "cidr-calculator": CidrCalculatorTool,
+  "subnet-calculator": SubnetCalculatorTool,
+  "fetch-to-curl-converter": FetchToCurlConverterTool,
+  "curl-to-fetch-converter": CurlToFetchConverterTool,
+  "ssl-certificate-decoder": SslCertificateDecoderTool,
+  "grep-online": GrepOnlineTool,
   "rgb-to-hex": RgbToHexTool,
   "pomodoro-timer": PomodoroTimerTool,
   "fake-address-generator": FakeAddressGeneratorTool,

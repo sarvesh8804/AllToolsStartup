@@ -1,0 +1,23 @@
+{
+  "slug": "subnet-calculator",
+  "name": "Subnet Calculator",
+  "family": "tools",
+  "category": "Networking & HTTP",
+  "status": "shipped",
+  "summary": "Calculate subnet details from an IP address and mask or prefix.",
+  "description": "Enter an IPv4 address plus a dotted subnet mask or CIDR prefix to get network, broadcast, host range, and usable addresses.",
+  "keywords": ["subnet calculator", "subnet mask", "ipv4 calculator", "network mask"],
+  "relatedSlugs": ["cidr-calculator", "port-number-reference", "url-parser-builder"],
+  "faqs": [
+    {
+      "question": "Can I use /24 instead of 255.255.255.0?",
+      "answer": "Yes — enter a prefix like /24 or 24 in the mask field."
+    },
+    {
+      "question": "What about /31 and /32?",
+      "answer": "Special cases are handled; usable host counts reflect point-to-point and single-address subnets."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "subnet-calculator"
+}

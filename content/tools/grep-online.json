@@ -1,0 +1,23 @@
+{
+  "slug": "grep-online",
+  "name": "Grep Online",
+  "family": "tools",
+  "category": "Regex & Text",
+  "status": "shipped",
+  "summary": "Search text with regex grep — line numbers and highlighted matches.",
+  "description": "Run multiline grep on pasted text with global, ignore-case, and multiline flags. Matching lines show line numbers with highlighted spans.",
+  "keywords": ["grep online", "regex grep", "search text lines", "multiline grep"],
+  "relatedSlugs": ["regex-tester", "find-and-replace-batch", "regex-explainer"],
+  "faqs": [
+    {
+      "question": "Is this the same as regex tester?",
+      "answer": "Grep focuses on line-by-line matches with line numbers; Regex Tester adds replace and match detail panels."
+    },
+    {
+      "question": "Which flags are supported?",
+      "answer": "g (global per line), i (ignore case), and m (multiline ^ and $ per line)."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "grep-online"
+}

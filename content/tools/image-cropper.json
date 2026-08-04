@@ -1,0 +1,27 @@
+{
+  "slug": "image-cropper",
+  "name": "Image Cropper",
+  "family": "image",
+  "category": "Image Tools",
+  "status": "shipped",
+  "summary": "Crop PNG, JPEG, or WebP images with aspect presets and pixel controls — in your browser.",
+  "description": "Upload an image, choose a crop region with sliders or aspect presets (1:1, 16:9, 4:3), preview the result, and download. All processing stays on your device.",
+  "keywords": ["image cropper", "crop image", "crop photo", "aspect ratio crop", "crop png"],
+  "relatedSlugs": ["image-resizer", "png-to-jpg", "favicon-generator-from-image"],
+  "faqs": [
+    {
+      "question": "Is my image uploaded?",
+      "answer": "No. Cropping runs entirely in your browser with the Canvas API."
+    },
+    {
+      "question": "Which aspect ratios are supported?",
+      "answer": "Free crop plus 1:1, 4:3, 16:9, and 3:2 presets centered on the image."
+    },
+    {
+      "question": "Which formats can I export?",
+      "answer": "Keep the source format, or export as JPEG, PNG, or WebP."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "image-cropper"
+}

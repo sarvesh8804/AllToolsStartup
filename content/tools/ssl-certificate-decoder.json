@@ -1,0 +1,23 @@
+{
+  "slug": "ssl-certificate-decoder",
+  "name": "SSL Certificate Decoder",
+  "family": "tools",
+  "category": "Security & Privacy",
+  "status": "shipped",
+  "summary": "Decode PEM X.509 certificates locally — subject, issuer, validity, and fingerprint.",
+  "description": "Paste a PEM certificate block to inspect subject and issuer DN fields, validity dates, serial number, and SHA-256 fingerprint without uploading to a server.",
+  "keywords": ["ssl certificate decoder", "pem decoder", "x509 certificate", "certificate fingerprint"],
+  "relatedSlugs": ["sha-256-hash", "md5-hash-generator", "password-strength-meter"],
+  "faqs": [
+    {
+      "question": "Is my certificate uploaded?",
+      "answer": "No. PEM text is parsed and hashed locally in your browser."
+    },
+    {
+      "question": "Can I paste a certificate chain?",
+      "answer": "Multiple PEM blocks in one paste are decoded separately."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "ssl-certificate-decoder"
+}

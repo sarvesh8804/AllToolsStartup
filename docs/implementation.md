@@ -79,9 +79,9 @@ _Plus ~50 hub days (H) + ~94 SEO days (S) + 15 monetization days (M) interleaved
 |---|---|
 | **Today’s phase** | `P091` |
 | **Last shipped** | `P090` |
-| **Tools live (shipped)** | 190 / 755 |
+| **Tools live (shipped)** | 199 / 755 |
 | **Production URL** | _set after Vercel deploy_ |
-| **Notes** | P096–P100 shipped (schema, ini/env, CSS tools, CSV tools, color tools, calendar, docker compose). Next: Image Cropper. |
+| **Notes** | P101–P105 shipped (image cropper, JSON path/tree, CIDR/subnet, fetch/curl converters, SSL decoder, grep). Next: CORS Explainer Simulator + CSS Clamp Calculator. |
 
 ---
 

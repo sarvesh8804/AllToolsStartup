@@ -1,0 +1,23 @@
+{
+  "slug": "json-pretty-print-with-tree-view",
+  "name": "JSON Pretty Print with Tree View",
+  "family": "tools",
+  "category": "JSON Tools",
+  "status": "shipped",
+  "summary": "Format JSON with indentation and explore it in a collapsible tree view.",
+  "description": "Paste minified or messy JSON to pretty-print it and browse keys, arrays, and values in an expandable tree alongside the formatted output.",
+  "keywords": ["json pretty print", "json tree view", "format json", "json viewer"],
+  "relatedSlugs": ["json-formatter", "json-validator", "json-path-tester"],
+  "faqs": [
+    {
+      "question": "Does this validate JSON?",
+      "answer": "Yes — invalid JSON shows an error before formatting or building the tree."
+    },
+    {
+      "question": "Can I collapse nested objects?",
+      "answer": "Click nodes in the tree to expand or collapse branches."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-pretty-print-with-tree-view"
+}

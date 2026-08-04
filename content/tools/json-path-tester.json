@@ -1,0 +1,23 @@
+{
+  "slug": "json-path-tester",
+  "name": "JSON Path Tester",
+  "family": "tools",
+  "category": "JSON Tools",
+  "status": "shipped",
+  "summary": "Test JSON Path expressions against sample JSON and see matching values.",
+  "description": "Paste JSON and a path like $.store.book[0].title or $.items[*].name. Matches appear instantly with dot keys, bracket indexes, and array wildcards.",
+  "keywords": ["json path", "jsonpath tester", "query json", "json path expression"],
+  "relatedSlugs": ["json-formatter", "json-validator", "json-pretty-print-with-tree-view"],
+  "faqs": [
+    {
+      "question": "Which JSON Path syntax is supported?",
+      "answer": "Dot notation, bracket keys and indexes, and [*] wildcards on arrays."
+    },
+    {
+      "question": "Is my JSON sent anywhere?",
+      "answer": "No. Parsing and evaluation run locally in your browser."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "json-path-tester"
+}

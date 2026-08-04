@@ -16,17 +16,17 @@
 
 | Field | Value |
 |---|---|
-| **Last completed phase** | `P100` |
-| **Next phase to do** | `P101` |
+| **Last completed phase** | `P105` |
+| **Next phase to do** | `P106` |
 | **Production live?** | Ready (deploy on push / Vercel) |
 | **Production URL** | — _(set after first Vercel deploy)_ |
 | **Foundation done** | 12 / 12 |
-| **Tool phases done** | 100 / 472 |
-| **Tools shipped** | 190 / 755 |
+| **Tool phases done** | 105 / 472 |
+| **Tools shipped** | 199 / 755 |
 | **Hub phases done** | 0 / 50 |
 | **SEO phases done** | 1 / 94 _(platform SEO pass after P030)_ |
 | **Monetization phases done** | 0 / 15 |
-| **Last updated** | 2026-08-03 |
+| **Last updated** | 2026-08-04 |
 
 ### Progress bar (manual)
 
@@ -60,6 +60,11 @@ Newest at top. One line per completed phase.
 
 | Date | Phase | Notes / commit / URL |
 |---|---|---|
+| 2026-08-04 | `P105` | cURL to Fetch Converter + Grep Online on `/tools` + tests |
+| 2026-08-04 | `P104` | SSL Certificate Decoder + Subnet Calculator on `/tools` + tests |
+| 2026-08-04 | `P103` | CIDR Calculator + Fetch to cURL Converter on `/tools` + tests |
+| 2026-08-04 | `P102` | JSON Path Tester + JSON Pretty Print with Tree View on `/tools` + tests |
+| 2026-08-04 | `P101` | Image Cropper on `/image` + tests |
 | 2026-08-03 | `P100` | Calendar Generator (print) + Docker Run to Compose Converter on `/tools` + tests |
 | 2026-08-03 | `P099` | Color Blindness Simulator + Random Palette Generator on `/tools` + tests |
 | 2026-08-03 | `P098` | CSV Cleaner + CSV Diff on `/tools` + tests |
@@ -304,11 +309,11 @@ _472 phases · 755 tools. Check the box when the whole phase (all tools listed) 
 | [x] | `P098` | CSV Cleaner (trim, dedupe); CSV Diff | M | `/tools` |
 | [x] | `P099` | Color Blindness Simulator; Random Palette Generator | E/M | `/tools` |
 | [x] | `P100` | Calendar Generator (print); Docker Run to Compose Converter | M | `/tools` |
-| [ ] | `P101` | Image Cropper | M | `/image` |
-| [ ] | `P102` | JSON Path Tester; JSON Pretty Print with Tree View | M | `/tools` |
-| [ ] | `P103` | CIDR Calculator; Fetch to cURL Converter | M | `/tools` |
-| [ ] | `P104` | SSL Certificate Decoder (paste PEM); Subnet Calculator | M | `/tools` |
-| [ ] | `P105` | cURL to Fetch Converter; Grep Online (multiline) | M | `/tools` |
+| [x] | `P101` | Image Cropper | M | `/image` |
+| [x] | `P102` | JSON Path Tester; JSON Pretty Print with Tree View | M | `/tools` |
+| [x] | `P103` | CIDR Calculator; Fetch to cURL Converter | M | `/tools` |
+| [x] | `P104` | SSL Certificate Decoder (paste PEM); Subnet Calculator | M | `/tools` |
+| [x] | `P105` | cURL to Fetch Converter; Grep Online (multiline) | M | `/tools` |
 | [ ] | `P106` | CORS Explainer Simulator; CSS Clamp Calculator | E/M | `/tools` |
 | [ ] | `P107` | CSS Filter Generator; Responsive Font Scale Calculator | E | `/tools` |
 | [ ] | `P108` | CSV Merger; Java Beautifier | M | `/tools` |

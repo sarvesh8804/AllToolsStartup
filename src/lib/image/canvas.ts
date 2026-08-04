@@ -2,6 +2,7 @@ import {
   clampJpegQuality,
   type OutputImageFormat,
 } from "@/lib/image/format";
+import type { CropRect } from "@/lib/image/crop";
 
 export type LoadedImage = {
   bitmap: ImageBitmap;
@@ -24,6 +25,32 @@ export type DrawOptions = {
   /** Fill under transparent pixels (JPEG has no alpha). */
   background?: string;
 };
+
+/** Crop a region from a source image into a new canvas. */
+export function drawCropToCanvas(
+  source: CanvasImageSource,
+  crop: CropRect,
+): HTMLCanvasElement {
+  const canvas = document.createElement("canvas");
+  canvas.width = crop.width;
+  canvas.height = crop.height;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) {
+    throw new Error("Could not get canvas 2D context.");
+  }
+  ctx.drawImage(
+    source,
+    crop.x,
+    crop.y,
+    crop.width,
+    crop.height,
+    0,
+    0,
+    crop.width,
+    crop.height,
+  );
+  return canvas;
+}
 
 export function drawImageToCanvas(
   source: CanvasImageSource,

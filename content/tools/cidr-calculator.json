@@ -1,0 +1,23 @@
+{
+  "slug": "cidr-calculator",
+  "name": "CIDR Calculator",
+  "family": "tools",
+  "category": "Networking & HTTP",
+  "status": "shipped",
+  "summary": "Calculate network, broadcast, host range, and mask from a CIDR block.",
+  "description": "Enter an IPv4 CIDR like 192.168.1.0/24 to see network address, broadcast, first and last host, subnet mask, and usable host count.",
+  "keywords": ["cidr calculator", "cidr block", "ipv4 subnet", "network calculator"],
+  "relatedSlugs": ["subnet-calculator", "port-number-reference", "url-parser-builder"],
+  "faqs": [
+    {
+      "question": "What format should I use?",
+      "answer": "IPv4 address followed by slash and prefix length, e.g. 10.0.0.0/8."
+    },
+    {
+      "question": "IPv6 support?",
+      "answer": "This tool focuses on IPv4 CIDR blocks."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "cidr-calculator"
+}

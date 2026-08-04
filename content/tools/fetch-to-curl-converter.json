@@ -1,0 +1,23 @@
+{
+  "slug": "fetch-to-curl-converter",
+  "name": "Fetch to cURL Converter",
+  "family": "tools",
+  "category": "Networking & HTTP",
+  "status": "shipped",
+  "summary": "Convert fetch() calls into equivalent curl commands.",
+  "description": "Paste a JavaScript fetch(url, options) snippet and get a curl one-liner with method, headers, and body mapped automatically.",
+  "keywords": ["fetch to curl", "javascript fetch curl", "convert fetch", "api debugging"],
+  "relatedSlugs": ["curl-to-fetch-converter", "url-parser-builder", "http-status-code-reference"],
+  "faqs": [
+    {
+      "question": "How are options parsed?",
+      "answer": "The options object is evaluated locally in your browser — use plain object literals, not variables."
+    },
+    {
+      "question": "Production ready?",
+      "answer": "Treat output as a starting point; review auth headers and complex bodies before sharing."
+    }
+  ],
+  "privacyLocal": true,
+  "component": "fetch-to-curl-converter"
+}
